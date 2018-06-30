@@ -353,6 +353,34 @@
           {
             "name": "slick-carousel",
             "version": "^1.8.1"
+          },
+          {
+            "name": "body-parser",
+            "version": "~1.18.2"
+          },
+          {
+            "name": "cookie-parser",
+            "version": "~1.4.3"
+          },
+          {
+            "name": "debug",
+            "version": "~2.6.9"
+          },
+          {
+            "name": "express",
+            "version": "~4.15.5"
+          },
+          {
+            "name": "jade",
+            "version": "~1.11.0"
+          },
+          {
+            "name": "morgan",
+            "version": "~1.9.0"
+          },
+          {
+            "name": "serve-favicon",
+            "version": "~2.4.5"
           }
         ],
         "devDependencies": [
@@ -379,12 +407,12 @@
       },
       "pathPrefix": "",
       "polyfill": true,
-      "buildTime": "2018-06-29T12:33:58.539Z",
+      "buildTime": "2018-06-30T07:01:06.287Z",
       "id": "Site",
       "parent": "SOURCE",
       "children": [],
       "internal": {
-        "contentDigest": "79d936a30a5ff1757453fbd84c0d455d",
+        "contentDigest": "4176e2629eff3f62eb729e8a306164cc",
         "type": "Site",
         "owner": "internal-data-bridge"
       }
@@ -405,7 +433,7 @@
       "children": [],
       "internal": {
         "type": "SitePage",
-        "contentDigest": "61157002f1ef7d57a3c5e310bed373fd",
+        "contentDigest": "a5dd084266548f083f91070cb708745b",
         "description": "Plugin component-page-creator",
         "owner": "internal-data-bridge"
       }
@@ -426,7 +454,7 @@
       "children": [],
       "internal": {
         "type": "SitePage",
-        "contentDigest": "3f00274511296e44c65d0caf11b3619f",
+        "contentDigest": "8bc3cf1bc87a75b620bca8eb8136fba4",
         "description": "Plugin component-page-creator",
         "owner": "internal-data-bridge"
       }
@@ -447,7 +475,7 @@
       "children": [],
       "internal": {
         "type": "SitePage",
-        "contentDigest": "b6e38f7c7e8d1a5bae2c4c2582ee5e3d",
+        "contentDigest": "62c57fb4c7396ed0b3fd8b014f7313f4",
         "description": "Plugin component-page-creator",
         "owner": "internal-data-bridge"
       }
@@ -468,7 +496,7 @@
       "children": [],
       "internal": {
         "type": "SitePage",
-        "contentDigest": "4b852de0fc15084eaeb647ca9e17c6a4",
+        "contentDigest": "99878dee04edbbc02673b54dbd7261a7",
         "description": "Plugin component-page-creator",
         "owner": "internal-data-bridge"
       }
@@ -489,7 +517,7 @@
       "children": [],
       "internal": {
         "type": "SitePage",
-        "contentDigest": "de545745d230b919cb830e502d0efb20",
+        "contentDigest": "1ad72e054c290c3d3329bd7849785347",
         "description": "Plugin prod-404",
         "owner": "internal-data-bridge"
       }
@@ -497,7 +525,7 @@
   },
   "status": {
     "plugins": {},
-    "PLUGINS_HASH": "fce2cdb6b55672e3a1501ada4c5cd1e8"
+    "PLUGINS_HASH": "1916886eee25ed2aeabd5baa49b654b0"
   },
   "componentDataDependencies": {
     "nodes": {
