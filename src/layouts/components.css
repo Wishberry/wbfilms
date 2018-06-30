@@ -108,62 +108,33 @@
   margin-bottom: 4em;
 }
 
-/* TESTIMONIAL */
-.quote:focus {
-  outline: none;
-}
-.quote h4 {
-  width: 60%;
-  margin: auto;
-  text-align: center;
-  line-height: 1.5em;
-  font-weight: 400;
-  letter-spacing: 1px;
-  position: relative;
-}
-
-.quote .author {
-  width: 25%;
-  margin-left: auto;
-  margin-right: 8%;
-}
-.author .name {
-  color: #777;
-  text-align: center;
-  font-weight: 700;
-  margin-bottom: 0;
-  line-height: 1.5em;
-  letter-spacing: 1px;
-}
-.author .title {
-  color: #777;
-  text-align: center;
-  font-weight: 300;
-  right: 0;
-  line-height: 1.5em;
-  letter-spacing: 1px;
+/* CAROUSEL */
+.carousel-container {
+  margin: 6em 0;
+  padding: 0 4rem;
 }
 .slick-arrow {
   z-index: 5;
-  top: 25%;
 }
 .slick-prev, .slick-next {
   width: 50px;
   height: 50px;
 }
 .slick-prev {
-  left: 0;
+  left: -4rem;
 }
 .slick-prev::before {
   content: '\027E8';
   color: #ee4723;
   font-size: 100px;
+  line-height: 0;
 }
 .slick-next {
-  right: 0;
+  right: -4rem;
 }
 .slick-next::before {
   content: '\027E9';
   color: #ee4723;
   font-size: 100px;
+  line-height: 0;
 }

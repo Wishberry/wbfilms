@@ -4,7 +4,7 @@ import Link from 'gatsby-link'
 import Section from '../components/section';
 import Button from '../components/button';
 import FilmCard from '../components/filmCard';
-import Testimonial from '../components/testimonial';
+import Carousel from '../components/carousel';
 import vid from '../images/home.mp4';
 
 import chuskit from '../images/chuskit.jpg';
@@ -116,9 +116,17 @@ class IndexPage extends React.PureComponent {
           </div>
         </Section>
         <Section id="testimonial-section" title="TESTIMONIALS">
-          <div className="testimonial-container">
-            <Testimonial list={testimonials} />
-          </div>
+          <Carousel>
+            { testimonials.map((item, index) => (
+              <div key={index} className="quote">
+                <h4>"{item.quote}"</h4>
+                <div className="author">
+                  <h5 className="name">{item.name}</h5>
+                  <div className="title">{item.title}</div>
+                </div>
+              </div>
+            ))}
+          </Carousel>
         </Section>
       </div>
     );

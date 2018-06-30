@@ -2,15 +2,19 @@ import React from 'react'
 import Link from 'gatsby-link'
 
 import Section from '../components/section';
-import Button from '../components/button';
-import FilmCard from '../components/filmCard';
-import Testimonial from '../components/testimonial';
+import Carousel from '../components/carousel';
 import aboutImage from '../images/about.jpg';
 
-import chuskit from '../images/chuskit.jpg';
-import chippa from '../images/chippa.jpg';
-import sap from '../images/sap.jpg';
-import zollywood from '../images/zollywood.jpg';
+import priyanka from '../images/priyanka.jpg';
+import anshulika from '../images/anshulika.jpg';
+import shashwat from '../images/shashwat.jpg';
+import suprateek from '../images/suprateek.jpg';
+import apoorva from '../images/apoorva.jpg';
+import dhruvi from '../images/dhruvi.jpg';
+import anant from '../images/anant.jpg';
+import nikita from '../images/nikita.jpg';
+
+import corner from '../images/corner.png';
 
 import financeService from '../images/finance.jpg';
 import distributionService from '../images/distribution.jpg';
@@ -22,23 +26,43 @@ class IndexPage extends React.PureComponent {
   render() {
     const team = [
       {
-        name: "",
-        image: "",
+        name: "Priyanka",
+        image: priyanka,
         title: "",
       },
       {
-        name: "",
-        image: "",
+        name: "Anshulika",
+        image: anshulika,
         title: "",
       },
       {
-        name: "",
-        image: "",
+        name: "Shashwat",
+        image: shashwat,
         title: "",
       },
       {
-        name: "",
-        image: "",
+        name: "Suprateek",
+        image: suprateek,
+        title: "",
+      },
+      {
+        name: "Apoorva",
+        image: apoorva,
+        title: "",
+      },
+      {
+        name: "Dhruvi",
+        image: dhruvi,
+        title: "",
+      },
+      {
+        name: "Anant",
+        image: anant,
+        title: "",
+      },
+      {
+        name: "Nikita",
+        image: nikita,
         title: "",
       },
       {
@@ -47,6 +71,30 @@ class IndexPage extends React.PureComponent {
         title: "",
       },
     ];
+
+    const advisors = [
+      {
+        name: "Lorem Ipsum Dolor",
+        image: priyanka
+      },
+      {
+        name: "Lorem Ipsum Dolor",
+        image: anshulika
+      },
+      {
+        name: "Lorem Ipsum Dolor",
+        image: shashwat
+      },
+      {
+        name: "Lorem Ipsum Dolor",
+        image: suprateek
+      },
+      {
+        name: "Lorem Ipsum Dolor",
+        image: apoorva
+      }
+    ];
+
     return (
       <div className="home">
         <div id="landing-section">
@@ -66,14 +114,33 @@ class IndexPage extends React.PureComponent {
         </Section>
         <Section id="team-section" title="THE TEAM">
           <div className="team">
-            <svg class="desktop" viewBox="0 0 100 100">
-              <path d="M10,5 L5,5 L5,10" fill="none" stroke="black" stroke-width="5" />
-              <path d="M2,90 L2,98 L10,98" fill="none" stroke="black" stroke-width="5" />
-              <path d="M90,98 L98,98 L98,90" fill="none" stroke="black" stroke-width="5" />
-              <path d="M98,10 L98,2 L90,2" fill="none" stroke="black" stroke-width="5" />
-            </svg>
-
+            <img className="corner top-left" src={corner} alt="corner" />
+            <img className="corner top-right" src={corner} alt="corner" />
+            <img className="corner bottom-left" src={corner} alt="corner" />
+            <img className="corner bottom-right" src={corner} alt="corner" />
+            <div className="rec"></div>
+            <div className="team-members">
+              { team.map((item, key) => (
+                <div key={key} className="member">
+                  <img src={item.image} alt={item.name} />
+                </div>
+              ))}
+            </div>
           </div>
+        </Section>
+        <Section id="advisor-section" title="BOARD OF ADVISORS">
+          <Carousel
+            settings={{ slidesToShow: 3 }}
+          >
+            { advisors.map((item, index) => (
+              <div className="advisor-container">
+                <div key={index} className="advisor">
+                  <img src={item.image} alt={item.name} />
+                </div>
+                <h5>{item.name}</h5>
+              </div>
+            ))}
+          </Carousel>
         </Section>
       </div>
     );
