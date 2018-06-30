@@ -1,0 +1,94 @@
+/* Homepage */
+.home {
+  position: relative;
+  width: 100%;
+  background-color: white;
+}
+#landing-section {
+  width: 100%;
+  height: calc(100vh - 100px);
+  min-height: 600px;
+  overflow: hidden;
+  position: relative;
+}
+#landing-section .media {
+  width: 100%;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+}
+.landing-text {
+  position: absolute;
+  color: #fff;
+  top: 50%;
+  left: 7.5%;
+  transform: translateY(-50%);
+}
+.landing-text h2 {
+  font-family: 'PT Sans', sans-serif;
+  line-height: 3.25rem;
+}
+.landing-text h2 span {
+  color: #ee4723;
+}
+.card-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.services-container {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+}
+.service-list {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 40px 0;
+}
+.service {
+  width: 20vw;
+  height: 20vw;
+  border-radius: 50%;
+  position: relative;
+  overflow: hidden;
+}
+.service img {
+
+}
+.service h6 {
+  text-align: center;
+  font-weight: 600;
+  color: #fff;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.service-submit {
+  width: 20vw;
+  margin: 40px 0;
+  display: flex;
+  justify-content: center;
+}
+
+.testimonial-container {
+  margin: 5em 0;
+}
+
+
+
+/* ABOUT */
+.about-text {
+  width: 70%;
+  margin-bottom: 5em;
+}
+.about-text h5{
+  font-weight: 400;
+  line-height: 1.5em;
+  letter-spacing: 1px;
+  text-align: justify;
+}
