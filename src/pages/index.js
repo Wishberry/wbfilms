@@ -79,7 +79,7 @@ class IndexPage extends React.PureComponent {
     return (
       <div className="home">
         <div id="landing-section">
-          <video className="media" autoPlay loop muted src="https://doc-0c-1s-docs.googleusercontent.com/docs/securesc/4aeu3am4ved93tu1bbhaalmi4tjpvrmp/cbutkedmjiifdg9lqd9kb6tbibfjn9uv/1530446400000/15541842174575554379/15541842174575554379/1cQhx9db_KT5BM6jrHkGfSLcq-T4i0CSG?h=05520853686249178583"></video>
+          <video className="media" autoPlay loop muted src="https://s3.ap-south-1.amazonaws.com/aw-files-1-118130771025/videoplayback.mp4"></video>
           <div className="landing-text">
             <h2>India's first<br />crowd-financing<br />studio for new<br />age cinema</h2>
             <Button size="19px">SUBMIT FILM</Button>
