@@ -24,9 +24,6 @@ const Header = ({ siteTitle }) => (
         Services
       </Link>
     </div>
-    <div className="header-nav-mobile">
-      
-    </div>
   </div>
 )
 
