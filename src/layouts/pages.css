@@ -6,7 +6,7 @@
 }
 #landing-section {
   width: 100%;
-  height: calc(100vh - 100px);
+  height: 100vh;
   min-height: 600px;
   overflow: hidden;
   position: relative;
@@ -20,44 +20,47 @@
 .landing-text {
   position: absolute;
   color: #fff;
-  top: 50%;
-  left: 7.5%;
+  top: calc(50% + 30px);
+  left: 3.75rem;
   transform: translateY(-50%);
 }
 .landing-text h2 {
   font-family: 'PT Sans', sans-serif;
-  line-height: 3.25rem;
+  line-height: 2.875rem;
+  font-weight: bold;
 }
 .landing-text h2 span {
   color: #ee4723;
 }
+
 .card-container {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
+  margin-top: 4rem;
 }
 
 .services-container {
   display: flex;
   flex-direction: column;
   align-items: flex-end;
+  margin-top: 6.5rem;
 }
 .service-list {
   width: 100%;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  margin: 40px 0;
 }
 .service {
-  width: 20vw;
-  height: 20vw;
+  width: 200px;
+  height: 200px;
   border-radius: 50%;
   position: relative;
   overflow: hidden;
 }
 .service img {
-
+  width: 100%;
 }
 .service h6 {
   text-align: center;
@@ -70,19 +73,28 @@
 }
 .service-submit {
   width: 20vw;
-  margin: 40px 0;
+  margin-top: 7.5rem;
   display: flex;
   justify-content: center;
+  max-width: 200px;
 }
 /* TESTIMONIAL */
+.quote-container {
+  position: relative;
+  width: 70%;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 6.5rem;
+  margin-bottom: 5rem;
+}
 .quote {
   position: relative;
 }
 .quote:focus {
   outline: none;
 }
-.quote h4 {
-  width: 67%;
+.quote h5 {
+  width: 90%;
   margin: auto;
   text-align: center;
   line-height: 1.5em;
@@ -92,9 +104,10 @@
 }
 
 .quote .author {
-  width: 25%;
+  width: 50%;
   margin-left: auto;
-  margin-right: 8%;
+  margin-right: auto;
+  margin-top: 1em;
 }
 .author .name {
   color: #777;
@@ -115,53 +128,17 @@
 
 /* ABOUT */
 .about-text {
-  width: 70%;
-  margin-bottom: 5em;
+  width: 72%;
+  margin-top: 4.5rem;
 }
 .about-text h5{
   font-weight: 400;
   line-height: 1.5em;
-  letter-spacing: 1px;
   text-align: justify;
 }
 .team {
   position: relative;
-  width: 90vw;
-  margin-left: auto;
-  margin-right: auto;
-  margin-top: 6rem;
-}
-.rec {
-  position: absolute;
-  top: 2.5%;
-  right: calc(5% - 1rem);
-  width: 1rem;
-  height: 1rem;
-  border-radius: 50%;
-  background-color: #ee4723;
-}
-.corner {
-  position: absolute;
-  width: 5%;
-}
-.top-left {
-  top: 0;
-  left: 0;
-}
-.top-right {
-  top: 0;
-  right: 0;
-  transform: rotateY(180deg);
-}
-.bottom-left {
-  bottom: 0;
-  left: 0;
-  transform: rotateX(180deg);
-}
-.bottom-right {
-  bottom: 0;
-  right: 0;
-  transform: rotate(180deg);
+  margin-top: 5rem;
 }
 .team-members {
   width: 90%;
@@ -169,40 +146,96 @@
   flex-wrap: wrap;
   justify-content: space-between;
   margin: auto;
-  padding: 1% 0 4% 0;
+  padding: 4.5rem 0 4.5rem 0;
+}
+.team-quote {
+  font-size: 12px;
+  text-align: center;
 }
 .member {
-  width: 25%;
+  width: 15%;
   border-radius: 50%;
   overflow: hidden;
-  margin: 2vw 1vw;
-  background-color: #999;
+  margin: 2% 2%;
+  position: relative;
+  cursor: pointer;
 }
 .member img {
   width: 100%;
   display: block;
   margin-bottom: 0;
 }
+.member .team-overlay img {
+  width: 25%;
+  margin: auto;
+}
+.team-overlay {
+  position: absolute;
+  width: 100%;
+  height: 0;
+  overflow: hidden;
+  background-color: rgba(255,85,0,.5);
+  color: #fff;
+  font-size: 14px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  padding: 0 10px;
+  box-sizing: border-box;
+  transition: .3s ease;
+}
+.member.active .team-overlay {
+  height: 100%;
+  pointer-events: none;
+}
+.team-overlay p {
+  margin-bottom: 50%;
+  line-height: 1em;
+}
+.linkedin {
+  position: absolute;
+  z-index: 10;
+  bottom: 30%;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 20%;
+  opacity: 0;
+  transition: 0.2s ease;
+  cursor: pointer;
+  pointer-events: none;
+}
+.member.active .linkedin {
+  opacity: 1;
+  bottom: 15%;
+  transition-delay: .1s;
+  pointer-events: all;
+}
 
 .advisor-container {
+  margin-top: 4.25rem;
+  padding: 0 3rem;
+}
+.advisors {
   display: flex;
 }
 .advisor {
   position: relative;
   border-radius: 50%;
   overflow: hidden;
-  width: 80%;
+  width: 45%;
   margin: auto;
 }
 .advisor-container h5 {
   position: relative;
-  margin-top: 1rem;
+  margin-top: 4rem;
   font-weight: 600;
-  width: 60%;
+  width: 50%;
   text-align: center;
   margin-left: auto;
   margin-right: auto;
-  color: #555;
+  color: #232323;
 }
 .advisor img {
   display: block;

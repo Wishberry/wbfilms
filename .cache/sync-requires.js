@@ -9,6 +9,7 @@ exports.layouts = {
 exports.components = {
   "component---src-pages-404-js": preferDefault(require("/Users/ankur/work/wbfilms/src/pages/404.js")),
   "component---src-pages-about-js": preferDefault(require("/Users/ankur/work/wbfilms/src/pages/about.js")),
+  "component---src-pages-film-js": preferDefault(require("/Users/ankur/work/wbfilms/src/pages/film.js")),
   "component---src-pages-index-js": preferDefault(require("/Users/ankur/work/wbfilms/src/pages/index.js")),
   "component---src-pages-page-2-js": preferDefault(require("/Users/ankur/work/wbfilms/src/pages/page-2.js"))
 }
@@ -17,6 +18,7 @@ exports.json = {
   "layout-index.json": require("/Users/ankur/work/wbfilms/.cache/json/layout-index.json"),
   "404.json": require("/Users/ankur/work/wbfilms/.cache/json/404.json"),
   "about.json": require("/Users/ankur/work/wbfilms/.cache/json/about.json"),
+  "film.json": require("/Users/ankur/work/wbfilms/.cache/json/film.json"),
   "index.json": require("/Users/ankur/work/wbfilms/.cache/json/index.json"),
   "page-2.json": require("/Users/ankur/work/wbfilms/.cache/json/page-2.json"),
   "404-html.json": require("/Users/ankur/work/wbfilms/.cache/json/404-html.json")

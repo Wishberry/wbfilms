@@ -4,19 +4,22 @@
   "version": "1.0.0",
   "author": "Kyle Mathews <mathews.kyle@gmail.com>",
   "dependencies": {
-    "gatsby": "^1.9.247",
-    "gatsby-link": "^1.6.40",
-    "gatsby-plugin-react-helmet": "^2.0.10",
-    "react-helmet": "^5.2.0",
-    "react-slick": "^0.23.1",
-    "slick-carousel": "^1.8.1",
     "body-parser": "~1.18.2",
     "cookie-parser": "~1.4.3",
     "debug": "~2.6.9",
-    "express": "~4.15.5",
+    "express": "^4.16.3",
+    "gatsby": "^1.9.273",
+    "gatsby-link": "^1.6.40",
+    "gatsby-plugin-react-helmet": "^2.0.10",
     "jade": "~1.11.0",
     "morgan": "~1.9.0",
-    "serve-favicon": "~2.4.5"
+    "rc-tooltip": "^3.7.2",
+    "react-grid-gallery": "^0.5.1",
+    "react-helmet": "^5.2.0",
+    "react-images": "^0.5.17",
+    "react-slick": "^0.23.1",
+    "serve-favicon": "~2.4.5",
+    "slick-carousel": "^1.8.1"
   },
   "keywords": [
     "gatsby"

@@ -3,8 +3,8 @@ import Link from 'gatsby-link'
 
 import logo from '../images/logo.png';
 
-const FilmCard = ({ image, title }) => (
-  <a href="#" className="card">
+const FilmCard = ({ image, title, url }) => (
+  <Link to={url} className="card">
     <div>
       <img src={image} alt={title} />
       <div className="card-text">
@@ -13,7 +13,7 @@ const FilmCard = ({ image, title }) => (
         })}
       </div>
     </div>
-  </a>
+  </Link>
 )
 
 export default FilmCard

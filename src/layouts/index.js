@@ -7,8 +7,10 @@ import Footer from '../components/footer'
 import './index.css'
 import './slick/slick.css'
 import './slick/slick-theme.css'
+import './bootstrap_white.css'
 import './common.css'
 import './pages.css'
+import './film.css'
 import './components.css'
 
 const Layout = ({ children, data }) => (
