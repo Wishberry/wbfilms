@@ -143,6 +143,7 @@
   position: relative;
   width: 49%;
   overflow: hidden;
+  margin-bottom: 1.25rem;
 }
 .card img {
   width: 100%;

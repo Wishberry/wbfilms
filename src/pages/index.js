@@ -6,6 +6,7 @@ import Button from '../components/button';
 import FilmCard from '../components/filmCard';
 import Carousel from '../components/carousel';
 import Frame from '../components/frame';
+import Header from '../components/headerNew';
 import vid from '../images/home.mp4';
 
 import chuskit from '../images/chuskit.jpg';
@@ -64,6 +65,8 @@ class IndexPage extends React.PureComponent {
     ];
 
     return (
+      <div>
+      <Header />
       <div className="home">
         <div id="landing-section">
           <video className="media" autoPlay loop muted src="https://s3.ap-south-1.amazonaws.com/aw-files-1-118130771025/videoplayback.mp4"></video>
@@ -133,6 +136,7 @@ class IndexPage extends React.PureComponent {
           </div>
         </Section>
       </div>
+    </div>
     );
   }
 }

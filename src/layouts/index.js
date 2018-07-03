@@ -22,7 +22,7 @@ const Layout = ({ children, data }) => (
         { name: 'keywords', content: 'sample, something' },
       ]}
     />
-    <Header siteTitle={data.site.siteMetadata.title} />
+    {/* <Header siteTitle={data.site.siteMetadata.title} /> */}
     <div>
       {children()}
     </div>
