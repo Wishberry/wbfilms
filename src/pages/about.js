@@ -2,6 +2,7 @@ import React from 'react'
 import Link from 'gatsby-link'
 
 import Header from '../components/header';
+import Footer from '../components/footer';
 import Section from '../components/section';
 import Carousel from '../components/carousel';
 import Frame from '../components/frame';
@@ -214,6 +215,7 @@ class IndexPage extends React.PureComponent {
           </div>
         </Section>
       </div>
+      <Footer />
       </div>
     );
   }

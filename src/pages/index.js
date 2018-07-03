@@ -7,6 +7,7 @@ import FilmCard from '../components/filmCard';
 import Carousel from '../components/carousel';
 import Frame from '../components/frame';
 import Header from '../components/headerNew';
+import Footer from '../components/footerNew';
 import vid from '../images/home.mp4';
 
 import chuskit from '../images/chuskit.jpg';
@@ -136,6 +137,7 @@ class IndexPage extends React.PureComponent {
           </div>
         </Section>
       </div>
+      <Footer />
     </div>
     );
   }

@@ -1,7 +1,7 @@
 import React from 'react'
 import Link from 'gatsby-link'
 
-import logo from '../images/logo-white.png';
+import logo from '../images/logo-white-1.png';
 
 import facebook from '../images/facebook.png';
 import instagram from '../images/instagram.png';
@@ -11,7 +11,7 @@ import twitter from '../images/twitter.png';
 const Footer = ({ siteTitle }) => (
   <div className="footer">
     <div className="footer-top">
-      <div className="footer-logo">
+      <div className="footer-logo-new">
         <img src={logo} alt="logo" />
       </div>
       <div className="footer-nav">
