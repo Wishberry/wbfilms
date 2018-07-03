@@ -3,7 +3,8 @@ const films = {
     title: 'Chuskit',
     coverImage: "https://s3.ap-south-1.amazonaws.com/aw-files-1-118130771025/chuskit-cover.jpg",
     director: {
-      text: "Priya Ramasubban is a reputed filmmaker who has travelled the world for over fifteen years making films for National Geographic, Discovery, History Channel and other major international broadcasters. Priya was one of the six people chosen from all over India as a part of a screenwriter’s lab organized by the National Film Development Corporation where she recieved an opportunity to evolve her story for Chuskit under the mentorship of award-winning Dutch writed Jolein Laarman.",
+      name: "Priya Ramasubban",
+      text: "Priya Ramasubban is a reputed filmmaker who has travelled the world for over fifteen years making films for National Geographic, Discovery, History Channel and other major international broadcasters.\n\nPriya was one of the six people chosen from all over India as a part of a screenwriter’s lab organized by the National Film Development Corporation where she recieved an opportunity to evolve her story for Chuskit under the mentorship of award-winning Dutch writed Jolein Laarman.",
       image: "https://s3.ap-south-1.amazonaws.com/aw-files-1-118130771025/priya.jpg",
     },
     synopsis: {
@@ -11,7 +12,7 @@ const films = {
       image: "https://s3.ap-south-1.amazonaws.com/aw-files-1-118130771025/giffoni.png",
     },
     facebook: "https://www.facebook.com/ChuskitTheFilm/",
-    website: "www.chuskit.com",
+    website: "http://www.chuskit.com",
     cast: [
       {
         name: "MORUM NAMGYAL",
@@ -47,7 +48,7 @@ const films = {
       },
       {
         src: "https://s3.ap-south-1.amazonaws.com/aw-files-1-118130771025/gallery4.jpg",
-        thumbnail: "https://s3.ap-south-1.amazonaws.com/aw-files-1-118130771025/gallery3.jpg",
+        thumbnail: "https://s3.ap-south-1.amazonaws.com/aw-files-1-118130771025/gallery4.jpg",
         thumbnailWidth: 250,
         thumbnailHeight: 250,
 

@@ -4,7 +4,7 @@ import Link from 'gatsby-link'
 import Header from '../components/header';
 import Footer from '../components/footer';
 import Section from '../components/section';
-import Gallery from '../components/gallery';
+import Gallery from '../components/gall';
 
 import films from '../data/films';
 
@@ -27,10 +27,14 @@ class FilmPage extends React.PureComponent {
         <Section title="DIRECTOR">
           <div className="director-section">
             <div className="director-text">
-              <h5>{film.director.text}</h5>
+              <h5>
+                {film.director.text.split('\n').map((item, key) => {
+                  return <span key={key}>{item}<br/></span>
+                })}
+              </h5>
             </div>
             <div className="director-image">
-              <img src={film.director.image} alt={film.director.text} />
+              <img src={film.director.image} alt={film.director.name} />
             </div>
           </div>
         </Section>
@@ -38,17 +42,17 @@ class FilmPage extends React.PureComponent {
           <div className="synopsis-section">
             <div className="synopsis-text">
               <h5>{film.synopsis.text}</h5>
-              <a className="synopsis-link" href={film.facebook}>
+              <a className="synopsis-link" href={film.facebook} target="_blank">
                 <img src={linkArrow} alt="link" />
                 <p>FACEBOOK</p>
               </a>
-              <a className="synopsis-link" href={film.facebook}>
+              <a className="synopsis-link" href={film.website} target="_blank">
                 <img src={linkArrow} alt="link" />
                 <p>WEBSITE</p>
               </a>
             </div>
             <div className="synopsis-image">
-              <img src={film.synopsis.image} alt={film.synopsis.text} />
+              <img src={film.synopsis.image} alt="Synopsis" />
             </div>
           </div>
         </Section>
@@ -67,6 +71,7 @@ class FilmPage extends React.PureComponent {
         </Section>
         <div className="photo-container">
           <div className="poster">
+            <h3>Film Poster</h3>
             <img src={film.poster} alt="poster" />
           </div>
           <div className="photo-gallery">

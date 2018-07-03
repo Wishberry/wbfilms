@@ -14,35 +14,46 @@
 .cover-text {
   position: absolute;
   color: #fff;
-  bottom: 3.75rem;
-  left: 3.75rem;
+  bottom: 2rem;
+  left: 2rem;
 }
 .cover-text h2 {
   font-size: 3.25rem;
   line-height: 3.25rem;
-  font-weight: bold;
+  font-weight: normal;
   margin-bottom: 0;
 }
 .director-section, .synopsis-section {
   display: flex;
+  justify-content: space-between;
+  margin-top: 4.5rem;
+  align-items: center;
 }
 .director-text, .synopsis-text {
-  width: 65%;
-  margin-top: 4.5rem;
+  width: 63%;
 }
 .director-text h5, .synopsis-text h5 {
   font-weight: 400;
-  line-height: 1.5em;
+  line-height: 38px;
   text-align: justify;
+  margin-bottom: 0;
 }
-.director-image, .synopsis-image {
-  width: 35%;
+.synopsis-text h5 {
+  margin-bottom: 3rem;
+}
+.director-image {
+  width: 30%;
   display: flex;
   justify-content: flex-end;
   align-items: center;
 }
+.synopsis-image {
+  width: 12%;
+  align-self: flex-start;
+  margin-right: 4rem;
+}
 .director-image img, .synopsis-image img {
-  width: 80%;
+  width: 100%;
   margin-left: auto;
 }
 .synopsis-link {
@@ -51,7 +62,7 @@
   display: flex;
   text-decoration: none;
   align-items: center;
-  margin-bottom: 10px;
+  margin-bottom: 1rem;
 }
 .synopsis-link img {
   height: 1rem;
@@ -61,6 +72,7 @@
 .synopsis-link p {
   margin-bottom: 0;
   color: #232323;
+  font-weight: bold;
 }
 
 .cast-container {
@@ -96,6 +108,7 @@
   bottom: 5%;
   left: 50%;
   transform: translateX(-50%);
+  line-height: 1.15em;
 }
 
 .photo-container {
@@ -104,14 +117,25 @@
   position: relative;
   justify-content: space-between;
   margin-bottom: 5rem;
+  width: 100%;
 }
 .poster {
-  height: 550px;
+  width: 33%;
+  position: relative;
 }
 .poster img {
-  height: 100%;
-
+  width: 100%;
+  display: block;
+}
+.poster h3 {
+  font-size: 38px;
+  position: absolute;
+  top: 1.5rem;
+  left: 1.5rem;
+  color: #fff;
+  font-weight: normal;
 }
 .photo-gallery {
-  width: 100%;
+  width: calc(67% - 2rem);
+  overflow: hidden;
 }
