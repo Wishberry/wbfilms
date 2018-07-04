@@ -276,7 +276,7 @@
   }
   .service {
     width: calc(50% - 1rem);
-    height: calc(50% - 1rem);
+    height: unset;
     margin-bottom: 2rem;
   }
   .service-submit {
