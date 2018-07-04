@@ -269,15 +269,180 @@
         "owner": "internal-data-bridge"
       }
     },
+    "Plugin gatsby-transformer-json": {
+      "resolve": "/Users/ankur/work/wbfilms/node_modules/gatsby-transformer-json",
+      "id": "Plugin gatsby-transformer-json",
+      "name": "gatsby-transformer-json",
+      "version": "1.0.20",
+      "pluginOptions": {
+        "plugins": []
+      },
+      "nodeAPIs": [
+        "onCreateNode"
+      ],
+      "browserAPIs": [],
+      "ssrAPIs": [],
+      "pluginFilepath": "/Users/ankur/work/wbfilms/node_modules/gatsby-transformer-json",
+      "packageJson": {
+        "name": "gatsby-transformer-json",
+        "description": "Gatsby transformer plugin for JSON files",
+        "version": "1.0.20",
+        "keywords": [
+          "gatsby",
+          "gatsby-plugin",
+          "json"
+        ],
+        "author": {
+          "name": "Kyle Mathews",
+          "email": "mathews.kyle@gmail.com"
+        },
+        "license": "MIT",
+        "dependencies": [
+          {
+            "name": "babel-runtime",
+            "version": "^6.26.0"
+          },
+          {
+            "name": "bluebird",
+            "version": "^3.5.0"
+          }
+        ],
+        "devDependencies": [
+          {
+            "name": "babel-cli",
+            "version": "^6.26.0"
+          },
+          {
+            "name": "cross-env",
+            "version": "^5.0.5"
+          }
+        ],
+        "peerDependencies": [],
+        "optionalDependecies": [],
+        "bundledDependecies": []
+      },
+      "parent": "SOURCE",
+      "children": [],
+      "internal": {
+        "contentDigest": "834a56777bc8f3e1ec0ecfbbb45f4b61",
+        "type": "SitePlugin",
+        "owner": "internal-data-bridge"
+      }
+    },
+    "Plugin gatsby-source-filesystem": {
+      "resolve": "/Users/ankur/work/wbfilms/node_modules/gatsby-source-filesystem",
+      "id": "Plugin gatsby-source-filesystem",
+      "name": "gatsby-source-filesystem",
+      "version": "1.5.39",
+      "pluginOptions": {
+        "plugins": [],
+        "path": "./src/data/",
+        "name": "data"
+      },
+      "nodeAPIs": [
+        "sourceNodes",
+        "setFieldsOnGraphQLNodeType"
+      ],
+      "browserAPIs": [],
+      "ssrAPIs": [],
+      "pluginFilepath": "/Users/ankur/work/wbfilms/node_modules/gatsby-source-filesystem",
+      "packageJson": {
+        "name": "gatsby-source-filesystem",
+        "description": "Gatsby plugin which parses files within a directory for further parsing by other plugins",
+        "version": "1.5.39",
+        "keywords": [
+          "gatsby",
+          "gatsby-plugin"
+        ],
+        "author": {
+          "name": "Kyle Mathews",
+          "email": "mathews.kyle@gmail.com"
+        },
+        "license": "MIT",
+        "dependencies": [
+          {
+            "name": "babel-cli",
+            "version": "^6.26.0"
+          },
+          {
+            "name": "babel-runtime",
+            "version": "^6.26.0"
+          },
+          {
+            "name": "better-queue",
+            "version": "^3.8.7"
+          },
+          {
+            "name": "bluebird",
+            "version": "^3.5.0"
+          },
+          {
+            "name": "chokidar",
+            "version": "^1.7.0"
+          },
+          {
+            "name": "fs-extra",
+            "version": "^4.0.1"
+          },
+          {
+            "name": "got",
+            "version": "^7.1.0"
+          },
+          {
+            "name": "md5-file",
+            "version": "^3.1.1"
+          },
+          {
+            "name": "mime",
+            "version": "^1.3.6"
+          },
+          {
+            "name": "pretty-bytes",
+            "version": "^4.0.2"
+          },
+          {
+            "name": "slash",
+            "version": "^1.0.0"
+          },
+          {
+            "name": "valid-url",
+            "version": "^1.0.9"
+          }
+        ],
+        "devDependencies": [
+          {
+            "name": "cross-env",
+            "version": "^5.0.5"
+          }
+        ],
+        "peerDependencies": [
+          {
+            "name": "gatsby",
+            "version": "^1.9.250"
+          }
+        ],
+        "optionalDependecies": [],
+        "bundledDependecies": []
+      },
+      "parent": "SOURCE",
+      "children": [],
+      "internal": {
+        "contentDigest": "6b3922f73f256d853aceb92b3ee308e3",
+        "type": "SitePlugin",
+        "owner": "internal-data-bridge"
+      }
+    },
     "Plugin default-site-plugin": {
       "resolve": "/Users/ankur/work/wbfilms",
       "id": "Plugin default-site-plugin",
       "name": "default-site-plugin",
-      "version": "a77c4ad8ddfd7c099694aea8fa852ba5",
+      "version": "ca6ddac0d69c326373a6996140a65614",
       "pluginOptions": {
         "plugins": []
       },
-      "nodeAPIs": [],
+      "nodeAPIs": [
+        "onCreateNode"
+      ],
       "browserAPIs": [],
       "ssrAPIs": [],
       "pluginFilepath": "/Users/ankur/work/wbfilms",
@@ -318,6 +483,14 @@
           {
             "name": "gatsby-plugin-react-helmet",
             "version": "^2.0.10"
+          },
+          {
+            "name": "gatsby-source-filesystem",
+            "version": "^1.5.39"
+          },
+          {
+            "name": "gatsby-transformer-json",
+            "version": "^1.0.20"
           },
           {
             "name": "jade",
@@ -369,7 +542,7 @@
       "parent": "SOURCE",
       "children": [],
       "internal": {
-        "contentDigest": "ad638467226060c6747ad86ba7f7b755",
+        "contentDigest": "ab54287e3e7140f899e042ef340e7c76",
         "type": "SitePlugin",
         "owner": "internal-data-bridge"
       }
@@ -462,14 +635,214 @@
       },
       "pathPrefix": "",
       "polyfill": true,
-      "buildTime": "2018-07-03T10:54:19.425Z",
+      "buildTime": "2018-07-04T07:25:33.624Z",
       "id": "Site",
       "parent": "SOURCE",
       "children": [],
       "internal": {
-        "contentDigest": "7a8363b55d966180e15bf5b05016dbd7",
+        "contentDigest": "8a963b0eac59bcd70df879c20c95faa1",
         "type": "Site",
         "owner": "internal-data-bridge"
+      }
+    },
+    "./src/data/ absPath of file": {
+      "id": "./src/data/ absPath of file",
+      "children": [],
+      "parent": "___SOURCE___",
+      "internal": {
+        "contentDigest": "291361b95fd18876301281e254f8c55e",
+        "type": "Directory",
+        "description": "Directory \"src/data\"",
+        "owner": "gatsby-source-filesystem"
+      },
+      "sourceInstanceName": "data",
+      "absolutePath": "./src/data/",
+      "relativePath": "",
+      "extension": "",
+      "size": 128,
+      "prettySize": "128 B",
+      "modifiedTime": "2018-07-03T11:51:13.206Z",
+      "accessTime": "2018-07-04T07:25:34.932Z",
+      "changeTime": "2018-07-03T11:51:13.206Z",
+      "birthTime": "2018-07-02T20:04:02.663Z",
+      "root": "",
+      "dir": "./src",
+      "base": "data",
+      "ext": "",
+      "name": "data",
+      "relativeDirectory": "..",
+      "dev": 16777222,
+      "mode": 16877,
+      "nlink": 4,
+      "uid": 502,
+      "gid": 20,
+      "rdev": 0,
+      "blksize": 4194304,
+      "ino": 4298786802,
+      "blocks": 0,
+      "atimeMs": 1530689134931.989,
+      "mtimeMs": 1530618673206.395,
+      "ctimeMs": 1530618673206.395,
+      "birthtimeMs": 1530561842663.288,
+      "atime": "2018-07-04T07:25:34.932Z",
+      "mtime": "2018-07-03T11:51:13.206Z",
+      "ctime": "2018-07-03T11:51:13.206Z",
+      "birthtime": "2018-07-02T20:04:02.663Z"
+    },
+    "src/data/data.js absPath of file": {
+      "id": "src/data/data.js absPath of file",
+      "children": [],
+      "parent": "___SOURCE___",
+      "internal": {
+        "contentDigest": "b0f59d5d706b6e2a7c27e3e27d6e27ce",
+        "mediaType": "application/javascript",
+        "type": "File",
+        "description": "File \"src/data/data.js\"",
+        "owner": "gatsby-source-filesystem"
+      },
+      "sourceInstanceName": "data",
+      "absolutePath": "src/data/data.js",
+      "relativePath": "data.js",
+      "extension": "js",
+      "size": 11089,
+      "prettySize": "11.1 kB",
+      "modifiedTime": "2018-07-04T07:19:01.260Z",
+      "accessTime": "2018-07-04T07:19:01.472Z",
+      "changeTime": "2018-07-04T07:19:01.260Z",
+      "birthTime": "2018-07-02T20:04:37.462Z",
+      "root": "",
+      "dir": "src/data",
+      "base": "data.js",
+      "ext": ".js",
+      "name": "data",
+      "relativeDirectory": "",
+      "dev": 16777222,
+      "mode": 33188,
+      "nlink": 1,
+      "uid": 502,
+      "gid": 20,
+      "rdev": 0,
+      "blksize": 4194304,
+      "ino": 4298786803,
+      "blocks": 24,
+      "atimeMs": 1530688741471.5742,
+      "mtimeMs": 1530688741259.6575,
+      "ctimeMs": 1530688741259.6575,
+      "birthtimeMs": 1530561877462.0657,
+      "atime": "2018-07-04T07:19:01.472Z",
+      "mtime": "2018-07-04T07:19:01.260Z",
+      "ctime": "2018-07-04T07:19:01.260Z",
+      "birthtime": "2018-07-02T20:04:37.462Z"
+    },
+    "src/data/data.json absPath of file": {
+      "id": "src/data/data.json absPath of file",
+      "children": [
+        "src/data/data.json absPath of file [0] >>> JSON"
+      ],
+      "parent": "___SOURCE___",
+      "internal": {
+        "contentDigest": "5d837b0fa10de62a15b9cab0db4fadb8",
+        "mediaType": "application/json",
+        "type": "File",
+        "description": "File \"src/data/data.json\"",
+        "owner": "gatsby-source-filesystem"
+      },
+      "sourceInstanceName": "data",
+      "absolutePath": "src/data/data.json",
+      "relativePath": "data.json",
+      "extension": "json",
+      "size": 3339,
+      "prettySize": "3.34 kB",
+      "modifiedTime": "2018-07-03T11:51:13.217Z",
+      "accessTime": "2018-07-03T11:51:13.220Z",
+      "changeTime": "2018-07-03T11:51:13.217Z",
+      "birthTime": "2018-07-03T11:51:13.206Z",
+      "root": "",
+      "dir": "src/data",
+      "base": "data.json",
+      "ext": ".json",
+      "name": "data",
+      "relativeDirectory": "",
+      "dev": 16777222,
+      "mode": 33188,
+      "nlink": 1,
+      "uid": 502,
+      "gid": 20,
+      "rdev": 0,
+      "blksize": 4194304,
+      "ino": 4298857302,
+      "blocks": 8,
+      "atimeMs": 1530618673219.9116,
+      "mtimeMs": 1530618673217.298,
+      "ctimeMs": 1530618673217.298,
+      "birthtimeMs": 1530618673206.3826,
+      "atime": "2018-07-03T11:51:13.220Z",
+      "mtime": "2018-07-03T11:51:13.217Z",
+      "ctime": "2018-07-03T11:51:13.217Z",
+      "birthtime": "2018-07-03T11:51:13.206Z"
+    },
+    "src/data/data.json absPath of file [0] >>> JSON": {
+      "films": {
+        "chuskit": {
+          "title": "Chuskit",
+          "coverImage": "https://s3.ap-south-1.amazonaws.com/aw-files-1-118130771025/chuskit-cover.jpg",
+          "director": {
+            "name": "Priya Ramasubban",
+            "text": "Priya Ramasubban is a reputed filmmaker who has travelled the world for over fifteen years making films for National Geographic, Discovery, History Channel and other major international broadcasters.\n\nPriya was one of the six people chosen from all over India as a part of a screenwriter’s lab organized by the National Film Development Corporation where she recieved an opportunity to evolve her story for Chuskit under the mentorship of award-winning Dutch writed Jolein Laarman.",
+            "image": "https://s3.ap-south-1.amazonaws.com/aw-files-1-118130771025/priya.jpg"
+          },
+          "synopsis": {
+            "text": "Sprightly Chuskit’s dream of going to school is cut short when she is rendered a paraplegic after an accident. She’s confined to life indoors in the company of her strict grandfather, Dorje. Chuskit continues to harbor hopes of school but Dorje tries to make her understand that school can’t handle her needs. As life at home gets harder, her battle with her grandfather exacerbates. Caught in between their struggle are Chuskit’s parents and her enterprising brother who want to respect the old world views that Dorje represents, but also want to keep Chuskit’s spirit alive. Chuskit will have to get her grandfather to yield or she will have to accept the reality he has chosen for her.",
+            "image": "https://s3.ap-south-1.amazonaws.com/aw-files-1-118130771025/giffoni.png"
+          },
+          "facebook": "https://www.facebook.com/ChuskitTheFilm/",
+          "website": "http://www.chuskit.com",
+          "cast": [
+            {
+              "name": "MORUM NAMGYAL",
+              "image": "https://s3.ap-south-1.amazonaws.com/aw-files-1-118130771025/morup.jpg"
+            },
+            {
+              "name": "JIGMENT DAWA LAMO",
+              "image": "https://s3.ap-south-1.amazonaws.com/aw-files-1-118130771025/jigment.jpg"
+            }
+          ],
+          "poster": "https://s3.ap-south-1.amazonaws.com/aw-files-1-118130771025/chuskit-poster.jpg",
+          "gallery": [
+            {
+              "src": "https://s3.ap-south-1.amazonaws.com/aw-files-1-118130771025/gallery1.jpg",
+              "thumbnail": "https://s3.ap-south-1.amazonaws.com/aw-files-1-118130771025/gallery1.jpg",
+              "thumbnailWidth": 250,
+              "thumbnailHeight": 250
+            },
+            {
+              "src": "https://s3.ap-south-1.amazonaws.com/aw-files-1-118130771025/gallery2.jpg",
+              "thumbnail": "https://s3.ap-south-1.amazonaws.com/aw-files-1-118130771025/gallery2.jpg",
+              "thumbnailWidth": 410,
+              "thumbnailHeight": 250
+            },
+            {
+              "src": "https://s3.ap-south-1.amazonaws.com/aw-files-1-118130771025/gallery3.jpg",
+              "thumbnail": "https://s3.ap-south-1.amazonaws.com/aw-files-1-118130771025/gallery3.jpg",
+              "thumbnailWidth": 410,
+              "thumbnailHeight": 250
+            },
+            {
+              "src": "https://s3.ap-south-1.amazonaws.com/aw-files-1-118130771025/gallery4.jpg",
+              "thumbnail": "https://s3.ap-south-1.amazonaws.com/aw-files-1-118130771025/gallery4.jpg",
+              "thumbnailWidth": 250,
+              "thumbnailHeight": 250
+            }
+          ]
+        }
+      },
+      "id": "src/data/data.json absPath of file [0] >>> JSON",
+      "children": [],
+      "parent": "src/data/data.json absPath of file",
+      "internal": {
+        "contentDigest": "bd76914624ffc4e6692d5aff77c7409b",
+        "type": "DataJson",
+        "owner": "gatsby-transformer-json"
       }
     },
     "SitePage /404/": {
@@ -488,7 +861,7 @@
       "children": [],
       "internal": {
         "type": "SitePage",
-        "contentDigest": "2cbd132e041a73a415956d1a0b83a310",
+        "contentDigest": "dddd952388df27dc78dc796e62904987",
         "description": "Plugin gatsby-plugin-page-creator",
         "owner": "internal-data-bridge"
       }
@@ -509,28 +882,91 @@
       "children": [],
       "internal": {
         "type": "SitePage",
-        "contentDigest": "afe783b79865f4464a8d171b7c594a9c",
+        "contentDigest": "68b458044de10ba3aa8e965ffdc167f8",
         "description": "Plugin gatsby-plugin-page-creator",
         "owner": "internal-data-bridge"
       }
     },
-    "SitePage /film/": {
+    "SitePage /film/chippa/": {
       "layout": "index",
-      "jsonName": "film.json",
-      "internalComponentName": "ComponentFilm",
-      "path": "/film/",
-      "component": "/Users/ankur/work/wbfilms/src/pages/film.js",
-      "componentChunkName": "component---src-pages-film-js",
+      "jsonName": "film-chippa.json",
+      "internalComponentName": "ComponentFilmChippa",
+      "path": "/film/chippa/",
+      "component": "/Users/ankur/work/wbfilms/src/pages/film/chippa.js",
+      "componentChunkName": "component---src-pages-film-chippa-js",
       "context": {},
       "pluginCreator___NODE": "Plugin gatsby-plugin-page-creator",
       "pluginCreatorId": "Plugin gatsby-plugin-page-creator",
-      "componentPath": "/Users/ankur/work/wbfilms/src/pages/film.js",
-      "id": "SitePage /film/",
+      "componentPath": "/Users/ankur/work/wbfilms/src/pages/film/chippa.js",
+      "id": "SitePage /film/chippa/",
       "parent": "SOURCE",
       "children": [],
       "internal": {
         "type": "SitePage",
-        "contentDigest": "64f86a3d79a2fc0c21a13a84579da141",
+        "contentDigest": "6c1c5eb2ed4d6c4c84d1544fa995b43f",
+        "description": "Plugin gatsby-plugin-page-creator",
+        "owner": "internal-data-bridge"
+      }
+    },
+    "SitePage /film/chuskit/": {
+      "layout": "index",
+      "jsonName": "film-chuskit.json",
+      "internalComponentName": "ComponentFilmChuskit",
+      "path": "/film/chuskit/",
+      "component": "/Users/ankur/work/wbfilms/src/pages/film/chuskit.js",
+      "componentChunkName": "component---src-pages-film-chuskit-js",
+      "context": {},
+      "pluginCreator___NODE": "Plugin gatsby-plugin-page-creator",
+      "pluginCreatorId": "Plugin gatsby-plugin-page-creator",
+      "componentPath": "/Users/ankur/work/wbfilms/src/pages/film/chuskit.js",
+      "id": "SitePage /film/chuskit/",
+      "parent": "SOURCE",
+      "children": [],
+      "internal": {
+        "type": "SitePage",
+        "contentDigest": "76dc41b34dd555cc51ad3692aee5c863",
+        "description": "Plugin gatsby-plugin-page-creator",
+        "owner": "internal-data-bridge"
+      }
+    },
+    "SitePage /film/sap/": {
+      "layout": "index",
+      "jsonName": "film-sap.json",
+      "internalComponentName": "ComponentFilmSap",
+      "path": "/film/sap/",
+      "component": "/Users/ankur/work/wbfilms/src/pages/film/sap.js",
+      "componentChunkName": "component---src-pages-film-sap-js",
+      "context": {},
+      "pluginCreator___NODE": "Plugin gatsby-plugin-page-creator",
+      "pluginCreatorId": "Plugin gatsby-plugin-page-creator",
+      "componentPath": "/Users/ankur/work/wbfilms/src/pages/film/sap.js",
+      "id": "SitePage /film/sap/",
+      "parent": "SOURCE",
+      "children": [],
+      "internal": {
+        "type": "SitePage",
+        "contentDigest": "cd72860ca49f864248dbeb54eb18367e",
+        "description": "Plugin gatsby-plugin-page-creator",
+        "owner": "internal-data-bridge"
+      }
+    },
+    "SitePage /film/zollywood/": {
+      "layout": "index",
+      "jsonName": "film-zollywood.json",
+      "internalComponentName": "ComponentFilmZollywood",
+      "path": "/film/zollywood/",
+      "component": "/Users/ankur/work/wbfilms/src/pages/film/zollywood.js",
+      "componentChunkName": "component---src-pages-film-zollywood-js",
+      "context": {},
+      "pluginCreator___NODE": "Plugin gatsby-plugin-page-creator",
+      "pluginCreatorId": "Plugin gatsby-plugin-page-creator",
+      "componentPath": "/Users/ankur/work/wbfilms/src/pages/film/zollywood.js",
+      "id": "SitePage /film/zollywood/",
+      "parent": "SOURCE",
+      "children": [],
+      "internal": {
+        "type": "SitePage",
+        "contentDigest": "201416af12f4cb2a487c0f23b889a43e",
         "description": "Plugin gatsby-plugin-page-creator",
         "owner": "internal-data-bridge"
       }
@@ -551,7 +987,7 @@
       "children": [],
       "internal": {
         "type": "SitePage",
-        "contentDigest": "3be08a77a2c022a3b043ba7309e0a54a",
+        "contentDigest": "276c9f3121d5491dbf34b9668ab1b1ae",
         "description": "Plugin gatsby-plugin-page-creator",
         "owner": "internal-data-bridge"
       }
@@ -572,7 +1008,28 @@
       "children": [],
       "internal": {
         "type": "SitePage",
-        "contentDigest": "3adf6632bd68d6a858ce4c5d8a0a8367",
+        "contentDigest": "3b6600dae7efb7587f5c139a4c5c4f11",
+        "description": "Plugin gatsby-plugin-page-creator",
+        "owner": "internal-data-bridge"
+      }
+    },
+    "SitePage /submit/": {
+      "layout": "index",
+      "jsonName": "submit.json",
+      "internalComponentName": "ComponentSubmit",
+      "path": "/submit/",
+      "component": "/Users/ankur/work/wbfilms/src/pages/submit.js",
+      "componentChunkName": "component---src-pages-submit-js",
+      "context": {},
+      "pluginCreator___NODE": "Plugin gatsby-plugin-page-creator",
+      "pluginCreatorId": "Plugin gatsby-plugin-page-creator",
+      "componentPath": "/Users/ankur/work/wbfilms/src/pages/submit.js",
+      "id": "SitePage /submit/",
+      "parent": "SOURCE",
+      "children": [],
+      "internal": {
+        "type": "SitePage",
+        "contentDigest": "045baf821d2b16e36f6c7bd8afeb9ffd",
         "description": "Plugin gatsby-plugin-page-creator",
         "owner": "internal-data-bridge"
       }
@@ -593,7 +1050,7 @@
       "children": [],
       "internal": {
         "type": "SitePage",
-        "contentDigest": "788b758b9280edb44d5b42df73a3195e",
+        "contentDigest": "782fab2612291775130321c5b06fa68b",
         "description": "Plugin prod-404",
         "owner": "internal-data-bridge"
       }
@@ -601,7 +1058,7 @@
   },
   "status": {
     "plugins": {},
-    "PLUGINS_HASH": "33e27a8525f836f04c597cebb96621c5"
+    "PLUGINS_HASH": "3887e96aaf8c06d728ced2e300b54bfe"
   },
   "componentDataDependencies": {
     "nodes": {

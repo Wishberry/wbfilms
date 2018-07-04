@@ -1,19 +1,19 @@
 import React from 'react'
 import Link from 'gatsby-link'
 
-import Header from '../components/header';
-import Footer from '../components/footer';
-import Section from '../components/section';
-import Gallery from '../components/gall';
+import Header from '../../components/header';
+import Footer from '../../components/footer';
+import Section from '../../components/section';
+import Gallery from '../../components/gallery';
 
-import films from '../data/films';
+import films from '../../data/data';
 
-import linkArrow from '../images/link-arrow.png';
+import linkArrow from '../../images/link-arrow.png';
 
 class FilmPage extends React.PureComponent {
 
   render() {
-    const film = films.chuskit;
+    const film = films.zollywood;
     return (
       <div>
       <Header />
@@ -28,6 +28,7 @@ class FilmPage extends React.PureComponent {
           <div className="director-section">
             <div className="director-text">
               <h5>
+                <strong>{film.director.displayName} </strong>
                 {film.director.text.split('\n').map((item, key) => {
                   return <span key={key}>{item}<br/></span>
                 })}

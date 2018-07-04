@@ -14,11 +14,32 @@
         "path": "/about/"
     },
     {
-        "componentChunkName": "component---src-pages-film-js",
+        "componentChunkName": "component---src-pages-film-chippa-js",
         "layout": "layout---index",
         "layoutComponentChunkName": "component---src-layouts-index-js",
-        "jsonName": "film.json",
-        "path": "/film/"
+        "jsonName": "film-chippa.json",
+        "path": "/film/chippa/"
+    },
+    {
+        "componentChunkName": "component---src-pages-film-chuskit-js",
+        "layout": "layout---index",
+        "layoutComponentChunkName": "component---src-layouts-index-js",
+        "jsonName": "film-chuskit.json",
+        "path": "/film/chuskit/"
+    },
+    {
+        "componentChunkName": "component---src-pages-film-sap-js",
+        "layout": "layout---index",
+        "layoutComponentChunkName": "component---src-layouts-index-js",
+        "jsonName": "film-sap.json",
+        "path": "/film/sap/"
+    },
+    {
+        "componentChunkName": "component---src-pages-film-zollywood-js",
+        "layout": "layout---index",
+        "layoutComponentChunkName": "component---src-layouts-index-js",
+        "jsonName": "film-zollywood.json",
+        "path": "/film/zollywood/"
     },
     {
         "componentChunkName": "component---src-pages-index-js",
@@ -33,6 +54,13 @@
         "layoutComponentChunkName": "component---src-layouts-index-js",
         "jsonName": "page-2.json",
         "path": "/page-2/"
+    },
+    {
+        "componentChunkName": "component---src-pages-submit-js",
+        "layout": "layout---index",
+        "layoutComponentChunkName": "component---src-layouts-index-js",
+        "jsonName": "submit.json",
+        "path": "/submit/"
     },
     {
         "componentChunkName": "component---src-pages-404-js",

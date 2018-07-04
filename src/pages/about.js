@@ -28,10 +28,17 @@ class IndexPage extends React.PureComponent {
     super(props);
     this.state = {
       selection: -1,
+      isMobile: false,
     };
   }
 
   componentDidMount() {
+    if(window.innerWidth <= 500) {
+      this.setState({ isMobile: true });
+    }
+    else {
+      this.setState({ isMobile: false });
+    }
     document.addEventListener('click', this.handleClickOutside);
   }
   componentWillUnmount() {
@@ -56,6 +63,7 @@ class IndexPage extends React.PureComponent {
   }
 
   render() {
+
     const team = [
       {
         name: "Priyanka",
@@ -159,7 +167,7 @@ class IndexPage extends React.PureComponent {
       <Header />
       <div className="home">
         <div id="landing-section">
-          <img src={aboutImage} alt="about-main"/>
+          <img className="media" src={aboutImage} alt="about-main"/>
           <div className="landing-text">
             <h2>We finance,<br />produce, market<br />and distribute<span>&quot;smart<br />budget&quot; films</span></h2>
           </div>
@@ -201,11 +209,11 @@ class IndexPage extends React.PureComponent {
         <Section id="advisor-section" title="BOARD OF ADVISORS">
           <div className="advisor-container">
             <Carousel
-              settings={{ slidesToShow: 3, autoplay: false }}
+              settings={this.state.isMobile ? {} : { slidesToShow: 3 }}
             >
               { advisors.map((item, index) => (
-                <div className="advisors">
-                  <div key={index} className="advisor">
+                <div key={index} className="advisors">
+                  <div className="advisor">
                     <img src={item.image} alt={item.name} />
                   </div>
                   <h5>{item.name}</h5>

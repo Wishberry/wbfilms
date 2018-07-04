@@ -11,6 +11,10 @@
   overflow: hidden;
   position: relative;
 }
+#landing-section.small {
+  height: 55vh;
+  min-height: 450px;
+}
 #landing-section .media {
   width: 100%;
   position: absolute;
@@ -51,6 +55,7 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
+  flex-wrap: wrap;
 }
 .service {
   width: 200px;
@@ -61,6 +66,7 @@
 }
 .service img {
   width: 100%;
+  display: block;
 }
 .service h6 {
   text-align: center;
@@ -241,4 +247,68 @@
   display: block;
   width: 100%;
   margin-bottom: 0;
+}
+
+.form-container {
+  margin-top: 4rem;
+}
+
+
+/* MOBILE */
+@media only screen and (max-width: 480px) {
+  #landing-section .media {
+    width: auto;
+    height: 100%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+  }
+  #landing-section.small .media {
+    height: 60%;
+  }
+  .landing-text {
+    left: 0;
+    padding: 0 2.125rem;
+  }
+  .landing-text h2 {
+    line-height: 3.25rem;
+    font-weight: bold;
+  }
+  .service {
+    width: calc(50% - 1rem);
+    height: calc(50% - 1rem);
+    margin-bottom: 2rem;
+  }
+  .service-submit {
+    width: calc(50% - 1rem);
+    margin-top: 4rem;
+  }
+  .quote-container {
+    width: 100%;
+  }
+  .quote .author {
+    width: 70%;
+  }
+  .about-text {
+    width: 100%;
+  }
+  .about-text h5 {
+    text-align: left;
+  }
+  .team-members {
+    padding-top: 2.5rem;
+  }
+  .member {
+    width: 45%;
+    margin: 1rem 1%;
+  }
+  .advisor-container {
+    margin-top: 2rem;
+  }
+  .advisor-container h5 {
+    margin-top: 3rem;
+  }
+  .advisor {
+    width: 85%
+  }
 }

@@ -27,22 +27,22 @@ class IndexPage extends React.PureComponent {
       {
         title: "Chuskit",
         image: chuskit,
-        url: "/film",
+        url: "/film/chuskit",
       },
       {
         title: "Chippa",
         image: chippa,
-        url: "/film",
+        url: "/film/chippa",
       },
       {
         title: "Sethum Aayiram Pon (Roots)",
         image: sap,
-        url: "/film",
+        url: "/film/sap",
       },
       {
         title: "Zollywood",
         image: zollywood,
-        url: "/film",
+        url: "/film/zollywood",
       }
     ];
 
@@ -92,12 +92,10 @@ class IndexPage extends React.PureComponent {
           <div className="services-container">
             <div className="service-list">
               { services.map((item, key) => (
-                <a href="#" key={key}>
-                  <div className="service">
-                    <img src={item.image} alt={item.name} />
-                    <h6>{item.name}</h6>
-                  </div>
-                </a>
+                <div key={key} className="service">
+                  <img src={item.image} alt={item.name} />
+                  <h6>{item.name}</h6>
+                </div>
               ))}
             </div>
             <div className="service-submit">

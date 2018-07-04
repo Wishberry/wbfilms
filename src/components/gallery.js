@@ -1,60 +1,84 @@
-import React from 'react'
-import Link from 'gatsby-link'
-import Gallery from 'react-grid-gallery';
+import PropTypes from 'prop-types';
+import React, { Component } from 'react';
+import Lightbox from 'react-images';
 
-class PhotoGallery extends React.PureComponent {
+class Gallery extends Component {
+	constructor () {
+		super();
 
-  render() {
-    const tileStyles = {
-      width: "20vw",
-      height: "20vw",
-      position: "relative",
-      overflow: "hidden",
-      marginRight: "2rem",
-    }
-    const thumbnailStyles = {
-      height: "100%",
-      width: "auto",
-      position: "absolute",
-      top: "50%",
-      left: "50%",
-      transform: "translate(-50%, -50%)",
-    }
+		this.state = {
+			lightboxIsOpen: false,
+			currentImage: 0,
+		};
+	}
+	openLightbox = (index, event) => {
+		event.preventDefault();
+		this.setState({
+			currentImage: index,
+			lightboxIsOpen: true,
+		});
+	}
+	closeLightbox = () => {
+		this.setState({
+			currentImage: 0,
+			lightboxIsOpen: false,
+		});
+	}
+	gotoPrevious = () => {
+		this.setState({
+			currentImage: this.state.currentImage - 1,
+		});
+	}
+	gotoNext = () => {
+		this.setState({
+			currentImage: this.state.currentImage + 1,
+		});
+	}
+	gotoImage = (index) => {
+		this.setState({
+			currentImage: index,
+		});
+	}
+	handleClickImage = () => {
+		if (this.state.currentImage === this.props.images.length - 1) return;
 
-    function tileFunc() {
-      if (this.props.index === 1 || this.props.index === 2){
-        return {
-          width: "30vw",
-          height: "20vw",
-          position: "relative",
-          overflow: "hidden",
+		this.gotoNext();
+	}
+
+	render () {
+    const images = this.props.images;
+		return (
+			<div className="gallery">
+        <div className="gallery-tiles">
+          { images.map((obj, i) => {
+      			return (
+      				<a
+      					href={obj.src}
+      					className="gallery-thumbnail"
+      					key={i}
+      					onClick={(e) => this.openLightbox(i, e)}
+      				>
+      					<img src={obj.thumbnail} alt="gallery" />
+      				</a>
+      			)
+      		})
         }
-      }
-      return tileStyles;
-    }
-
-    function thumbnailFunc() {
-      return thumbnailStyles;
-    }
-    return (
-      <Gallery
-        images={this.props.images}
-        enableLightBox={true}
-        backdropClosesModal={true}
-        preloadNextImage={true}
-        enableKeyboardInput={true}
-        showImageCount={true}
-        showLightboxThumbnails={true}
-        enableImageSelection={false}
-        maxRows={2}
-        rowHeight={250}
-        margin={0}
-        tileViewportStyle={tileFunc}
-        thumbnailStyle={thumbnailFunc}
-      />
-    );
-  }
+        </div>
+				<Lightbox
+					currentImage={this.state.currentImage}
+					images={this.props.images}
+					isOpen={this.state.lightboxIsOpen}
+					onClickImage={this.handleClickImage}
+					onClickNext={this.gotoNext}
+					onClickPrev={this.gotoPrevious}
+					onClickThumbnail={this.gotoImage}
+					onClose={this.closeLightbox}
+					showThumbnails={true}
+          backdropClosesModal={true}
+				/>
+			</div>
+		);
+	}
 }
 
-
-export default PhotoGallery
+export default Gallery;
