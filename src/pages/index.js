@@ -73,7 +73,7 @@ class IndexPage extends React.PureComponent {
           <video className="media" autoPlay loop muted src="https://s3.ap-south-1.amazonaws.com/aw-files-1-118130771025/videoplayback.mp4"></video>
           <div className="landing-text">
             <h2>India's first<br />crowd-financing<br />studio for new age<br />cinema</h2>
-            <Button size="16px">SUBMIT FILM</Button>
+            <Button to="/submit" size="16px">SUBMIT FILM</Button>
           </div>
         </div>
         <Section id="films-section" title="OUR FILMS">
@@ -99,7 +99,7 @@ class IndexPage extends React.PureComponent {
               ))}
             </div>
             <div className="service-submit">
-              <Button size="18px">
+              <Button to="/submit" size="18px">
                 SUBMIT FILM
               </Button>
             </div>
