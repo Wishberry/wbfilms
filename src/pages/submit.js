@@ -1,6 +1,10 @@
 import React from 'react'
 import Link from 'gatsby-link'
-
+import { ToastContainer, toast, Slide } from 'react-toastify';
+import axios from 'axios';
+import Dropdown from 'react-dropdown'
+import 'react-dropdown/style.css'
+import 'react-toastify/dist/ReactToastify.css';
 import Section from '../components/section';
 import Header from '../components/header';
 import Footer from '../components/footer';
@@ -8,13 +12,88 @@ import Button from '../components/button';
 
 import submit from '../images/submit.jpg';
 
-
 class SubmitPage extends React.PureComponent {
 
-  onSubmit = () => {
-    console.log("submit");
+  constructor(props) {
+    super(props);
+    this.state = {
+      userName: undefined,
+      phoneNumber: undefined,
+      userEmail: undefined,
+      filmName: undefined,
+      directorName: undefined,
+      filmSummary: undefined,
+      pastWork: undefined,
+      filmBudget: undefined,
+      success: false,
+
+    };
+  }
+
+  showSuccess = () => {
+    toast.success("Submitted Successfully!", {
+      position: toast.POSITION.TOP_CENTER,
+      autoClose: 3000
+    });
+  }
+
+  showError = () => {
+    toast.error("Error in Submission!", {
+      position: toast.POSITION.TOP_CENTER,
+      autoClose: 3000
+    });
+  }
+
+  handleChange = (event, field) => {
+    let updatedState = this.state;
+    updatedState[field] = event.target.value;
+    this.setState(updatedState);
+  }
+
+  onSelect = (selected) => {
+    this.setState({ filmBudget: selected.value })
+  }
+
+  onSubmit = (event) => {
+    event.preventDefault();
+    axios.post('https://wishberry-flims.herokuapp.com/api/creator/lead/create', this.state)
+    .then(function (response) {
+      console.log(response);
+      if (response.data && response.data.success) {
+        event.target.reset();
+        this.showSuccess();
+      } else {
+        this.showError();
+      }
+    })
+    .catch(function (error) {
+      console.log(error);
+      this.showError();
+    });
   }
   render() {
+    const options = [
+      {
+        value: 1000000,
+        label: '1000000',
+        className: 'drop-option'
+      },
+      {
+        value: 2000000,
+        label: '2000000',
+        className: 'drop-option'
+      },
+      {
+        value: 3000000,
+        label: '3000000',
+        className: 'drop-option'
+      },
+      {
+        value: 4000000,
+        label: '4000000',
+        className: 'drop-option'
+      }
+    ];
     return (
       <div>
       <Header />
@@ -26,49 +105,81 @@ class SubmitPage extends React.PureComponent {
           </div>
         </div>
         <Section id="submit-section" title="HERE WE GO">
+          <ToastContainer transition={Slide} hideProgressBar/>
           <div className="form-container">
-            <form onSubmit={this.onSubmit}>
-              <div className="form-row">
-                <label>
-                  Your Name:
-                  <input type="text" name="name" />
-                </label>
-                <label>
-                  Phone Number:
-                  <input type="text" name="phone" />
-                </label>
-                <label>
-                  Email ID:
-                  <input type="text" name="email" />
-                </label>
-                <label>
-                  Name of Film:
-                  <input type="text" name="film" />
-                </label>
-                <label>
-                  Name of Director:
-                  <input type="text" name="director" />
-                </label>
-                <label>
-                  Film Synopsis:
-                  <input type="text" name="synopsis" />
-                </label>
-                <label>
-                  Budget Range:
-                  <input type="text" name="budget" />
-                </label>
-                <label>
-                  Past Work(Optional):
-                  <input type="text" name="work" />
-                </label>
-              </div>
-              <Button type="submit" size="16px">SUBMIT</Button>
+            <form onSubmit={this.onSubmit} noValidate>
+              <div className="form">
+                <div className="form-component medium">
+                  <label>
+                    Your Name
+                  </label>
+                  <input className="form-input" type="text" name="userName" value={this.state.userName} onChange={(e) => this.handleChange(e, 'userName')} required/>
+                </div>
+                <div className="form-component small">
+                  <label>
+                    Phone Number
+                  </label>
+                  <input className="form-input" type="text" name="phoneNumber" value={this.state.phoneNumber} onChange={(e) => this.handleChange(e, 'phoneNumber')} required/>
+                </div>
+                <div className="form-component small">
+                  <label>
+                    Email ID
+                  </label>
+                  <input className="form-input" type="text" name="userEmail" value={this.state.userEmail} onChange={(e) => this.handleChange(e, 'userEmail')} required/>
+                </div>
+                <div className="form-component medium multiple">
+                  <div>
+                    <label>
+                      Name of Film
+                    </label>
+                    <input className="form-input" type="text" name="filmName" value={this.state.filmName} onChange={(e) => this.handleChange(e, 'filmName')} required/>
+                  </div>
+                  <div>
+                    <label>
+                      Name of Director
+                    </label>
+                    <input className="form-input" type="text" name="directorName" value={this.state.directorName} onChange={(e) => this.handleChange(e, 'directorName')} required/>
+                  </div>
+                </div>
+                <div className="form-component large">
+                  <div>
+                    <label>
+                      Film Synopsis
+                    </label>
+                    <textarea type="text" name="filmSummary" value={this.state.filmSummary} onChange={(e) => this.handleChange(e, 'filmSummary')} required/>
+                  </div>
+                </div>
+                <div className="form-component medium">
+                  <label>
+                    Budget Range
+                  </label>
+                  <Dropdown
+                    options={options}
+                    onChange={this.onSelect}
+                    placeholder="Select Budget"
+                    controlClassName="form-input"
+                    className="dropdown"
+                    arrowClassName="drop-arrow"
+                    menuClassName="drop-menu"
+                  />
+                  <div className="help-text">*We mainly work with films that are under 2 Crores.</div>
+                </div>
+                <div className="form-component large">
+                  <label>
+                    Past Work (Optional)
+                  </label>
+                  <input className="form-input" type="text" name="pastWork" value={this.state.pastWork} onChange={(e) => this.handleChange(e, 'pastWork')} />
+                </div>
 
+              </div>
+              <div className="form-submit">
+                <Button type="submit" size="16px">SUBMIT</Button>
+              </div>
             </form>
           </div>
         </Section>
       </div>
-      {/* <Footer /> */}
+      <Footer />
     </div>
     );
   }

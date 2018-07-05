@@ -457,6 +457,10 @@
         "license": "MIT",
         "dependencies": [
           {
+            "name": "axios",
+            "version": "^0.18.0"
+          },
+          {
             "name": "body-parser",
             "version": "~1.18.2"
           },
@@ -505,6 +509,10 @@
             "version": "^3.7.2"
           },
           {
+            "name": "react-dropdown",
+            "version": "^1.5.0"
+          },
+          {
             "name": "react-grid-gallery",
             "version": "^0.5.1"
           },
@@ -519,6 +527,10 @@
           {
             "name": "react-slick",
             "version": "^0.23.1"
+          },
+          {
+            "name": "react-toastify",
+            "version": "^4.1.0"
           },
           {
             "name": "serve-favicon",
@@ -635,12 +647,12 @@
       },
       "pathPrefix": "",
       "polyfill": true,
-      "buildTime": "2018-07-04T08:10:12.483Z",
+      "buildTime": "2018-07-05T05:13:09.596Z",
       "id": "Site",
       "parent": "SOURCE",
       "children": [],
       "internal": {
-        "contentDigest": "f783de85d5aba4dbb3c627637360b882",
+        "contentDigest": "77ae8e3b55bf99b498aab1df3bfb237c",
         "type": "Site",
         "owner": "internal-data-bridge"
       }
@@ -650,7 +662,7 @@
       "children": [],
       "parent": "___SOURCE___",
       "internal": {
-        "contentDigest": "84bdaf5c1ad7ab1b495aa951671e1914",
+        "contentDigest": "de18dc6880efe399a45899bea9bbf846",
         "type": "Directory",
         "description": "Directory \"src/data\"",
         "owner": "gatsby-source-filesystem"
@@ -662,7 +674,7 @@
       "size": 128,
       "prettySize": "128 B",
       "modifiedTime": "2018-07-03T11:51:13.206Z",
-      "accessTime": "2018-07-04T08:10:13.833Z",
+      "accessTime": "2018-07-05T05:13:12.171Z",
       "changeTime": "2018-07-03T11:51:13.206Z",
       "birthTime": "2018-07-02T20:04:02.663Z",
       "root": "",
@@ -680,11 +692,11 @@
       "blksize": 4194304,
       "ino": 4298786802,
       "blocks": 0,
-      "atimeMs": 1530691813833.0232,
+      "atimeMs": 1530767592170.7893,
       "mtimeMs": 1530618673206.395,
       "ctimeMs": 1530618673206.395,
       "birthtimeMs": 1530561842663.288,
-      "atime": "2018-07-04T08:10:13.833Z",
+      "atime": "2018-07-05T05:13:12.171Z",
       "mtime": "2018-07-03T11:51:13.206Z",
       "ctime": "2018-07-03T11:51:13.206Z",
       "birthtime": "2018-07-02T20:04:02.663Z"
@@ -694,7 +706,7 @@
       "children": [],
       "parent": "___SOURCE___",
       "internal": {
-        "contentDigest": "b0f59d5d706b6e2a7c27e3e27d6e27ce",
+        "contentDigest": "e1f8b717c6b90ed08923ae6aa390b6c2",
         "mediaType": "application/javascript",
         "type": "File",
         "description": "File \"src/data/data.js\"",
@@ -704,11 +716,11 @@
       "absolutePath": "src/data/data.js",
       "relativePath": "data.js",
       "extension": "js",
-      "size": 11089,
-      "prettySize": "11.1 kB",
-      "modifiedTime": "2018-07-04T07:19:01.260Z",
-      "accessTime": "2018-07-04T07:19:01.472Z",
-      "changeTime": "2018-07-04T07:19:01.260Z",
+      "size": 7903,
+      "prettySize": "7.9 kB",
+      "modifiedTime": "2018-07-04T18:34:36.237Z",
+      "accessTime": "2018-07-04T18:34:36.448Z",
+      "changeTime": "2018-07-04T18:34:36.237Z",
       "birthTime": "2018-07-02T20:04:37.462Z",
       "root": "",
       "dir": "src/data",
@@ -724,14 +736,14 @@
       "rdev": 0,
       "blksize": 4194304,
       "ino": 4298786803,
-      "blocks": 24,
-      "atimeMs": 1530688741471.5742,
-      "mtimeMs": 1530688741259.6575,
-      "ctimeMs": 1530688741259.6575,
+      "blocks": 16,
+      "atimeMs": 1530729276447.8716,
+      "mtimeMs": 1530729276237.1965,
+      "ctimeMs": 1530729276237.1965,
       "birthtimeMs": 1530561877462.0657,
-      "atime": "2018-07-04T07:19:01.472Z",
-      "mtime": "2018-07-04T07:19:01.260Z",
-      "ctime": "2018-07-04T07:19:01.260Z",
+      "atime": "2018-07-04T18:34:36.448Z",
+      "mtime": "2018-07-04T18:34:36.237Z",
+      "ctime": "2018-07-04T18:34:36.237Z",
       "birthtime": "2018-07-02T20:04:37.462Z"
     },
     "src/data/data.json absPath of file": {
@@ -754,7 +766,7 @@
       "size": 3339,
       "prettySize": "3.34 kB",
       "modifiedTime": "2018-07-03T11:51:13.217Z",
-      "accessTime": "2018-07-03T11:51:13.220Z",
+      "accessTime": "2018-07-04T13:48:56.494Z",
       "changeTime": "2018-07-03T11:51:13.217Z",
       "birthTime": "2018-07-03T11:51:13.206Z",
       "root": "",
@@ -772,11 +784,11 @@
       "blksize": 4194304,
       "ino": 4298857302,
       "blocks": 8,
-      "atimeMs": 1530618673219.9116,
+      "atimeMs": 1530712136493.789,
       "mtimeMs": 1530618673217.298,
       "ctimeMs": 1530618673217.298,
       "birthtimeMs": 1530618673206.3826,
-      "atime": "2018-07-03T11:51:13.220Z",
+      "atime": "2018-07-04T13:48:56.494Z",
       "mtime": "2018-07-03T11:51:13.217Z",
       "ctime": "2018-07-03T11:51:13.217Z",
       "birthtime": "2018-07-03T11:51:13.206Z"
@@ -861,7 +873,7 @@
       "children": [],
       "internal": {
         "type": "SitePage",
-        "contentDigest": "8467a931eeb22441286a5c50e9bc769e",
+        "contentDigest": "49e6b72db422b789412d2d278e259c74",
         "description": "Plugin gatsby-plugin-page-creator",
         "owner": "internal-data-bridge"
       }
@@ -882,7 +894,7 @@
       "children": [],
       "internal": {
         "type": "SitePage",
-        "contentDigest": "81a3518cedb3df239ed5f774edbe51d1",
+        "contentDigest": "83cc8d01dee158b97e916afed69d781a",
         "description": "Plugin gatsby-plugin-page-creator",
         "owner": "internal-data-bridge"
       }
@@ -903,7 +915,7 @@
       "children": [],
       "internal": {
         "type": "SitePage",
-        "contentDigest": "42bb6ba164b5d4cc92f3cb2c0749a7b1",
+        "contentDigest": "44a635767f4eb495cf7fbc5206a4fd63",
         "description": "Plugin gatsby-plugin-page-creator",
         "owner": "internal-data-bridge"
       }
@@ -924,7 +936,7 @@
       "children": [],
       "internal": {
         "type": "SitePage",
-        "contentDigest": "e101d3fecd32d456ec4702f6f947ccbb",
+        "contentDigest": "fcf979cb2d57a6dd18a6e4dd615ebc2c",
         "description": "Plugin gatsby-plugin-page-creator",
         "owner": "internal-data-bridge"
       }
@@ -945,7 +957,7 @@
       "children": [],
       "internal": {
         "type": "SitePage",
-        "contentDigest": "a86fb95cf886151aeb481717f87e5827",
+        "contentDigest": "bd8e01c6b39394bb1475cd5cf16e3329",
         "description": "Plugin gatsby-plugin-page-creator",
         "owner": "internal-data-bridge"
       }
@@ -966,7 +978,7 @@
       "children": [],
       "internal": {
         "type": "SitePage",
-        "contentDigest": "fd22dd2b467e4e6ce8cdc064657fe470",
+        "contentDigest": "078127225be4b275d84af22efebb2963",
         "description": "Plugin gatsby-plugin-page-creator",
         "owner": "internal-data-bridge"
       }
@@ -987,7 +999,7 @@
       "children": [],
       "internal": {
         "type": "SitePage",
-        "contentDigest": "c1a1ff58b3664c89f29db7c30a8fd3d9",
+        "contentDigest": "2415a1299c6deb3c2c38685c272a6f98",
         "description": "Plugin gatsby-plugin-page-creator",
         "owner": "internal-data-bridge"
       }
@@ -1008,7 +1020,7 @@
       "children": [],
       "internal": {
         "type": "SitePage",
-        "contentDigest": "3edc4f0e4486c6e3d1eef493e6bbfcee",
+        "contentDigest": "d2060e6ef03725f74af31a4465c8c060",
         "description": "Plugin gatsby-plugin-page-creator",
         "owner": "internal-data-bridge"
       }
@@ -1029,7 +1041,7 @@
       "children": [],
       "internal": {
         "type": "SitePage",
-        "contentDigest": "be8be7194fdfaa1b008259bc197901bf",
+        "contentDigest": "bdc95ff5d0515a44c466f864e0933a68",
         "description": "Plugin gatsby-plugin-page-creator",
         "owner": "internal-data-bridge"
       }
@@ -1050,7 +1062,7 @@
       "children": [],
       "internal": {
         "type": "SitePage",
-        "contentDigest": "424e06f8c3e652c96387d876352ddaa3",
+        "contentDigest": "6cb857053b074e8f43d2d3e53dc35f35",
         "description": "Plugin prod-404",
         "owner": "internal-data-bridge"
       }
@@ -1058,7 +1070,7 @@
   },
   "status": {
     "plugins": {},
-    "PLUGINS_HASH": "3887e96aaf8c06d728ced2e300b54bfe"
+    "PLUGINS_HASH": "86386272cb211e3886fc836e47abb4a7"
   },
   "componentDataDependencies": {
     "nodes": {

@@ -159,6 +159,7 @@
   border: none;
   letter-spacing: 1px;
   text-decoration: none;
+  cursor: pointer;
 }
 
 
@@ -306,11 +307,32 @@
 }
 
 /* Gallery */
-.ReactGridGallery {
+.photo-gallery {
   display: flex;
-  width: 100%;
-  flex-wrap: wrap;
+  position: relative;
   justify-content: space-between;
+  width: 100%;
+}
+.poster {
+  width: 33%;
+  position: relative;
+  cursor: pointer;
+}
+.poster img {
+  width: 100%;
+  display: block;
+}
+.poster h3 {
+  font-size: 38px;
+  position: absolute;
+  top: 1.5rem;
+  left: 1.5rem;
+  color: #fff;
+  font-weight: normal;
+}
+.photo-thumbnails {
+  width: calc(67% - 2rem);
+  overflow: hidden;
 }
 .gallery {
   height: 100%;
@@ -538,6 +560,17 @@
   }
   .carousel-container {
     padding: 4rem 1.5rem;
+  }
+
+  .photo-gallery {
+    flex-direction: column;
+  }
+  .poster {
+    width: 100%;
+    margin-bottom: 1rem;
+  }
+  .photo-thumbnails {
+    width: 100%;
   }
   .gallery-thumbnail {
     width: calc(60vw - 3rem);

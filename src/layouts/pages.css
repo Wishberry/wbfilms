@@ -36,6 +36,22 @@
 .landing-text h2 span {
   color: #ee4723;
 }
+.learn-more-container {
+  position: absolute;
+  bottom: 30px;
+  left: 50%;
+  text-align: center;
+  cursor: pointer;
+}
+.learn-more-container p {
+  font-size: 14px;
+  color: rgba(255,255,255,.7);
+  margin-bottom: 0;
+}
+.learn-more-container img {
+  height: 8px;
+  width: 15px;
+}
 
 .card-container {
   display: flex;
@@ -251,8 +267,74 @@
 
 .form-container {
   margin-top: 4rem;
+  margin-bottom: 6rem;
 }
-
+.form-container .form {
+  height: 650px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+.form-component {
+  height: 25%;
+}
+.form-component.multiple, .form-component.tall {
+  height: 50%;
+}
+.form-component.multiple div {
+  height: 50%;
+}
+.form-component label {
+  font-size: 20px;
+  display: block;
+  text-align: left;
+  margin-bottom: 20px;
+}
+.form-component .form-input, .form-component textarea {
+  height: 56px;
+  display: block;
+  border: 1px solid #232323;
+  width: 100%;
+  font-size: 20px;
+  padding: 0 1.5rem;
+  border-radius: 0;
+}
+.form-component .dropdown  .form-input {
+  display: flex;
+  align-items: center;
+}
+.form-component .drop-arrow {
+  border-color: #232323 transparent transparent;
+  top: 22px;
+  right: 1.5rem;
+  border-width: 10px 10px 0;
+}
+.form-component .drop-menu {
+  border-color: #232323;
+}
+.form-component .drop-option {
+  padding: 16px 1.5rem;
+  font-size: 20px;
+}
+.form-component .drop-option:hover {
+  background-color: #eee;
+}
+.form-component textarea {
+  resize: none;
+  height: 218px;
+}
+.small {
+  width: calc(29% - 2rem);
+}
+.medium {
+  width: 42%;
+}
+.large {
+  width: calc(58% - 2rem);
+}
+.form-submit {
+  float: right;
+}
 
 /* MOBILE */
 @media only screen and (max-width: 480px) {
@@ -264,7 +346,7 @@
     transform: translate(-50%,-50%);
   }
   #landing-section.small .media {
-    height: 60%;
+    height: 100%;
   }
   .landing-text {
     left: 0;
@@ -310,5 +392,20 @@
   }
   .advisor {
     width: 85%
+  }
+  .form-container .form {
+    height: unset;
+  }
+  .form-component {
+    margin-bottom: 3rem;
+  }
+  .form-component.multiple{
+    margin-bottom: 0;
+  }
+  .form-component.multiple div {
+    margin-bottom: 3rem;
+  }
+  .small, .medium, .large {
+    width: 100%;
   }
 }

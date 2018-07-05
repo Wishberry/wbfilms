@@ -18,8 +18,8 @@ const Layout = ({ children, data }) => (
     <Helmet
       title="Wishberry Films"
       meta={[
-        { name: 'description', content: 'Sample' },
-        { name: 'keywords', content: 'sample, something' },
+        { name: 'description', content: 'Wishberry Films website' },
+        { name: 'keywords', content: 'wishberry, film, invest' },
       ]}
     />
     {/* <Header siteTitle={data.site.siteMetadata.title} /> */}

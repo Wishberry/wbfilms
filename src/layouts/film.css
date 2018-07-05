@@ -14,20 +14,25 @@
 .cover-text {
   position: absolute;
   color: #fff;
-  bottom: 2rem;
+  bottom: 4rem;
   left: 2rem;
 }
 .cover-text h2 {
-  font-size: 3.25rem;
-  line-height: 3.25rem;
+  font-size: 5rem;
+  line-height: 5rem;
   font-weight: normal;
   margin-bottom: 0;
+}
+.cover-text .details {
+  margin-top: 10px;
+  font-size: 22px;
+  margin-left: 5px;
 }
 .director-section, .synopsis-section {
   display: flex;
   justify-content: space-between;
   margin-top: 4.5rem;
-  align-items: center;
+  align-items: flex-start;
   position: relative;
 }
 .director-text, .synopsis-text {
@@ -49,13 +54,15 @@
   align-items: center;
 }
 .synopsis-image {
-  width: 12%;
+  width: 30%;
   align-self: flex-start;
-  margin-right: 4rem;
+  text-align: center;
 }
-.director-image img, .synopsis-image img {
+.director-image img {
   width: 100%;
-  margin-left: auto;
+}
+.synopsis-image img {
+  width: 55%;
 }
 .synopsis-link {
   max-height: 20px;
@@ -100,6 +107,14 @@
   width: 100%;
   display: block
 }
+.cast-gradient {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(0deg, rgba(0,0,0,.6) 0%, rgba(0,0,0,0) 50%);
+}
 .cast h6 {
   margin-bottom: 0;
   text-align: center;
@@ -120,27 +135,6 @@
   margin-bottom: 5rem;
   width: 100%;
 }
-.poster {
-  width: 33%;
-  position: relative;
-}
-.poster img {
-  width: 100%;
-  display: block;
-}
-.poster h3 {
-  font-size: 38px;
-  position: absolute;
-  top: 1.5rem;
-  left: 1.5rem;
-  color: #fff;
-  font-weight: normal;
-}
-.photo-gallery {
-  width: calc(67% - 2rem);
-  overflow: hidden;
-}
-
 
 @media only screen and (max-width: 480px) {
   #cover-section .media {
@@ -181,12 +175,5 @@
   }
   .photo-container {
     flex-direction: column;
-  }
-  .poster {
-    width: 100%;
-    margin-bottom: 1rem;
-  }
-  .photo-gallery {
-    width: 100%;
   }
 }

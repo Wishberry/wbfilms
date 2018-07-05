@@ -40,42 +40,61 @@ class Gallery extends Component {
 		});
 	}
 	handleClickImage = () => {
-		if (this.state.currentImage === this.props.images.length - 1) return;
+		if (this.state.currentImage === this.props.tiles.length) return;
 
 		this.gotoNext();
 	}
 
 	render () {
-    const images = this.props.images;
+    const tiles = this.props.tiles;
+		let images = [
+			{
+				src: this.props.poster,
+				thumbnail: this.props.poster
+			},
+			...tiles
+		];
 		return (
-			<div className="gallery">
-        <div className="gallery-tiles">
-          { images.map((obj, i) => {
-      			return (
-      				<a
-      					href={obj.src}
-      					className="gallery-thumbnail"
-      					key={i}
-      					onClick={(e) => this.openLightbox(i, e)}
-      				>
-      					<img src={obj.thumbnail} alt="gallery" />
-      				</a>
-      			)
-      		})
-        }
-        </div>
-				<Lightbox
-					currentImage={this.state.currentImage}
-					images={this.props.images}
-					isOpen={this.state.lightboxIsOpen}
-					onClickImage={this.handleClickImage}
-					onClickNext={this.gotoNext}
-					onClickPrev={this.gotoPrevious}
-					onClickThumbnail={this.gotoImage}
-					onClose={this.closeLightbox}
-					showThumbnails={true}
-          backdropClosesModal={true}
-				/>
+			<div className="photo-gallery">
+				<div
+					className="poster"
+					href={this.props.poster}
+					onClick={(e) => this.openLightbox(0, e)}
+				>
+					<h3>Film Poster</h3>
+					<img src={this.props.poster} alt="poster" />
+				</div>
+				<div className="photo-thumbnails">
+					<div className="gallery">
+		        <div className="gallery-tiles">
+		          { tiles.map((obj, i) => {
+		      			return (
+		      				<a
+		      					href={obj.src}
+		      					className="gallery-thumbnail"
+		      					key={i}
+		      					onClick={(e) => this.openLightbox((i + 1), e)}
+		      				>
+		      					<img src={obj.thumbnail} alt="gallery" />
+		      				</a>
+		      			)
+		      		})
+		        }
+		        </div>
+					</div>
+					<Lightbox
+						currentImage={this.state.currentImage}
+						images={images}
+						isOpen={this.state.lightboxIsOpen}
+						onClickImage={this.handleClickImage}
+						onClickNext={this.gotoNext}
+						onClickPrev={this.gotoPrevious}
+						onClickThumbnail={this.gotoImage}
+						onClose={this.closeLightbox}
+						showThumbnails={true}
+	          backdropClosesModal={true}
+					/>
+				</div>
 			</div>
 		);
 	}

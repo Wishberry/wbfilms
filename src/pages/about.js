@@ -8,6 +8,7 @@ import Carousel from '../components/carousel';
 import Frame from '../components/frame';
 import TooltipComponent from '../components/tooltip';
 import aboutImage from '../images/about.jpg';
+import downArrow from '../images/down-arrow.png';
 
 import priyanka from '../images/priyanka.jpg';
 import anshulika from '../images/anshulika.jpg';
@@ -43,6 +44,11 @@ class IndexPage extends React.PureComponent {
   }
   componentWillUnmount() {
     document.removeEventListener('click', this.handleClickOutside);
+  }
+
+  scrollPage = () => {
+    const height = window.innerHeight;
+    window.scrollBy({top: height, left: 0, behavior: 'smooth'});
   }
 
   handleClickOutside = (event) => {
@@ -170,6 +176,10 @@ class IndexPage extends React.PureComponent {
           <img className="media" src={aboutImage} alt="about-main"/>
           <div className="landing-text">
             <h2>We finance,<br />produce, market<br />and distribute<span>&quot;smart<br />budget&quot; films</span></h2>
+          </div>
+          <div className="learn-more-container" onClick={this.scrollPage}>
+            <p className="learn-more-text">See more</p>
+            <img src={downArrow} className="learn-more-icon" />
           </div>
         </div>
         <Section id="about-section" title="ABOUT US">

@@ -12,7 +12,7 @@ class Carousel extends React.PureComponent {
       slidesToScroll: 1,
       arrows: true,
       autoplay: true,
-      autoplaySpeed: 5000,
+      autoplaySpeed: 8000,
     };
     if (this.props.settings) {
       settings = {...settings, ...this.props.settings};
