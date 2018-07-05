@@ -1,8 +1,6 @@
 import React from 'react'
 import Link from 'gatsby-link'
 
-import Header from '../components/header';
-import Footer from '../components/footer';
 import Section from '../components/section';
 import Carousel from '../components/carousel';
 import Frame from '../components/frame';
@@ -169,8 +167,6 @@ class IndexPage extends React.PureComponent {
     ];
 
     return (
-      <div>
-      <Header />
       <div className="home">
         <div id="landing-section">
           <img className="media" src={aboutImage} alt="about-main"/>
@@ -232,8 +228,6 @@ class IndexPage extends React.PureComponent {
             </Carousel>
           </div>
         </Section>
-      </div>
-      <Footer />
       </div>
     );
   }

@@ -1,8 +1,8 @@
 import React from 'react'
 import Link from 'gatsby-link'
 
-import logoBlack from '../images/logo-black.png';
-import logoWhite from '../images/logo-white.png';
+import logoBlack from '../images/logo.png';
+import logoWhite from '../images/logo-white-1.png';
 import menuWhite from '../images/menu-white.png';
 import menuBlack from '../images/menu-black.png';
 import close from '../images/close.png';

@@ -1,8 +1,6 @@
 import React from 'react'
 import Link from 'gatsby-link'
 
-import Header from '../../components/header';
-import Footer from '../../components/footer';
 import Section from '../../components/section';
 import Gallery from '../../components/gallery';
 
@@ -21,8 +19,6 @@ class FilmPage extends React.PureComponent {
   render() {
     const film = films.zollywood;
     return (
-      <div>
-      <Header />
       <div className="home">
         <div id="cover-section">
           <img className="media" src={film.coverImage} alt="cover"/>
@@ -93,8 +89,6 @@ class FilmPage extends React.PureComponent {
           </div>
         }
       </div>
-      <Footer />
-    </div>
     );
   }
 }

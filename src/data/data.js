@@ -6,7 +6,7 @@ const films = {
     coverImage: "https://s3.ap-south-1.amazonaws.com/aw-files-1-118130771025/chuskit-cover.jpg",
     director: {
       name: "Priya Ramasubban",
-      text: "is a reputed filmmaker who has travelled the world for over fifteen years making films for National Geographic, Discovery, History Channel and other major international broadcasters.\n\nPriya was one of the six people chosen from all over India as a part of a screenwriter’s lab organized by the National Film Development Corporation where she recieved an opportunity to evolve her story for Chuskit under the mentorship of award-winning Dutch writed Jolein Laarman.",
+      text: "has travelled the world for over fifteen years making films for International broadcasters like  National Geographic and Discovery. She was one of 6 people, chosen to participate in a Screenwriter’s Lab organized by the National Film Development Corporation of India. There, she received an opportunity to evolve her story for 'Chuskit' under the mentorship of award-winning Dutch writer Jolein Laarman.",
       image: "https://s3.ap-south-1.amazonaws.com/aw-files-1-118130771025/priya.jpg",
     },
     synopsis: {

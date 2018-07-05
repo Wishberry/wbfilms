@@ -86,15 +86,12 @@
   align-items: flex-start;
   padding-top: 2.5rem;
 }
-.footer-logo, .footer-logo-new {
+.footer-logo {
   width: 20%;
   display: flex;
   align-items: center;
 }
 .footer-logo img {
-  width: 80%;
-}
-.footer-logo-new img {
   width: 65%;
 }
 .footer-nav {

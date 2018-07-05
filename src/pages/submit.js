@@ -6,8 +6,6 @@ import Dropdown from 'react-dropdown'
 import 'react-dropdown/style.css'
 import 'react-toastify/dist/ReactToastify.css';
 import Section from '../components/section';
-import Header from '../components/header';
-import Footer from '../components/footer';
 import Button from '../components/button';
 
 import submit from '../images/submit.jpg';
@@ -90,8 +88,6 @@ class SubmitPage extends React.PureComponent {
       }
     ];
     return (
-      <div>
-      <Header />
       <div className="home">
         <div id="landing-section" className="small">
           <img className="media" src={submit} />
@@ -175,8 +171,6 @@ class SubmitPage extends React.PureComponent {
           </div>
         </Section>
       </div>
-      <Footer />
-    </div>
     );
   }
 }

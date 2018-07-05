@@ -22,11 +22,11 @@ const Layout = ({ children, data }) => (
         { name: 'keywords', content: 'wishberry, film, invest' },
       ]}
     />
-    {/* <Header siteTitle={data.site.siteMetadata.title} /> */}
+    <Header siteTitle={data.site.siteMetadata.title} />
     <div>
       {children()}
     </div>
-    {/* <Footer /> */}
+    <Footer />
   </div>
 )
 
