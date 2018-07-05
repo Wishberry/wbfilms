@@ -61,7 +61,6 @@ class Gallery extends Component {
 					href={this.props.poster}
 					onClick={(e) => this.openLightbox(0, e)}
 				>
-					<h3>Film Poster</h3>
 					<img src={this.props.poster} alt="poster" />
 				</div>
 				<div className="photo-thumbnails">

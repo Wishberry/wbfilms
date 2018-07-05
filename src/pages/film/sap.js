@@ -8,7 +8,7 @@ import films from '../../data/data';
 
 import linkArrow from '../../images/link-arrow.png';
 import downArrow from '../../images/down-arrow.png';
-
+import soon from '../../images/coming-soon.png';
 class FilmPage extends React.PureComponent {
 
   scrollPage = () => {
@@ -69,7 +69,7 @@ class FilmPage extends React.PureComponent {
             </div>
           </div>
         </Section>
-        { film.cast &&
+        { film.cast ?
           <Section title="CAST">
             <div className="cast-container">
               <div className="cast-list">
@@ -80,6 +80,17 @@ class FilmPage extends React.PureComponent {
                     <h6>{item.name}</h6>
                   </div>
                 ))}
+                <div className="cast"></div>
+              </div>
+            </div>
+          </Section>
+          :
+          <Section title="CAST">
+            <div className="cast-container">
+              <div className="cast-list">
+                <div className="cast coming-soon">
+                  <img src={soon} alt="Coming Soon" />
+                </div>
                 <div className="cast"></div>
               </div>
             </div>

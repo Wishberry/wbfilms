@@ -61,9 +61,6 @@ class Header extends React.PureComponent {
           <Link className="header-link" activeClassName="header-link-active" to="/">
             Investor Corner
           </Link>
-          <Link className="header-link" activeClassName="header-link-active" to="/">
-            Services
-          </Link>
         </div>
         <div className="header-nav-mobile">
           <a className="nav-link" onClick={this.toggleMenu}>
@@ -86,9 +83,6 @@ class Header extends React.PureComponent {
             </Link>
             <Link className="header-link-mobile" activeClassName="header-link-active" to="/">
               Investor Corner
-            </Link>
-            <Link className="header-link-mobile" activeClassName="header-link-active" to="/">
-              Services
             </Link>
           </div>
         </div>

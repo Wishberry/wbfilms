@@ -100,39 +100,37 @@ class SubmitPage extends React.PureComponent {
           <div className="form-container">
             <form onSubmit={this.onSubmit} noValidate>
               <div className="form">
-                <div className="form-component medium">
+                <div className="form-component required">
                   <label>
                     Your Name
                   </label>
                   <input className="form-input" type="text" name="userName" value={this.state.userName} onChange={(e) => this.handleChange(e, 'userName')} required/>
                 </div>
-                <div className="form-component small">
+                <div className="form-component required">
                   <label>
                     Phone Number
                   </label>
                   <input className="form-input" type="text" name="phoneNumber" value={this.state.phoneNumber} onChange={(e) => this.handleChange(e, 'phoneNumber')} required/>
                 </div>
-                <div className="form-component small">
+                <div className="form-component required">
                   <label>
                     Email ID
                   </label>
                   <input className="form-input" type="text" name="userEmail" value={this.state.userEmail} onChange={(e) => this.handleChange(e, 'userEmail')} required/>
                 </div>
-                <div className="form-component medium multiple">
-                  <div>
-                    <label>
-                      Name of Film
-                    </label>
-                    <input className="form-input" type="text" name="filmName" value={this.state.filmName} onChange={(e) => this.handleChange(e, 'filmName')} required/>
-                  </div>
-                  <div>
-                    <label>
-                      Name of Director
-                    </label>
-                    <input className="form-input" type="text" name="directorName" value={this.state.directorName} onChange={(e) => this.handleChange(e, 'directorName')} required/>
-                  </div>
+                <div className="form-component required">
+                  <label>
+                    Name of Film
+                  </label>
+                  <input className="form-input" type="text" name="filmName" value={this.state.filmName} onChange={(e) => this.handleChange(e, 'filmName')} required/>
                 </div>
-                <div className="form-component large">
+                <div className="form-component required">
+                  <label>
+                    Name of Director
+                  </label>
+                  <input className="form-input" type="text" name="directorName" value={this.state.directorName} onChange={(e) => this.handleChange(e, 'directorName')} required/>
+                </div>
+                <div className="form-component required">
                   <div>
                     <label>
                       Film Synopsis
@@ -140,7 +138,7 @@ class SubmitPage extends React.PureComponent {
                     <textarea type="text" name="filmSummary" value={this.state.filmSummary} onChange={(e) => this.handleChange(e, 'filmSummary')} required/>
                   </div>
                 </div>
-                <div className="form-component medium">
+                <div className="form-component required">
                   <label>
                     Budget Range
                   </label>
@@ -156,9 +154,9 @@ class SubmitPage extends React.PureComponent {
                   />
                   <div className="help-text">*We mainly work with films that are under 2 Crores.</div>
                 </div>
-                <div className="form-component large">
+                <div className="form-component">
                   <label>
-                    Past Work (Optional)
+                    Past Work
                   </label>
                   <input className="form-input" type="text" name="pastWork" value={this.state.pastWork} onChange={(e) => this.handleChange(e, 'pastWork')} />
                 </div>

@@ -273,25 +273,23 @@
   margin-bottom: 6rem;
 }
 .form-container .form {
-  height: 650px;
   display: flex;
-  flex-wrap: wrap;
+  flex-direction: column;
   justify-content: space-between;
 }
 .form-component {
-  height: 25%;
-}
-.form-component.multiple, .form-component.tall {
-  height: 50%;
-}
-.form-component.multiple div {
-  height: 50%;
+  width: 40%;
+  margin-bottom: 2.25rem;
 }
 .form-component label {
   font-size: 20px;
   display: block;
   text-align: left;
   margin-bottom: 20px;
+}
+.form-component.required label:after{
+  content: '*';
+  color: red;
 }
 .form-component .form-input, .form-component textarea {
   height: 56px;
@@ -340,7 +338,7 @@
   width: calc(58% - 2rem);
 }
 .form-submit {
-  float: right;
+  margin-top: 1rem;
 }
 
 /* MOBILE */
@@ -406,6 +404,7 @@
     height: unset;
   }
   .form-component {
+    width: 100%;
     margin-bottom: 3rem;
   }
   .form-component.multiple{

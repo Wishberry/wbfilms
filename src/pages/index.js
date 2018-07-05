@@ -111,7 +111,7 @@ class IndexPage extends React.PureComponent {
             </div>
           </div>
         </Section>
-        <Section id="testimonial-section" title="TESTIMONIALS">
+        <Section id="testimonial-section" title="OUR RECOMMENDATIONS">
           <div className="quote-container">
             <Frame>
               <Carousel settings={{ arrows: false }}>
@@ -133,7 +133,7 @@ class IndexPage extends React.PureComponent {
                   <h5>"It has truly been amazing working with Wishberry right from the first narration meeting. Literally 8 days later, they called me back for a narration with an interested investor and the deal was locked within 48 hours!"</h5>
                   <div className="author">
                     <h6 className="name">Celine Loop</h6>
-                    <div className="title">Producer - Chippa<br />Producer - Brahman Naman</div>
+                    <div className="title">Producer - Chippa, Brahman Naman</div>
                   </div>
                 </div>
               </Carousel>

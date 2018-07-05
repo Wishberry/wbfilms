@@ -49,7 +49,7 @@ const films = {
   },
   chippa: {
     title: 'Chippa',
-    status: "Post-production",
+    status: "In Post-production",
     language: "Hindi, Bengali",
     runtime: undefined,
     category: "Fiction",
@@ -61,7 +61,7 @@ const films = {
     },
     synopsis: {
       text: "The film is a coming-of-age tale of a ten year old boy called ‘Chippa’, who lives on a footpath of Calcutta’s streets. On the eve of his tenth birthday, Chippa’s grand aunt hands him a letter written by his father who he has never known. He can’t decipher the letter since it is written in Urdu.\n\nIn order to unravel this message, Chippa leaves his pavement abode at the stroke of midnight and heads out to discover the city and its street nightlife. the film as seen through Chippa’s eyes is full of magic realism, wonder and enchanting conversations with strangers. The night, which is energetic and lively to start with, becomes a little dream-like as the film proceeds.",
-      image: "https://s3.ap-south-1.amazonaws.com/aw-files-1-118130771025/giffoni.png",
+      image: undefined,
     },
     facebook: undefined,
     website: undefined,
@@ -76,7 +76,7 @@ const films = {
   },
   sap: {
     title: 'Sethum Aayiram Pon (Roots)',
-    status: "Pre-production",
+    status: "In Pre-production",
     language: "Tamil",
     runtime: undefined,
     category: "Fiction",
@@ -88,7 +88,7 @@ const films = {
     },
     synopsis: {
       text: "Meera is an upcoming makeup artist, struggling to make it big in the Tamil film industry. Her grandmother Krishnaveni is an Oppari singer (mourning songs) in a nearby village.\n\nAt her grandmother’s insistence, Meera finally visits her maternal village after years of separation. After an awkward reunion, they both head to a fellow villager’s funeral, where Krishnaveni has to perform the Oppari ritual. At the funeral, Meera meets Guberan, a makeup artist for the dead, who fulfills a local ritual. ",
-      image: "https://s3.ap-south-1.amazonaws.com/aw-files-1-118130771025/giffoni.png",
+      image: undefined,
     },
     facebook: undefined,
     website: undefined,
@@ -98,7 +98,7 @@ const films = {
   },
   zollywood: {
     title: 'Zollywood',
-    status: "Pre-production",
+    status: "In Pre-production",
     language: "Hindi",
     runtime: undefined,
     category: "Fiction",
@@ -110,7 +110,7 @@ const films = {
     },
     synopsis: {
       text: "The film is set in the early 2000s. Raja runs a &quot;press&quot; (production company) in Vidarbha. The press doesn’t operate smoothly because Raja is in love with one of the actresses and doesn’t focus on the press. This upsets the troupe members and they approach the writer of the press, Deepak for a solution.\n\nDeepak turns to Narayan Rao who is a senior well-renowned actor of Zaddipati. They decide to set up a new press together. Narayan Rao agrees to back Deepak financially but in return, asks Deepak to pledge his loyalty towards Zaddipati. That is how Shri Maa Durga Press is set up.",
-      image: "https://s3.ap-south-1.amazonaws.com/aw-files-1-118130771025/giffoni.png",
+      image: undefined,
     },
     facebook: undefined,
     website: undefined,

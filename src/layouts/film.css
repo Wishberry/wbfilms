@@ -28,10 +28,11 @@
   font-size: 20px;
   margin-left: 5px;
   font-weight: 300;
+  font-style: italic;
 }
 .cover-text .status {
   margin-top: 18px;
-  font-size: 28px;
+  font-size: 20px;
   margin-left: 5px;
   font-weight: 300;
 }
@@ -109,6 +110,9 @@
   border-radius: 50%;
   position: relative;
   overflow: hidden;
+}
+.cast.coming-soon {
+border-radius: 0;
 }
 .cast img {
   width: 100%;
