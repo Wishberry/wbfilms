@@ -68,80 +68,84 @@ class IndexPage extends React.PureComponent {
 
   render() {
 
-    const team = [
-      {
-        name: "Priyanka",
-        image: priyanka,
-        quote: "\"Show me the monnnneeeeeyyyyy.\"",
-        quoteFilm: "Jerry Maguire",
-        title: "Co-Founder",
-        linkedin: "https://in.linkedin.com/in/priyankapagarwal",
-      },
-      {
-        name: "Anshulika",
-        image: anshulika,
-        quote: "\"I guess when you’re young, you just believe there’ll be many people with whom you’ll connect with. Later in life, you realize it only happens a few times.\"",
-        quoteFilm: "Before Sunset",
-        title: "Co-Founder",
-        linkedin: "https://in.linkedin.com/in/anshulikadubey",
-      },
-      {
-        name: "Shashwat",
-        image: shashwat,
-        quote: "\"Every path is the right path. Everything could have been anything else, and it would have just as much meaning.\"",
-        quoteFilm: "Mr. Nobody",
-        title: "Production",
-        linkedin: "https://www.wishberry.in/wishberry-team/www.linkedin.com/in/singh-shashwat",
-      },
-      {
-        name: "Suprateek",
-        image: suprateek,
-        quote: "\"Happiness is in doing, not in getting what you want.\"",
-        quoteFilm: "Before Sunset",
-        title: "Content",
-        linkedin: "#",
-      },
-      {
-        name: "Apoorva",
-        image: apoorva,
-        quote: "\"Don't let the muggles get you down.\"",
-        quoteFilm: "Harry Potter and the Prisoner of Azkaban",
-        title: "Investor Relations",
-        linkedin: "https://www.linkedin.com/in/apoorvaa-agarwal-35834478/",
-      },
-      {
-        name: "Dhruvi",
-        image: dhruvi,
-        quote: "\"All you have to do is listen.\"",
-        quoteFilm: "August Rush",
-        title: "Marketing & Publicity",
-        linkedin: "#",
-      },
-      {
-        name: "Anant",
-        image: anant,
-        quote: "\"I remembered what my Nonlinear Equations professor once told me, always account for variable change.\"",
-        quoteFilm: "21",
-        title: "Investor Relations",
-        linkedin: "https://www.linkedin.com/in/anant-agarwal-a4375290/",
-      },
-      {
-        name: "Nikita",
-        image: nikita,
-        quote: "\"It’s sort of like how they say that other dimensions exist all around us, but we don’t have the ability to perceive them. That’s - That’s what I want out of any relationship. Or just life, I guess.\"",
-        quoteFilm: "Frances Ha",
-        title: "Festival Strategy",
-        linkedin: "https://in.linkedin.com/in/ahujanikita136",
-      },
-      {
-        name: "Mohanish",
-        image: mohanish,
-        quote: "\"Gentlemen. You can't fight in there. This is the war room!\"",
-        quoteFilm: "Dr. Strangelove",
-        title: "Manager, Distribution ",
-        linkedin: "https://www.linkedin.com/in/mohanishvaidya/",
-      },
-    ];
+    const team = {
+      row1: [
+        {
+          name: "Priyanka",
+          image: priyanka,
+          quote: "\"Show me the monnnneeeeeyyyyy.\"",
+          quoteFilm: "Jerry Maguire",
+          title: "Co-Founder",
+          linkedin: "https://in.linkedin.com/in/priyankapagarwal",
+        },
+        {
+          name: "Anshulika",
+          image: anshulika,
+          quote: "\"I guess when you’re young, you just believe there’ll be many people with whom you’ll connect with. Later in life, you realize it only happens a few times.\"",
+          quoteFilm: "Before Sunset",
+          title: "Co-Founder",
+          linkedin: "https://in.linkedin.com/in/anshulikadubey",
+        },
+        {
+          name: "Shashwat",
+          image: shashwat,
+          quote: "\"Every path is the right path. Everything could have been anything else, and it would have just as much meaning.\"",
+          quoteFilm: "Mr. Nobody",
+          title: "Production",
+          linkedin: "https://www.wishberry.in/wishberry-team/www.linkedin.com/in/singh-shashwat",
+        },
+        {
+          name: "Suprateek",
+          image: suprateek,
+          quote: "\"Happiness is in doing, not in getting what you want.\"",
+          quoteFilm: "Before Sunset",
+          title: "Content",
+          linkedin: "#",
+        }
+      ],
+      row2: [
+        {
+          name: "Apoorva",
+          image: apoorva,
+          quote: "\"Don't let the muggles get you down.\"",
+          quoteFilm: "Harry Potter and the Prisoner of Azkaban",
+          title: "Investor Relations",
+          linkedin: "https://www.linkedin.com/in/apoorvaa-agarwal-35834478/",
+        },
+        {
+          name: "Dhruvi",
+          image: dhruvi,
+          quote: "\"All you have to do is listen.\"",
+          quoteFilm: "August Rush",
+          title: "Marketing & Publicity",
+          linkedin: "#",
+        },
+        {
+          name: "Anant",
+          image: anant,
+          quote: "\"I remembered what my Nonlinear Equations professor once told me, always account for variable change.\"",
+          quoteFilm: "21",
+          title: "Investor Relations",
+          linkedin: "https://www.linkedin.com/in/anant-agarwal-a4375290/",
+        },
+        {
+          name: "Nikita",
+          image: nikita,
+          quote: "\"It’s sort of like how they say that other dimensions exist all around us, but we don’t have the ability to perceive them. That’s - That’s what I want out of any relationship. Or just life, I guess.\"",
+          quoteFilm: "Frances Ha",
+          title: "Festival Strategy",
+          linkedin: "https://in.linkedin.com/in/ahujanikita136",
+        },
+        {
+          name: "Mohanish",
+          image: mohanish,
+          quote: "\"Gentlemen. You can't fight in there. This is the war room!\"",
+          quoteFilm: "Dr. Strangelove",
+          title: "Manager, Distribution ",
+          linkedin: "https://www.linkedin.com/in/mohanishvaidya/",
+        }
+      ]
+    };
 
     const advisors = [
       {
@@ -188,28 +192,40 @@ class IndexPage extends React.PureComponent {
         </Section>
         <Section id="team-section" title="THE TEAM">
           <div className="team">
-            <Frame>
-              <div className="team-members">
-                { team.map((item, key) => (
-                  <div key={key} className={this.state.selection ===  key ? "member active" : "member"}>
-                    <TooltipComponent text={item.quote} caption={item.quoteFilm}>
-                      <a onClick={(event) => this.handleClick(event, key)}>
-                        <div className="team-overlay">
-                          <p>{item.name}<br /><br />{item.title}</p>
-                        </div>
-                        <img src={item.image} alt={item.name} />
-                      </a>
-                    </TooltipComponent>
-                    <a className="linkedin" onClick={() => this.openLinkedin(item.linkedin)}>
-                      <img src={linkedin} alt="linkedin" />
+            <div className="team-row">
+              { team.row1.map((item, key) => (
+                <div key={key} className={this.state.selection ===  key ? "member active" : "member"}>
+                  <TooltipComponent text={item.quote} caption={item.quoteFilm}>
+                    <a onClick={(event) => this.handleClick(event, key)}>
+                      <div className="team-overlay">
+                        <p>{item.name}<br /><br />{item.title}</p>
+                      </div>
+                      <img src={item.image} alt={item.name} />
                     </a>
-                  </div>
-
-                ))}
-                <div className="member blank">
+                  </TooltipComponent>
+                  <a className="linkedin" onClick={() => this.openLinkedin(item.linkedin)}>
+                    <img src={linkedin} alt="linkedin" />
+                  </a>
                 </div>
-              </div>
-            </Frame>
+              ))}
+            </div>
+            <div className="team-row" >
+              { team.row2.map((item, key) => (
+                <div key={key + team.row1.length} className={this.state.selection ===  (key + team.row1.length) ? "member active" : "member"}>
+                  <TooltipComponent text={item.quote} caption={item.quoteFilm}>
+                    <a onClick={(event) => this.handleClick(event, (key + team.row1.length))}>
+                      <div className="team-overlay">
+                        <p>{item.name}<br /><br />{item.title}</p>
+                      </div>
+                      <img src={item.image} alt={item.name} />
+                    </a>
+                  </TooltipComponent>
+                  <a className="linkedin" onClick={() => this.openLinkedin(item.linkedin)}>
+                    <img src={linkedin} alt="linkedin" />
+                  </a>
+                </div>
+              ))}
+            </div>
           </div>
         </Section>
         <Section id="advisor-section" title="BOARD OF ADVISORS">

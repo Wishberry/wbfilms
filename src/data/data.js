@@ -1,8 +1,10 @@
 const films = {
   chuskit: {
     title: 'Chuskit',
+    status: "Completed",
     language: "Ladakhi",
-    runtime: "120",
+    runtime: "90",
+    category: "Fiction",
     coverImage: "https://s3.ap-south-1.amazonaws.com/aw-files-1-118130771025/chuskit-cover.jpg",
     director: {
       name: "Priya Ramasubban",
@@ -47,8 +49,10 @@ const films = {
   },
   chippa: {
     title: 'Chippa',
+    status: "Post-production",
     language: "Hindi, Bengali",
-    runtime: "120",
+    runtime: undefined,
+    category: "Fiction",
     coverImage: "https://s3.ap-south-1.amazonaws.com/aw-files-1-118130771025/chippa-cover.jpg",
     director: {
       name: "Safdar Rahman",
@@ -72,8 +76,10 @@ const films = {
   },
   sap: {
     title: 'Sethum Aayiram Pon (Roots)',
+    status: "Pre-production",
     language: "Tamil",
-    runtime: "120",
+    runtime: undefined,
+    category: "Fiction",
     coverImage: "https://s3.ap-south-1.amazonaws.com/aw-files-1-118130771025/sap-cover.jpg",
     director: {
       name: "Anand Ravichandran",
@@ -92,8 +98,10 @@ const films = {
   },
   zollywood: {
     title: 'Zollywood',
+    status: "Pre-production",
     language: "Hindi",
-    runtime: "120",
+    runtime: undefined,
+    category: "Fiction",
     coverImage: "https://s3.ap-south-1.amazonaws.com/aw-files-1-118130771025/chuskit-cover.jpg",
     director: {
       name: "Trushant Ingle",

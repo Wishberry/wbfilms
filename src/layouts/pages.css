@@ -161,14 +161,17 @@
 .team {
   position: relative;
   margin-top: 5rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
-.team-members {
+
+.team-row {
   width: 90%;
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-between;
-  margin: auto;
-  padding: 4.5rem 0 4.5rem 0;
+  justify-content: center;
+  margin-bottom: 2rem;
 }
 .team-quote {
   font-size: 12px;
@@ -381,8 +384,10 @@
   .about-text h5 {
     text-align: left;
   }
-  .team-members {
-    padding-top: 2.5rem;
+  .team-row {
+    width: 100%;
+    margin-bottom: 0;
+    justify-content: space-between;
   }
   .member {
     width: 45%;

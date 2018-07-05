@@ -24,7 +24,8 @@ class FilmPage extends React.PureComponent {
           <img className="media" src={film.coverImage} alt="cover"/>
           <div className="cover-text">
             <h2>{film.title}</h2>
-            <div className="details">{film.language} | {film.runtime} mins</div>
+            <div className="status">{film.status}</div>
+            <div className="details">{film.runtime && <span>{film.runtime} minutes | </span>}{film.language} | {film.category}</div>
           </div>
           <div className="learn-more-container" onClick={this.scrollPage}>
             <p className="learn-more-text">See more</p>
@@ -75,6 +76,7 @@ class FilmPage extends React.PureComponent {
                 { film.cast.map((item, key) => (
                   <div key={key} className="cast">
                     <img src={item.image} alt={item.name} />
+                    <div className="cast-gradient"></div>
                     <h6>{item.name}</h6>
                   </div>
                 ))}
