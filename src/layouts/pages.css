@@ -299,6 +299,10 @@
   padding: 0 1.5rem;
   border-radius: 0;
 }
+.form-component textarea {
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+}
 .form-component .dropdown  .form-input {
   display: flex;
   align-items: center;

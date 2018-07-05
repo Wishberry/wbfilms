@@ -17,11 +17,11 @@ const films = {
     website: "http://www.chuskit.com",
     cast: [
       {
-        name: "MORUP NAMGYAL",
+        name: "MORUP NAMGYAL (Padma Shri)",
         image: "https://s3.ap-south-1.amazonaws.com/aw-files-1-118130771025/morup.jpg",
       },
       {
-        name: "JIGMENT DAWA LAMO",
+        name: "JIGMET DEWA LHAMO",
         image: "https://s3.ap-south-1.amazonaws.com/aw-files-1-118130771025/jigment.jpg",
       }
     ],

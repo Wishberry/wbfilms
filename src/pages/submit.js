@@ -56,7 +56,7 @@ class SubmitPage extends React.PureComponent {
 
   onSubmit = (event) => {
     event.preventDefault();
-    axios.post('https://wishberry-flims.herokuapp.com/api/creator/lead/create', this.state)
+    axios.post('https://wishberry-films.herokuapp.com/api/creator/lead/create', this.state)
     .then(function (response) {
       console.log(response);
       if (response.data && response.data.success) {
@@ -74,23 +74,18 @@ class SubmitPage extends React.PureComponent {
   render() {
     const options = [
       {
-        value: 1000000,
-        label: '1000000',
+        value: 'less than Rs. 1 Cr',
+        label: 'less than Rs. 1 Cr',
         className: 'drop-option'
       },
       {
-        value: 2000000,
-        label: '2000000',
+        value: 'between Rs. 1 Cr and 2 Cr',
+        label: 'between Rs. 1 Cr and 2 Cr',
         className: 'drop-option'
       },
       {
-        value: 3000000,
-        label: '3000000',
-        className: 'drop-option'
-      },
-      {
-        value: 4000000,
-        label: '4000000',
+        value: 'between Rs. 3 Cr and 5 Cr',
+        label: 'between Rs. 3 Cr and 5 Cr',
         className: 'drop-option'
       }
     ];
@@ -161,6 +156,7 @@ class SubmitPage extends React.PureComponent {
                     className="dropdown"
                     arrowClassName="drop-arrow"
                     menuClassName="drop-menu"
+                    value={this.state.filmBudget}
                   />
                   <div className="help-text">*We mainly work with films that are under 2 Crores.</div>
                 </div>
