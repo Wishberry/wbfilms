@@ -74,6 +74,7 @@ class IndexPage extends React.PureComponent {
       <div className="home">
         <div id="landing-section">
           <img className="media" src={cover} alt="cover"/>
+          <div className="landing-overlay"></div>
           <div className="landing-text">
             <h2>India's first<br />crowd-financing<br />studio for new age<br />cinema</h2>
             <Button to="/submit" size="16px">SUBMIT FILM</Button>
