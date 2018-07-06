@@ -6,7 +6,6 @@ import Button from '../components/linkButton';
 import FilmCard from '../components/filmCard';
 import Carousel from '../components/carousel';
 import Frame from '../components/frame';
-import vid from '../images/home.mp4';
 import downArrow from '../images/down-arrow.png';
 
 import chuskit from '../images/chuskit.jpg';
@@ -18,6 +17,8 @@ import financeService from '../images/finance.jpg';
 import distributionService from '../images/distribution.jpg';
 import festivalService from '../images/festival.jpg';
 import publicityService from '../images/publicity.jpg';
+
+const cover = "https://s3.ap-south-1.amazonaws.com/aw-files-1-118130771025/home-cover.jpg";
 
 class IndexPage extends React.PureComponent {
 
@@ -72,7 +73,7 @@ class IndexPage extends React.PureComponent {
     return (
       <div className="home">
         <div id="landing-section">
-          <video className="media" autoPlay loop muted src="https://s3.ap-south-1.amazonaws.com/aw-files-1-118130771025/videoplayback.mp4"></video>
+          <img className="media" src={cover} alt="cover"/>
           <div className="landing-text">
             <h2>India's first<br />crowd-financing<br />studio for new age<br />cinema</h2>
             <Button to="/submit" size="16px">SUBMIT FILM</Button>
@@ -111,7 +112,7 @@ class IndexPage extends React.PureComponent {
             </div>
           </div>
         </Section>
-        <Section id="testimonial-section" title="TESTIMONIAL">
+        <Section id="testimonial-section" title="TESTIMONIALS">
           <div className="quote-container">
             <Frame>
               <Carousel settings={{ arrows: false }}>

@@ -61,6 +61,7 @@ const films = {
       image: "https://s3.ap-south-1.amazonaws.com/aw-files-1-118130771025/safdar.jpg",
     },
     producer: {
+      title: "PRODUCER",
       name: "Céline Loop",
       text: "is a Belgian lawyer turned indie film producer, who has been living in India for the last 8 years. Céline's core strength is creating universal stories for global audiences and selling them to Netflix.\n\nCéline produced four films which were subsequently sold to Netflix. 'Brahman Naman' premiered at Sundance Film Festival and was sold to Netflix for Rs. 7 crores, 'Gandu' & 'Ludo' were sold to Netflix for Rs. 1-1.5 crores and 'Kajarya' was sold to Netflix for Rs. 1 crore.",
       image: "https://s3.ap-south-1.amazonaws.com/aw-files-1-118130771025/celine.jpg",
@@ -92,6 +93,7 @@ const films = {
       text: "has written and directed several short films, international theatre plays and promo videos. In 2017, his short film “Kuberanum Irandu Gundargalum” was awarded the Special Mention award out of 250+ entries at the Qube Moviebuff short film contest. He has also been a screenplay and scriptwriter for several Hindi and Tamil films.",
       image: "https://s3.ap-south-1.amazonaws.com/aw-files-1-118130771025/anand.jpg",
     },
+    producer: undefined,
     synopsis: {
       text: "Meera is an upcoming makeup artist, struggling to make it big in the Tamil film industry, harried by the demands of her profession and big city life. Her grandmother Krishnaveni is an Oppari singer, who sings songs of mourning at funerals, in a nearby village. At Krishnaveni’s insistence, Meera finally visits her maternal village after years of separation. A series of events leads to Meera having to apply makeup on a recently deceased villager, a ritual of prestige in those parts. Meera’s work is appreciated and demand for her skills rise, leading to a rivalry with local makeup artist Guberan. Soon, she finds the kind of fulfillment in the village that she was unable to find in the superficial life of the city."
     },
@@ -108,11 +110,17 @@ const films = {
     language: "Hindi",
     runtime: undefined,
     category: "Fiction",
-    coverImage: "https://s3.ap-south-1.amazonaws.com/aw-files-1-118130771025/chuskit-cover.jpg",
+    coverImage: "https://s3.ap-south-1.amazonaws.com/aw-files-1-118130771025/zollywood-cover.jpg",
     director: {
       name: "Trushant Ingle",
       text: "was born and brought up in Nagpur and was a child artist for performances in Zadipatti from 2005 to 2007.\n\nTrushant worked with Amit as the Casting Director on ‘Newton’. Amit has mentored him since then helping Trushant hone his directorial skills.\n\nAs an insider in the Zadipatti industry and Amit’s protégé, he is in a unique position to direct this story professionally while capturing the nuances of Zadipatti",
       image: "https://s3.ap-south-1.amazonaws.com/aw-files-1-118130771025/trushant.jpg",
+    },
+    producer: {
+      title: "CREATIVE PRODUCER",
+      name: "Amit Masurkar",
+      text: "directed the independent comedy film Sulemani Keeda in 2013. His second feature film, Newton was selected as the Indian entry for the Best Foreign Language Film at the 90th Academy Awards.\n\nAmit’s directorial expertise will enhance Zollywood's production. His involvement will also give the film greater mileage globally!",
+      image: "https://s3.ap-south-1.amazonaws.com/aw-files-1-118130771025/amit.jpg",
     },
     synopsis: {
       text: "In Vidarbha, the eastern region of Maharashtra, the period between Diwali and Holi is when farmers retire from the fields and seek entertainment and recreation. The tradition of zhaadi-patti theatre, referred to as Zollywood, takes over — a Rs 400 crore industry that seemingly springs up overnight, with daily performances till the arrival of spring. We get a look into this world through the eyes of a group of enterprising people in the sleepy hamlet of Vadsa over three years in the early '00s. Raja and Deepak are two such dreamers who run a 'press' (production company) together; however, because of Raja's dalliances with one of his actresses at the expense of their work, Deepak and veteran zhaadi-patti actor Narayan Rao part ways and form their own press. As time passes, fortunes swing and lives change, both for better and for worse, but the show never stops."

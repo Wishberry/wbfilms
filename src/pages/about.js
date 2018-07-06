@@ -159,79 +159,73 @@ class IndexPage extends React.PureComponent {
       {
         name: "Lorem Ipsum Dolor",
         image: shashwat
-      },
-      {
-        name: "Lorem Ipsum Dolor",
-        image: suprateek
-      },
-      {
-        name: "Lorem Ipsum Dolor",
-        image: apoorva
       }
     ];
 
     return (
       <div className="home">
-        <div id="landing-section">
-          <img className="media" src={aboutImage} alt="about-main"/>
-          <div className="landing-text">
-            <h2>We finance,<br />produce, market<br />and distribute<span>&quot;smart<br />budget&quot; films</span></h2>
+        <div className="about-container">
+          <img className="cover-image" src="https://s3.ap-south-1.amazonaws.com/aw-files-1-118130771025/about-cover.jpg" alt="cover" />
+          <div id="landing-section">
+            <div className="landing-text">
+              <h2>We finance,<br />produce, market<br />and distribute<span>&quot;smart<br />budget&quot; films</span></h2>
+            </div>
+            <div className="learn-more-container" onClick={this.scrollPage}>
+              <p className="learn-more-text">See more</p>
+              <img src={downArrow} className="learn-more-icon" />
+            </div>
           </div>
-          <div className="learn-more-container" onClick={this.scrollPage}>
-            <p className="learn-more-text">See more</p>
-            <img src={downArrow} className="learn-more-icon" />
-          </div>
+          <Section id="about-section" title="ABOUT US">
+            <div className="about-text">
+              <h5>In 2012, Wishberry premiered the concept of crowdfunding in India for Independent filmmakers. Over 400 media projects have raised over 2 million dollars using the platform's rewards-based crowdfunding model from over 15,000 people across the world.
+              <br /><br />
+              Leveraging on its experience in supporting indie cinema, Wishberry is now extending its digital platform to allow High Net Worth Individuals (HNIs) to discover and invest in low budget cinema in exchange for a share of the film’s profits.
+            </h5>
+            </div>
+          </Section>
+          <Section id="team-section" title="THE TEAM">
+            <div className="team">
+              <div className="team-row">
+                { team.row1.map((item, key) => (
+                  <div key={key} className={this.state.selection ===  key ? "member active" : "member"}>
+                    <TooltipComponent text={item.quote} caption={item.quoteFilm}>
+                      <a onClick={(event) => this.handleClick(event, key)}>
+                        <div className="team-overlay">
+                          <p>{item.name}<br /><br />{item.title}</p>
+                        </div>
+                        <img src={item.image} alt={item.name} />
+                      </a>
+                    </TooltipComponent>
+                    <a className="linkedin" onClick={() => this.openLinkedin(item.linkedin)}>
+                      <img src={linkedin} alt="linkedin" />
+                    </a>
+                  </div>
+                ))}
+              </div>
+              <div className="team-row" >
+                { team.row2.map((item, key) => (
+                  <div key={key + team.row1.length} className={this.state.selection ===  (key + team.row1.length) ? "member active" : "member"}>
+                    <TooltipComponent text={item.quote} caption={item.quoteFilm}>
+                      <a onClick={(event) => this.handleClick(event, (key + team.row1.length))}>
+                        <div className="team-overlay">
+                          <p>{item.name}<br /><br />{item.title}</p>
+                        </div>
+                        <img src={item.image} alt={item.name} />
+                      </a>
+                    </TooltipComponent>
+                    <a className="linkedin" onClick={() => this.openLinkedin(item.linkedin)}>
+                      <img src={linkedin} alt="linkedin" />
+                    </a>
+                  </div>
+                ))}
+              </div>
+            </div>
+          </Section>
         </div>
-        <Section id="about-section" title="ABOUT US">
-          <div className="about-text">
-            <h5>In 2012, Wishberry premiered the concept of crowdfunding in India for Independent filmmakers. Over 400 media projects have raised over 2 million dollars using the platform's rewards-based crowdfunding model from over 15,000 people across the world.
-            <br /><br />
-            Leveraging on its experience in supporting indie cinema, Wishberry is now extending its digital platform to allow High Net Worth Individuals (HNIs) to discover and invest in low budget cinema in exchange for a share of the film’s profits.
-          </h5>
-          </div>
-        </Section>
-        <Section id="team-section" title="THE TEAM">
-          <div className="team">
-            <div className="team-row">
-              { team.row1.map((item, key) => (
-                <div key={key} className={this.state.selection ===  key ? "member active" : "member"}>
-                  <TooltipComponent text={item.quote} caption={item.quoteFilm}>
-                    <a onClick={(event) => this.handleClick(event, key)}>
-                      <div className="team-overlay">
-                        <p>{item.name}<br /><br />{item.title}</p>
-                      </div>
-                      <img src={item.image} alt={item.name} />
-                    </a>
-                  </TooltipComponent>
-                  <a className="linkedin" onClick={() => this.openLinkedin(item.linkedin)}>
-                    <img src={linkedin} alt="linkedin" />
-                  </a>
-                </div>
-              ))}
-            </div>
-            <div className="team-row" >
-              { team.row2.map((item, key) => (
-                <div key={key + team.row1.length} className={this.state.selection ===  (key + team.row1.length) ? "member active" : "member"}>
-                  <TooltipComponent text={item.quote} caption={item.quoteFilm}>
-                    <a onClick={(event) => this.handleClick(event, (key + team.row1.length))}>
-                      <div className="team-overlay">
-                        <p>{item.name}<br /><br />{item.title}</p>
-                      </div>
-                      <img src={item.image} alt={item.name} />
-                    </a>
-                  </TooltipComponent>
-                  <a className="linkedin" onClick={() => this.openLinkedin(item.linkedin)}>
-                    <img src={linkedin} alt="linkedin" />
-                  </a>
-                </div>
-              ))}
-            </div>
-          </div>
-        </Section>
         <Section id="advisor-section" title="BOARD OF ADVISORS">
           <div className="advisor-container">
             <Carousel
-              settings={this.state.isMobile ? {} : { slidesToShow: 3 }}
+              settings={this.state.isMobile ? {} : { slidesToShow: 3, infinite: false, arrows: false, autoplay: false }}
             >
               { advisors.map((item, index) => (
                 <div key={index} className="advisors">

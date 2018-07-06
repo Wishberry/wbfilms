@@ -11,6 +11,9 @@
   overflow: hidden;
   position: relative;
 }
+#landing-section.dark {
+  background-color: #232323;
+}
 #landing-section.small {
   height: 55vh;
   min-height: 450px;
@@ -149,14 +152,29 @@
 }
 
 /* ABOUT */
+.about-container {
+  width: 100%;
+  color: #fff;
+  overflow: hidden;
+  position: relative;
+}
+.cover-image {
+  position: absolute;
+  top: 0;
+  z-index: 0;
+  width: 100%;
+}
 .about-text {
-  width: 72%;
+  width: 60%;
   margin-top: 4.5rem;
 }
 .about-text h5{
   font-weight: 400;
   line-height: 1.5em;
   text-align: justify;
+}
+#team-section {
+  margin-top: 10rem;
 }
 .team {
   position: relative;
@@ -239,7 +257,7 @@
 }
 
 .advisor-container {
-  margin-top: 4.25rem;
+  margin-top: 3.5rem;
   padding: 0 3rem;
 }
 .advisors {
@@ -364,6 +382,15 @@
   .learn-more-container {
     display: none;
   }
+  .about-container {
+    color: #232323;
+  }
+  .cover-image {
+    width: 120%;
+    height: 100vh;
+    left: 50%;
+    transform: translateX(-50%);
+  }
   .service {
     width: calc(50% - 1rem);
     height: unset;
@@ -372,6 +399,9 @@
   .service-submit {
     width: calc(50% - 1rem);
     margin-top: 4rem;
+  }
+  .service-submit .btn {
+    font-size: 15px !important;
   }
   .quote-container {
     width: 100%;

@@ -49,7 +49,7 @@ class FilmPage extends React.PureComponent {
           </div>
         </Section>
         { film.producer &&
-          <Section title="PRODUCER">
+          <Section title={film.producer.title}>
             <div className="director-section">
               <div className="director-text">
                 <h5>

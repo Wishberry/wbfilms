@@ -8,7 +8,7 @@ import 'react-toastify/dist/ReactToastify.css';
 import Section from '../components/section';
 import Button from '../components/button';
 
-import submit from '../images/submit.jpg';
+const submit = "https://s3.ap-south-1.amazonaws.com/aw-files-1-118130771025/submit-cover.jpg";
 
 class SubmitPage extends React.PureComponent {
 
@@ -24,7 +24,6 @@ class SubmitPage extends React.PureComponent {
       pastWork: undefined,
       filmBudget: undefined,
       success: false,
-
     };
   }
 
