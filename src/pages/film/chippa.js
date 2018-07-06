@@ -17,6 +17,10 @@ class FilmPage extends React.PureComponent {
     window.scrollBy({top: height, left: 0, behavior: 'smooth'});
   }
 
+  createMarkup = (text) => {
+    return {__html: text};
+  }
+
   render() {
     const film = films.chippa;
     return (
@@ -36,12 +40,7 @@ class FilmPage extends React.PureComponent {
         <Section title="DIRECTOR">
           <div className="director-section">
             <div className="director-text">
-              <h5>
-                <strong>{film.director.name} </strong>
-                {film.director.text.split('\n').map((item, key) => {
-                  return <span key={key}>{item}<br/></span>
-                })}
-              </h5>
+              <h5 dangerouslySetInnerHTML={this.createMarkup(film.director.text)}></h5>
             </div>
             <div className="director-image">
               <img src={film.director.image} alt={film.director.name} />
@@ -52,12 +51,7 @@ class FilmPage extends React.PureComponent {
           <Section title={film.producer.title}>
             <div className="director-section">
               <div className="director-text">
-                <h5>
-                  <strong>{film.producer.name} </strong>
-                  {film.producer.text.split('\n').map((item, key) => {
-                    return <span key={key}>{item}<br/></span>
-                  })}
-                </h5>
+                <h5 dangerouslySetInnerHTML={this.createMarkup(film.producer.text)}></h5>
               </div>
               <div className="director-image">
                 <img src={film.producer.image} alt={film.producer.name} />
@@ -68,7 +62,7 @@ class FilmPage extends React.PureComponent {
         <Section title="SYNOPSIS">
           <div className="synopsis-section">
             <div className="synopsis-text">
-              <h5>{film.synopsis.text}</h5>
+              <h5 dangerouslySetInnerHTML={this.createMarkup(film.synopsis.text)}></h5>
               { film.facebook &&
                 <a className="synopsis-link" href={film.facebook} target="_blank">
                   <img src={linkArrow} alt="link" />
