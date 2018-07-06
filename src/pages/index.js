@@ -111,7 +111,7 @@ class IndexPage extends React.PureComponent {
             </div>
           </div>
         </Section>
-        <Section id="testimonial-section" title="OUR RECOMMENDATIONS">
+        <Section id="testimonial-section" title="TESTIMONIAL">
           <div className="quote-container">
             <Frame>
               <Carousel settings={{ arrows: false }}>

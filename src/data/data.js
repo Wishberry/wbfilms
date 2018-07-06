@@ -11,10 +11,11 @@ const films = {
       text: "has travelled the world for over fifteen years making films for International broadcasters like  National Geographic and Discovery. She was one of 6 people, chosen to participate in a Screenwriter’s Lab organized by the National Film Development Corporation of India. There, she received an opportunity to evolve her story for 'Chuskit' under the mentorship of award-winning Dutch writer Jolein Laarman.",
       image: "https://s3.ap-south-1.amazonaws.com/aw-files-1-118130771025/priya.jpg",
     },
+    producer: undefined,
     synopsis: {
-      text: "Sprightly Chuskit’s dream of going to school is cut short when she is rendered a paraplegic after an accident. She’s confined to life indoors in the company of her strict grandfather, Dorje. Chuskit continues to harbor hopes of school but Dorje tries to make her understand that school can’t handle her needs. As life at home gets harder, her battle with her grandfather exacerbates. Caught in between their struggle are Chuskit’s parents and her enterprising brother who want to respect the old world views that Dorje represents, but also want to keep Chuskit’s spirit alive. Chuskit will have to get her grandfather to yield or she will have to accept the reality he has chosen for her.",
-      image: "https://s3.ap-south-1.amazonaws.com/aw-files-1-118130771025/giffoni.png",
+      text: "Sprightly Chuskit’s dream of going to school is cut short when she is rendered a paraplegic after an accident. She’s confined to life indoors in the company of her strict grandfather, Dorje. Chuskit continues to harbor hopes of school but Dorje tries to make her understand that school can’t handle her needs. As life at home gets harder, her battle with her grandfather exacerbates. Caught in between their struggle are Chuskit’s parents and her enterprising brother who want to respect the old world views that Dorje represents, but also want to keep Chuskit’s spirit alive. Chuskit will have to get her grandfather to yield or she will have to accept the reality he has chosen for her."
     },
+    festivals: ["https://s3.ap-south-1.amazonaws.com/aw-files-1-118130771025/giffoni.png"],
     facebook: "https://www.facebook.com/ChuskitTheFilm/",
     website: "http://www.chuskit.com",
     cast: [
@@ -59,10 +60,15 @@ const films = {
       text: "was born in Kolkata and has been involved in the theatre scene since a very young age. He directed 2 plays: Exit and Haroun Ki Dilchasp Kahaani, and has been working with kids for the last 6 years. Safdar has also worked on numerous films as an executive producer.",
       image: "https://s3.ap-south-1.amazonaws.com/aw-files-1-118130771025/safdar.jpg",
     },
-    synopsis: {
-      text: "The film is a coming-of-age tale of a ten year old boy called ‘Chippa’, who lives on a footpath of Calcutta’s streets. On the eve of his tenth birthday, Chippa’s grand aunt hands him a letter written by his father who he has never known. He can’t decipher the letter since it is written in Urdu.\n\nIn order to unravel this message, Chippa leaves his pavement abode at the stroke of midnight and heads out to discover the city and its street nightlife. the film as seen through Chippa’s eyes is full of magic realism, wonder and enchanting conversations with strangers. The night, which is energetic and lively to start with, becomes a little dream-like as the film proceeds.",
-      image: undefined,
+    producer: {
+      name: "Céline Loop",
+      text: "is a Belgian lawyer turned indie film producer, who has been living in India for the last 8 years. Céline's core strength is creating universal stories for global audiences and selling them to Netflix.\n\nCéline produced four films which were subsequently sold to Netflix. 'Brahman Naman' premiered at Sundance Film Festival and was sold to Netflix for Rs. 7 crores, 'Gandu' & 'Ludo' were sold to Netflix for Rs. 1-1.5 crores and 'Kajarya' was sold to Netflix for Rs. 1 crore.",
+      image: "https://s3.ap-south-1.amazonaws.com/aw-files-1-118130771025/celine.jpg",
     },
+    synopsis: {
+      text: "Chippa The film is a coming-of-age tale of a ten year old boy called 'Chippa', who lives on a footpath of Calcutta's streets. On the eve of his tenth birthday, Chippa's grand aunt hands him a letter written by his father who he has never known. He can't decipher the letter since it is written in Urdu.\n\nIn order to unravel this message, Chippa leaves his pavement abode at the stroke of midnight and heads out to discover the city and its street nightlife. the film as seen through Chippa's eyes is full of magic realism, wonder and enchanting conversations with strangers. The night, which is energetic and lively to start with, becomes a little dream-like as the film proceeds."
+    },
+    festivals: undefined,
     facebook: undefined,
     website: undefined,
     cast: [
@@ -87,9 +93,9 @@ const films = {
       image: "https://s3.ap-south-1.amazonaws.com/aw-files-1-118130771025/anand.jpg",
     },
     synopsis: {
-      text: "Meera is an upcoming makeup artist, struggling to make it big in the Tamil film industry. Her grandmother Krishnaveni is an Oppari singer (mourning songs) in a nearby village.\n\nAt her grandmother’s insistence, Meera finally visits her maternal village after years of separation. After an awkward reunion, they both head to a fellow villager’s funeral, where Krishnaveni has to perform the Oppari ritual. At the funeral, Meera meets Guberan, a makeup artist for the dead, who fulfills a local ritual. ",
-      image: undefined,
+      text: "Meera is an upcoming makeup artist, struggling to make it big in the Tamil film industry, harried by the demands of her profession and big city life. Her grandmother Krishnaveni is an Oppari singer, who sings songs of mourning at funerals, in a nearby village. At Krishnaveni’s insistence, Meera finally visits her maternal village after years of separation. A series of events leads to Meera having to apply makeup on a recently deceased villager, a ritual of prestige in those parts. Meera’s work is appreciated and demand for her skills rise, leading to a rivalry with local makeup artist Guberan. Soon, she finds the kind of fulfillment in the village that she was unable to find in the superficial life of the city."
     },
+    festivals: undefined,
     facebook: undefined,
     website: undefined,
     cast: undefined,
@@ -109,9 +115,9 @@ const films = {
       image: "https://s3.ap-south-1.amazonaws.com/aw-files-1-118130771025/trushant.jpg",
     },
     synopsis: {
-      text: "The film is set in the early 2000s. Raja runs a &quot;press&quot; (production company) in Vidarbha. The press doesn’t operate smoothly because Raja is in love with one of the actresses and doesn’t focus on the press. This upsets the troupe members and they approach the writer of the press, Deepak for a solution.\n\nDeepak turns to Narayan Rao who is a senior well-renowned actor of Zaddipati. They decide to set up a new press together. Narayan Rao agrees to back Deepak financially but in return, asks Deepak to pledge his loyalty towards Zaddipati. That is how Shri Maa Durga Press is set up.",
-      image: undefined,
+      text: "In Vidarbha, the eastern region of Maharashtra, the period between Diwali and Holi is when farmers retire from the fields and seek entertainment and recreation. The tradition of zhaadi-patti theatre, referred to as Zollywood, takes over — a Rs 400 crore industry that seemingly springs up overnight, with daily performances till the arrival of spring. We get a look into this world through the eyes of a group of enterprising people in the sleepy hamlet of Vadsa over three years in the early '00s. Raja and Deepak are two such dreamers who run a 'press' (production company) together; however, because of Raja's dalliances with one of his actresses at the expense of their work, Deepak and veteran zhaadi-patti actor Narayan Rao part ways and form their own press. As time passes, fortunes swing and lives change, both for better and for worse, but the show never stops."
     },
+    festivals: undefined,
     facebook: undefined,
     website: undefined,
     cast: undefined,

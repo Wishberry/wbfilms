@@ -56,6 +56,13 @@
         "path": "/page-2/"
     },
     {
+        "componentChunkName": "component---src-pages-privacy-policy-js",
+        "layout": "layout---index",
+        "layoutComponentChunkName": "component---src-layouts-index-js",
+        "jsonName": "privacy-policy.json",
+        "path": "/privacy-policy/"
+    },
+    {
         "componentChunkName": "component---src-pages-submit-js",
         "layout": "layout---index",
         "layoutComponentChunkName": "component---src-layouts-index-js",

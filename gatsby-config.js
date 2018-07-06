@@ -12,5 +12,13 @@ module.exports = {
         name: `data`
       },
     },
+    {
+      resolve: `gatsby-plugin-google-analytics`,
+      options: {
+        trackingId: "UA-11608777-3",
+        // Puts tracking script in the head instead of the body
+        head: true,
+      },
+    },
   ],
 }

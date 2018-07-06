@@ -1,4 +1,7 @@
-var plugins = []
+var plugins = [{
+      plugin: require('/Users/ankur/work/wbfilms/node_modules/gatsby-plugin-google-analytics/gatsby-browser'),
+      options: {"plugins":[],"trackingId":"UA-11608777-3","head":true},
+    }]
 // During bootstrap, we write requires at top of this file which looks
 // basically like:
 // var plugins = [

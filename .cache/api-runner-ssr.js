@@ -1,6 +1,9 @@
 var plugins = [{
       plugin: require('/Users/ankur/work/wbfilms/node_modules/gatsby-plugin-react-helmet/gatsby-ssr'),
       options: {"plugins":[]},
+    },{
+      plugin: require('/Users/ankur/work/wbfilms/node_modules/gatsby-plugin-google-analytics/gatsby-ssr'),
+      options: {"plugins":[],"trackingId":"UA-11608777-3","head":true},
     }]
 // During bootstrap, we write requires at top of this file which looks like:
 // var plugins = [

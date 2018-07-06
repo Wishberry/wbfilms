@@ -3,6 +3,8 @@ import Link from 'gatsby-link'
 
 import logo from '../images/logo-white-1.png';
 
+import soon from '../images/coming-soon.png';
+
 import facebook from '../images/facebook.png';
 import instagram from '../images/instagram.png';
 import youtube from '../images/youtube.png';
@@ -16,36 +18,35 @@ const Footer = ({ siteTitle }) => (
           <img src={logo} alt="logo" />
         </div>
         <div className="footer-nav">
+          <div className="footer-nav-title"></div>
           <Link to="/about" className="footer-nav-link">About Us</Link>
           <Link to="/" className="footer-nav-link">Films</Link>
-          <Link to="/" className="footer-nav-link">Investor Corner</Link>
-          <Link to="/" className="footer-nav-link">Services</Link>
-          <Link to="/" className="footer-nav-link">Project Rules</Link>
-          <Link to="/" className="footer-nav-link">Crowdfunding</Link>
-          <Link to="/" className="footer-nav-link">Guide</Link>
-          <Link to="/" className="footer-nav-link">FAQs</Link>
-          <Link to="/" className="footer-nav-link">Our Team</Link>
-          <Link to="/" className="footer-nav-link">Press</Link>
-          <Link to="/" className="footer-nav-link">Terms of Use</Link>
           <Link to="/" className="footer-nav-link">Privacy Policy</Link>
-          <Link to="/" className="footer-nav-link">Films</Link>
-          <Link to="/" className="footer-nav-link">Music</Link>
-          <Link to="/" className="footer-nav-link">Theatre</Link>
-          <Link to="/" className="footer-nav-link">Comics</Link>
+        </div>
+        <div className="footer-nav">
+          <div className="footer-nav-title">
+            <img src={soon} alt="coming soon"/>
+          </div>
+          <Link to="/" className="footer-nav-link">Investor Corner</Link>
+          <Link to="/" className="footer-nav-link">Press</Link>
+          <Link to="/" className="footer-nav-link">FAQs</Link>
+        </div>
+        <div className="footer-contact">
+          <div className="footer-divider"></div>
+          <div className="footer-contact-us">
+            <div className="footer-nav-title">
+              Contact Us
+            </div>
+            <span>102/103 Matharu Arcade, Subhash road,</span>
+            <span>Vile Parle (E), Mumbai 400057</span>
+            <span>info@wishberry.in | +9122-49426200</span>
+          </div>
         </div>
       </div>
       <div className="footer-bottom">
         <div className="footer-info">
           <div className="info">
             &copy;2012-2016 Wishberry. All Rights Reserved
-          </div>
-          <div className="footer-divider"></div>
-          <div className="info">
-            +91 22 4942 6200
-          </div>
-          <div className="footer-divider"></div>
-          <div className="info">
-            info@wishberry.in
           </div>
         </div>
         {/* <div className="footer-social"> */}

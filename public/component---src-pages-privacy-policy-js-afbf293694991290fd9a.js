@@ -1,0 +1,2 @@
+webpackJsonp([0xe019c0547eb],{314:function(e,t,a){"use strict";function l(e){return e&&e.__esModule?e:{default:e}}t.__esModule=!0;var u=a(1),c=l(u),n=a(9),d=(l(n),a(27)),i=l(d),r=function(){return c.default.createElement("div",{className:"home"},c.default.createElement(i.default,{id:"policy-section",title:"PRIVACY POLICY"},c.default.createElement("div",{className:"privacy-text"})))};t.default=r,e.exports=t.default}});
+//# sourceMappingURL=component---src-pages-privacy-policy-js-afbf293694991290fd9a.js.map

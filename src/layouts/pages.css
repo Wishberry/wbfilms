@@ -361,6 +361,9 @@
     line-height: 3.25rem;
     font-weight: bold;
   }
+  .learn-more-container {
+    display: none;
+  }
   .service {
     width: calc(50% - 1rem);
     height: unset;

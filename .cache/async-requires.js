@@ -10,6 +10,7 @@ exports.components = {
   "component---src-pages-film-zollywood-js": require("gatsby-module-loader?name=component---src-pages-film-zollywood-js!/Users/ankur/work/wbfilms/src/pages/film/zollywood.js"),
   "component---src-pages-index-js": require("gatsby-module-loader?name=component---src-pages-index-js!/Users/ankur/work/wbfilms/src/pages/index.js"),
   "component---src-pages-page-2-js": require("gatsby-module-loader?name=component---src-pages-page-2-js!/Users/ankur/work/wbfilms/src/pages/page-2.js"),
+  "component---src-pages-privacy-policy-js": require("gatsby-module-loader?name=component---src-pages-privacy-policy-js!/Users/ankur/work/wbfilms/src/pages/privacy-policy.js"),
   "component---src-pages-submit-js": require("gatsby-module-loader?name=component---src-pages-submit-js!/Users/ankur/work/wbfilms/src/pages/submit.js")
 }
 
@@ -23,6 +24,7 @@ exports.json = {
   "film-zollywood.json": require("gatsby-module-loader?name=path---film-zollywood!/Users/ankur/work/wbfilms/.cache/json/film-zollywood.json"),
   "index.json": require("gatsby-module-loader?name=path---index!/Users/ankur/work/wbfilms/.cache/json/index.json"),
   "page-2.json": require("gatsby-module-loader?name=path---page-2!/Users/ankur/work/wbfilms/.cache/json/page-2.json"),
+  "privacy-policy.json": require("gatsby-module-loader?name=path---privacy-policy!/Users/ankur/work/wbfilms/.cache/json/privacy-policy.json"),
   "submit.json": require("gatsby-module-loader?name=path---submit!/Users/ankur/work/wbfilms/.cache/json/submit.json"),
   "404-html.json": require("gatsby-module-loader?name=path---404-html!/Users/ankur/work/wbfilms/.cache/json/404-html.json")
 }

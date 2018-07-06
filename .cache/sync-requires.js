@@ -15,6 +15,7 @@ exports.components = {
   "component---src-pages-film-zollywood-js": preferDefault(require("/Users/ankur/work/wbfilms/src/pages/film/zollywood.js")),
   "component---src-pages-index-js": preferDefault(require("/Users/ankur/work/wbfilms/src/pages/index.js")),
   "component---src-pages-page-2-js": preferDefault(require("/Users/ankur/work/wbfilms/src/pages/page-2.js")),
+  "component---src-pages-privacy-policy-js": preferDefault(require("/Users/ankur/work/wbfilms/src/pages/privacy-policy.js")),
   "component---src-pages-submit-js": preferDefault(require("/Users/ankur/work/wbfilms/src/pages/submit.js"))
 }
 
@@ -28,6 +29,7 @@ exports.json = {
   "film-zollywood.json": require("/Users/ankur/work/wbfilms/.cache/json/film-zollywood.json"),
   "index.json": require("/Users/ankur/work/wbfilms/.cache/json/index.json"),
   "page-2.json": require("/Users/ankur/work/wbfilms/.cache/json/page-2.json"),
+  "privacy-policy.json": require("/Users/ankur/work/wbfilms/.cache/json/privacy-policy.json"),
   "submit.json": require("/Users/ankur/work/wbfilms/.cache/json/submit.json"),
   "404-html.json": require("/Users/ankur/work/wbfilms/.cache/json/404-html.json")
 }

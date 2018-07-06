@@ -65,12 +65,15 @@
   width: 30%;
   align-self: flex-start;
   text-align: center;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
 }
 .director-image img {
   width: 100%;
 }
 .synopsis-image img {
-  width: 55%;
+  width: 45%;
 }
 .synopsis-link {
   max-height: 20px;
@@ -110,6 +113,9 @@
   border-radius: 50%;
   position: relative;
   overflow: hidden;
+}
+.cast.no-radius {
+  border-radius: 0;
 }
 .cast.coming-soon {
 border-radius: 0;
@@ -173,10 +179,8 @@ border-radius: 0;
     margin-bottom: 2rem;
   }
   .synopsis-image {
-    width: 30%;
-    position: absolute;
-    bottom: 0;
-    right: 0;
+    width: 100%;
+    margin-top: 3rem;
   }
   .cast {
     width: calc(50% - 1rem);

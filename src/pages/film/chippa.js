@@ -20,7 +20,6 @@ class FilmPage extends React.PureComponent {
   render() {
     const film = films.chippa;
     return (
-      <div>
       <div className="home">
         <div id="cover-section">
           <img className="media" src={film.coverImage} alt="cover"/>
@@ -49,6 +48,23 @@ class FilmPage extends React.PureComponent {
             </div>
           </div>
         </Section>
+        { film.producer &&
+          <Section title="PRODUCER">
+            <div className="director-section">
+              <div className="director-text">
+                <h5>
+                  <strong>{film.producer.name} </strong>
+                  {film.producer.text.split('\n').map((item, key) => {
+                    return <span key={key}>{item}<br/></span>
+                  })}
+                </h5>
+              </div>
+              <div className="director-image">
+                <img src={film.producer.image} alt={film.producer.name} />
+              </div>
+            </div>
+          </Section>
+        }
         <Section title="SYNOPSIS">
           <div className="synopsis-section">
             <div className="synopsis-text">
@@ -66,9 +82,13 @@ class FilmPage extends React.PureComponent {
                 </a>
               }
             </div>
-            <div className="synopsis-image">
-              <img src={film.synopsis.image} alt="Synopsis" />
-            </div>
+            { film.festivals &&
+              <div className="synopsis-image">
+                { film.festivals.map((item, key) => (
+                  <img key={key} src={item} alt="Synopsis" />
+                ))}
+              </div>
+            }
           </div>
         </Section>
         { film.cast ?
@@ -90,7 +110,7 @@ class FilmPage extends React.PureComponent {
           <Section title="CAST">
             <div className="cast-container">
               <div className="cast-list">
-                <div className="cast">
+                <div className="cast no-radius">
                   <img src={soon} alt="Coming Soon" />
                 </div>
                 <div className="cast"></div>
@@ -104,7 +124,6 @@ class FilmPage extends React.PureComponent {
           </div>
         }
       </div>
-    </div>
     );
   }
 }
