@@ -16,10 +16,11 @@ import './components.css'
 const Layout = ({ children, data }) => (
   <div>
     <Helmet
-      title="Wishberry Films"
+      title="Wishberry Films, India’s first crowd-financing studio for new age cinema"
       meta={[
-        { name: 'description', content: 'Wishberry Films website' },
-        { name: 'keywords', content: 'wishberry, film, invest' },
+        { name: 'description', content: 'We finance, produce, market and distribute ”smart budget” films' },
+        { name: 'keywords', content: 'wishberry, film, invest, crowd, finance, wishberry film finance, wishberry series A, reliance invests in wishberry, wishberry films, wishberry film' },
+        { property: 'og:image', content: 'We finance, produce, market and distribute ”smart budget” films' },
       ]}
     />
     {/* <Header /> */}
