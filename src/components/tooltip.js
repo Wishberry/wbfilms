@@ -2,8 +2,6 @@ import React from 'react'
 import Link from 'gatsby-link'
 import Tooltip from 'rc-tooltip'
 
-import logo from '../images/logo.png';
-
 const TooltipComponent = ({ children, text, caption }) => (
   <Tooltip
     placement="top"

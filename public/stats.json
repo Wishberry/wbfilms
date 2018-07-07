@@ -9,8 +9,8 @@
       "component---src-pages-film-sap-js-8e32f75a2dc1c0402ccd.js.map"
     ],
     "component---src-pages-index-js": [
-      "component---src-pages-index-js-42e4cd94e1d233b6d8f7.js",
-      "component---src-pages-index-js-42e4cd94e1d233b6d8f7.js.map"
+      "component---src-pages-index-js-00218b258cc8949ef5ce.js",
+      "component---src-pages-index-js-00218b258cc8949ef5ce.js.map"
     ],
     "path---film-zollywood": [
       "path---film-zollywood-a0e39f21c11f6a62c5ab.js",
@@ -29,8 +29,8 @@
       "component---src-pages-film-chippa-js-09bd295d12a335bf5c87.js.map"
     ],
     "component---src-layouts-index-js": [
-      "component---src-layouts-index-js-ca11be3d67348021fe52.js",
-      "component---src-layouts-index-js-ca11be3d67348021fe52.js.map"
+      "component---src-layouts-index-js-77d5ca55fcc69aee3140.js",
+      "component---src-layouts-index-js-77d5ca55fcc69aee3140.js.map"
     ],
     "path---film-sap": [
       "path---film-sap-a0e39f21c11f6a62c5ab.js",
@@ -53,9 +53,9 @@
       "component---src-pages-404-js-4503918ea3a16cfcdb75.js.map"
     ],
     "commons": [
-      "commons-c0a9e3573d810b70989b.js",
+      "commons-3e0b1210910966189f83.js",
       "build-js-styles.css",
-      "commons-c0a9e3573d810b70989b.js.map",
+      "commons-3e0b1210910966189f83.js.map",
       "build-js-styles.css.map"
     ],
     "path---404-html": [
@@ -93,12 +93,12 @@
       "path---404-a0e39f21c11f6a62c5ab.js.map"
     ],
     "component---src-pages-submit-js": [
-      "component---src-pages-submit-js-4b662c00188d8f7815f6.js",
-      "component---src-pages-submit-js-4b662c00188d8f7815f6.js.map"
+      "component---src-pages-submit-js-b0a001420a01f462fb46.js",
+      "component---src-pages-submit-js-b0a001420a01f462fb46.js.map"
     ],
     "component---src-pages-about-js": [
-      "component---src-pages-about-js-b3c982f77aca9ed6cad9.js",
-      "component---src-pages-about-js-b3c982f77aca9ed6cad9.js.map"
+      "component---src-pages-about-js-51267b95fbce76b6e65c.js",
+      "component---src-pages-about-js-51267b95fbce76b6e65c.js.map"
     ],
     "path---about": [
       "path---about-a0e39f21c11f6a62c5ab.js",

@@ -1,7 +1,7 @@
 import React from 'react'
 import Link from 'gatsby-link'
 
-import logo from '../images/logo-white-1.png';
+import logo from '../images/logo-white.png';
 
 import soon from '../images/coming-soon.png';
 

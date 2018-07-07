@@ -20,7 +20,7 @@ const Layout = ({ children, data }) => (
       meta={[
         { name: 'description', content: 'We finance, produce, market and distribute ”smart budget” films' },
         { name: 'keywords', content: 'wishberry, film, invest, crowd, finance, wishberry film finance, wishberry series A, reliance invests in wishberry, wishberry films, wishberry film' },
-        { property: 'og:image', content: 'We finance, produce, market and distribute ”smart budget” films' },
+        { property: 'og:image', content: 'https://s3.ap-south-1.amazonaws.com/aw-files-1-118130771025/logo.png' },
       ]}
     />
     {/* <Header /> */}
