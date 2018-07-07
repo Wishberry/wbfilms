@@ -22,6 +22,10 @@ import mohanish from '../images/mohanish.jpg';
 import corner from '../images/corner.png';
 import linkedin from '../images/linkedin.png';
 
+const vikramaditya = "https://s3.ap-south-1.amazonaws.com/aw-files-1-118130771025/vikramaditya.jpg";
+const shibashish = "https://s3.ap-south-1.amazonaws.com/aw-files-1-118130771025/shibashish.jpg";
+const sunil = "https://s3.ap-south-1.amazonaws.com/aw-files-1-118130771025/sunil.jpg";
+
 class IndexPage extends React.PureComponent {
 
   constructor(props) {
@@ -150,16 +154,19 @@ class IndexPage extends React.PureComponent {
 
     const advisors = [
       {
-        name: "Lorem Ipsum Dolor",
-        image: priyanka
+        name: "Dr. Sunil Patil",
+        title: "Director on the Board of Scrabble Entertainment Limited",
+        image: sunil
       },
       {
-        name: "Lorem Ipsum Dolor",
-        image: anshulika
+        name: "Shibasish Sarkar",
+        title: "COO, Reliance Entertainment",
+        image: shibashish
       },
       {
-        name: "Lorem Ipsum Dolor",
-        image: shashwat
+        name: "Vikramaditya Motwane",
+        title: "Film Director, Udaan, Dev D Co-Owner, Phantom Films",
+        image: vikramaditya
       }
     ];
 
