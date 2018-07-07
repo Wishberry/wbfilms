@@ -385,6 +385,18 @@
 .privacy-text h4{
   margin-bottom: 0;
 }
+.cookie-policy {
+  background-color:transparent;
+  border-collapse:collapse;
+}
+.cookie-policy td {
+  border:1px solid black;
+  padding:5px;
+  text-align: center;
+}
+.cookie-policy tr.bold td {
+  font-weight: bold;
+}
 
 /* MOBILE */
 @media only screen and (max-width: 480px) {
