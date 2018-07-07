@@ -36,6 +36,10 @@ class IndexPage extends React.PureComponent {
     };
   }
 
+  createMarkup = (text) => {
+    return {__html: text};
+  }
+
   componentDidMount() {
     if(window.innerWidth <= 500) {
       this.setState({ isMobile: true });
@@ -155,17 +159,17 @@ class IndexPage extends React.PureComponent {
     const advisors = [
       {
         name: "Dr. Sunil Patil",
-        title: "Director on the Board of Scrabble Entertainment Limited",
+        title: "Director on the Board, Scrabble Entertainment Limited",
         image: sunil
       },
       {
         name: "Shibasish Sarkar",
-        title: "COO, Reliance Entertainment",
+        title: "COO, Reliance Entertainment<br/><br/>",
         image: shibashish
       },
       {
         name: "Vikramaditya Motwane",
-        title: "Film Director, Udaan, Dev D Co-Owner, Phantom Films",
+        title: "Film Director, Udaan, Dev D<br/>Co-Owner, Phantom Films",
         image: vikramaditya
       }
     ];
@@ -243,6 +247,7 @@ class IndexPage extends React.PureComponent {
                       <img src={item.image} alt={item.name} />
                     </div>
                     <h5>{item.name}</h5>
+                    <h6 dangerouslySetInnerHTML={this.createMarkup(item.title)}></h6>
                   </div>
                 ))}
               </Carousel>

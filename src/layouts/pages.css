@@ -279,13 +279,18 @@
 }
 .advisor-container h5 {
   position: relative;
-  margin-top: 4rem;
+  margin-top: 2rem;
   font-weight: 600;
-  width: 50%;
+  width: 80%;
   text-align: center;
   margin-left: auto;
   margin-right: auto;
   color: #232323;
+}
+.advisor-container h6 {
+  color: #999;
+  text-align: center;
+  font-weight: normal;
 }
 .advisor img {
   display: block;
@@ -467,7 +472,7 @@
     margin-top: 2rem;
   }
   .advisor-container h5 {
-    margin-top: 3rem;
+    margin-top: 2rem;
   }
   .advisor {
     width: 85%
