@@ -113,7 +113,6 @@ const Footer = ({ siteTitle }) => (
         </a>
       </div>
     </div>
-    <script src="https://cdn1.pdmntn.com/a/4JQNDStMr.js"></script>
   </div>
 )
 

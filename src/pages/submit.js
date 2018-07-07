@@ -29,6 +29,15 @@ class SubmitPage extends React.PureComponent {
     };
   }
 
+  componentDidMount() {
+    const script = document.createElement("script");
+
+    script.src = "https://cdn1.pdmntn.com/a/4JQNDStMr.js";
+    script.async = true;
+
+    document.body.appendChild(script);
+  }
+
   showSuccess = () => {
     toast.success("Submitted Successfully!", {
       position: toast.POSITION.TOP_CENTER,
