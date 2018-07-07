@@ -51,7 +51,7 @@ class Header extends React.PureComponent {
 
   render() {
     return (
-      <div  className={this.state.fixed ? 'header fixed' : 'header'}>
+      <div  className={this.state.fixed || this.props.fixed ? 'header fixed' : 'header'}>
         <Link to="/" style={{ height: '100%' }}>
           <div className="logo">
             <img src={(this.state.fixed || this.state.menuOpen) ? logoBlack : logoWhite} alt="Logo" />
