@@ -1,36 +1,36 @@
 {
   "assetsByChunkName": {
     "component---src-pages-privacy-policy-js": [
-      "component---src-pages-privacy-policy-js-afbf293694991290fd9a.js",
-      "component---src-pages-privacy-policy-js-afbf293694991290fd9a.js.map"
+      "component---src-pages-privacy-policy-js-1d06f98a4d8ca9a80d26.js",
+      "component---src-pages-privacy-policy-js-1d06f98a4d8ca9a80d26.js.map"
     ],
     "component---src-pages-film-sap-js": [
-      "component---src-pages-film-sap-js-c7175fef99bb172e4acd.js",
-      "component---src-pages-film-sap-js-c7175fef99bb172e4acd.js.map"
+      "component---src-pages-film-sap-js-8e32f75a2dc1c0402ccd.js",
+      "component---src-pages-film-sap-js-8e32f75a2dc1c0402ccd.js.map"
     ],
     "component---src-pages-index-js": [
-      "component---src-pages-index-js-3c26df20d3fd14507bf9.js",
-      "component---src-pages-index-js-3c26df20d3fd14507bf9.js.map"
+      "component---src-pages-index-js-42e4cd94e1d233b6d8f7.js",
+      "component---src-pages-index-js-42e4cd94e1d233b6d8f7.js.map"
     ],
     "path---film-zollywood": [
       "path---film-zollywood-a0e39f21c11f6a62c5ab.js",
       "path---film-zollywood-a0e39f21c11f6a62c5ab.js.map"
     ],
     "component---src-pages-film-chuskit-js": [
-      "component---src-pages-film-chuskit-js-88bc8fa821fbebcbca53.js",
-      "component---src-pages-film-chuskit-js-88bc8fa821fbebcbca53.js.map"
+      "component---src-pages-film-chuskit-js-fc45bee91594e29ccca4.js",
+      "component---src-pages-film-chuskit-js-fc45bee91594e29ccca4.js.map"
     ],
     "path---": [
       "path----cac63ff5c1b42581353c.js",
       "path----cac63ff5c1b42581353c.js.map"
     ],
     "component---src-pages-film-chippa-js": [
-      "component---src-pages-film-chippa-js-7787ae21d4bf4836e355.js",
-      "component---src-pages-film-chippa-js-7787ae21d4bf4836e355.js.map"
+      "component---src-pages-film-chippa-js-09bd295d12a335bf5c87.js",
+      "component---src-pages-film-chippa-js-09bd295d12a335bf5c87.js.map"
     ],
     "component---src-layouts-index-js": [
-      "component---src-layouts-index-js-0e53fe2df7d6d2ec124c.js",
-      "component---src-layouts-index-js-0e53fe2df7d6d2ec124c.js.map"
+      "component---src-layouts-index-js-b823c3c499bbc3e9bca7.js",
+      "component---src-layouts-index-js-b823c3c499bbc3e9bca7.js.map"
     ],
     "path---film-sap": [
       "path---film-sap-a0e39f21c11f6a62c5ab.js",
@@ -41,8 +41,8 @@
       "path---page-2-a0e39f21c11f6a62c5ab.js.map"
     ],
     "component---src-pages-film-zollywood-js": [
-      "component---src-pages-film-zollywood-js-99ba1fb13146afbeedf2.js",
-      "component---src-pages-film-zollywood-js-99ba1fb13146afbeedf2.js.map"
+      "component---src-pages-film-zollywood-js-015b8052cdb261fba343.js",
+      "component---src-pages-film-zollywood-js-015b8052cdb261fba343.js.map"
     ],
     "path---index": [
       "path---index-a0e39f21c11f6a62c5ab.js",
@@ -53,9 +53,9 @@
       "component---src-pages-404-js-4503918ea3a16cfcdb75.js.map"
     ],
     "commons": [
-      "commons-a375652425f4e44d0225.js",
+      "commons-4f41d77b1c3a8a13f207.js",
       "build-js-styles.css",
-      "commons-a375652425f4e44d0225.js.map",
+      "commons-4f41d77b1c3a8a13f207.js.map",
       "build-js-styles.css.map"
     ],
     "path---404-html": [
@@ -93,12 +93,12 @@
       "path---404-a0e39f21c11f6a62c5ab.js.map"
     ],
     "component---src-pages-submit-js": [
-      "component---src-pages-submit-js-0a56a3ac499dd5136ad6.js",
-      "component---src-pages-submit-js-0a56a3ac499dd5136ad6.js.map"
+      "component---src-pages-submit-js-0391e2951bce68df0ca5.js",
+      "component---src-pages-submit-js-0391e2951bce68df0ca5.js.map"
     ],
     "component---src-pages-about-js": [
-      "component---src-pages-about-js-171dff4c2652feae06e9.js",
-      "component---src-pages-about-js-171dff4c2652feae06e9.js.map"
+      "component---src-pages-about-js-09b1d02920cc06e5ce3b.js",
+      "component---src-pages-about-js-09b1d02920cc06e5ce3b.js.map"
     ],
     "path---about": [
       "path---about-a0e39f21c11f6a62c5ab.js",

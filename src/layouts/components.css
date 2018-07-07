@@ -1,6 +1,7 @@
 /* HEADER */
 .header {
-  background: transparent;
+  background: rgb(0,0,0);
+background: linear-gradient(180deg, rgba(0,0,0,0.2231093120842087) 0%, rgba(0,0,0,0) 100%);
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -14,7 +15,7 @@
 }
 .header.fixed {
   height: 80px;
-  background-color: #fff;
+  background: #fff;
 }
 
 .logo {

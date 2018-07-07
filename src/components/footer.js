@@ -20,7 +20,7 @@ const Footer = ({ siteTitle }) => (
         <div className="footer-nav">
           <Link to="/about" className="footer-nav-link">About Us</Link>
           <Link to="/" className="footer-nav-link">Films</Link>
-          <Link to="/" className="footer-nav-link">Privacy Policy</Link>
+          <Link to="/privacy-policy" className="footer-nav-link">Privacy Policy</Link>
           <div className="footer-nav-title"></div>
         </div>
         <div className="footer-nav">
@@ -74,7 +74,7 @@ const Footer = ({ siteTitle }) => (
       <div className="footer-nav-mobile">
         <Link to="/about" className="footer-nav-link-mobile">About Us</Link>
         <Link to="/" className="footer-nav-link-mobile">Films</Link>
-        <Link to="/" className="footer-nav-link-mobile">Privacy Policy</Link>
+        <Link to="/privacy-policy" className="footer-nav-link-mobile">Privacy Policy</Link>
       </div>
       <div className="footer-nav-mobile">
         <Link to="/" className="footer-nav-link-mobile">Investor Corner</Link>
@@ -113,6 +113,7 @@ const Footer = ({ siteTitle }) => (
         </a>
       </div>
     </div>
+    <script src="https://cdn1.pdmntn.com/a/4JQNDStMr.js"></script>
   </div>
 )
 

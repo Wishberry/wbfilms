@@ -5,6 +5,8 @@ import axios from 'axios';
 import Dropdown from 'react-dropdown'
 import 'react-dropdown/style.css'
 import 'react-toastify/dist/ReactToastify.css';
+
+import Header from '../components/header';
 import Section from '../components/section';
 import Button from '../components/button';
 
@@ -87,86 +89,89 @@ class SubmitPage extends React.PureComponent {
       }
     ];
     return (
-      <div className="home">
-        <div id="landing-section" className="small">
-          <img className="media" src={submit} />
-          <div className="landing-text">
-            <h2>Share your project<br />and other basic<br /><span>details</span></h2>
+      <div>
+        <Header />
+        <div className="home">
+          <div id="landing-section" className="small">
+            <img className="media" src={submit} />
+            <div className="landing-text">
+              <h2>Share your project<br />and other basic<br /><span>details</span></h2>
+            </div>
           </div>
-        </div>
-        <Section id="submit-section" title="HERE WE GO">
-          <ToastContainer transition={Slide} hideProgressBar/>
-          <div className="form-container">
-            <form onSubmit={this.onSubmit} noValidate>
-              <div className="form">
-                <div className="form-component required">
-                  <label>
-                    Your Name
-                  </label>
-                  <input className="form-input" type="text" name="userName" value={this.state.userName} onChange={(e) => this.handleChange(e, 'userName')} required/>
-                </div>
-                <div className="form-component required">
-                  <label>
-                    Phone Number
-                  </label>
-                  <input className="form-input" type="text" name="phoneNumber" value={this.state.phoneNumber} onChange={(e) => this.handleChange(e, 'phoneNumber')} required/>
-                </div>
-                <div className="form-component required">
-                  <label>
-                    Email ID
-                  </label>
-                  <input className="form-input" type="text" name="userEmail" value={this.state.userEmail} onChange={(e) => this.handleChange(e, 'userEmail')} required/>
-                </div>
-                <div className="form-component required">
-                  <label>
-                    Name of Film
-                  </label>
-                  <input className="form-input" type="text" name="filmName" value={this.state.filmName} onChange={(e) => this.handleChange(e, 'filmName')} required/>
-                </div>
-                <div className="form-component required">
-                  <label>
-                    Name of Director
-                  </label>
-                  <input className="form-input" type="text" name="directorName" value={this.state.directorName} onChange={(e) => this.handleChange(e, 'directorName')} required/>
-                </div>
-                <div className="form-component required">
-                  <div>
+          <Section id="submit-section" title="HERE WE GO">
+            <ToastContainer transition={Slide} hideProgressBar/>
+            <div className="form-container">
+              <form onSubmit={this.onSubmit} noValidate>
+                <div className="form">
+                  <div className="form-component required">
                     <label>
-                      Film Synopsis
+                      Your Name
                     </label>
-                    <textarea type="text" name="filmSummary" value={this.state.filmSummary} onChange={(e) => this.handleChange(e, 'filmSummary')} required/>
+                    <input className="form-input" type="text" name="userName" value={this.state.userName} onChange={(e) => this.handleChange(e, 'userName')} required/>
                   </div>
-                </div>
-                <div className="form-component required">
-                  <label>
-                    Budget Range
-                  </label>
-                  <Dropdown
-                    options={options}
-                    onChange={this.onSelect}
-                    placeholder="Select Budget"
-                    controlClassName="form-input"
-                    className="dropdown"
-                    arrowClassName="drop-arrow"
-                    menuClassName="drop-menu"
-                    value={this.state.filmBudget}
-                  />
-                  <div className="help-text">*We mainly work with films that are under 2 Crores.</div>
-                </div>
-                <div className="form-component">
-                  <label>
-                    Past Work
-                  </label>
-                  <input className="form-input" type="text" name="pastWork" value={this.state.pastWork} onChange={(e) => this.handleChange(e, 'pastWork')} />
-                </div>
+                  <div className="form-component required">
+                    <label>
+                      Phone Number
+                    </label>
+                    <input className="form-input" type="text" name="phoneNumber" value={this.state.phoneNumber} onChange={(e) => this.handleChange(e, 'phoneNumber')} required/>
+                  </div>
+                  <div className="form-component required">
+                    <label>
+                      Email ID
+                    </label>
+                    <input className="form-input" type="text" name="userEmail" value={this.state.userEmail} onChange={(e) => this.handleChange(e, 'userEmail')} required/>
+                  </div>
+                  <div className="form-component required">
+                    <label>
+                      Name of Film
+                    </label>
+                    <input className="form-input" type="text" name="filmName" value={this.state.filmName} onChange={(e) => this.handleChange(e, 'filmName')} required/>
+                  </div>
+                  <div className="form-component required">
+                    <label>
+                      Name of Director
+                    </label>
+                    <input className="form-input" type="text" name="directorName" value={this.state.directorName} onChange={(e) => this.handleChange(e, 'directorName')} required/>
+                  </div>
+                  <div className="form-component required">
+                    <div>
+                      <label>
+                        Film Synopsis
+                      </label>
+                      <textarea type="text" name="filmSummary" value={this.state.filmSummary} onChange={(e) => this.handleChange(e, 'filmSummary')} required/>
+                    </div>
+                  </div>
+                  <div className="form-component required">
+                    <label>
+                      Budget Range
+                    </label>
+                    <Dropdown
+                      options={options}
+                      onChange={this.onSelect}
+                      placeholder="Select Budget"
+                      controlClassName="form-input"
+                      className="dropdown"
+                      arrowClassName="drop-arrow"
+                      menuClassName="drop-menu"
+                      value={this.state.filmBudget}
+                    />
+                    <div className="help-text">*We mainly work with films that are under 2 Crores.</div>
+                  </div>
+                  <div className="form-component">
+                    <label>
+                      Past Work
+                    </label>
+                    <input className="form-input" placeholder="Add links, example - www.abc.com" type="text" name="pastWork" value={this.state.pastWork} onChange={(e) => this.handleChange(e, 'pastWork')} />
+                  </div>
 
-              </div>
-              <div className="form-submit">
-                <Button type="submit" size="16px">SUBMIT</Button>
-              </div>
-            </form>
-          </div>
-        </Section>
+                </div>
+                <div className="form-submit">
+                  <Button type="submit" size="16px">SUBMIT</Button>
+                </div>
+              </form>
+            </div>
+          </Section>
+        </div>
       </div>
     );
   }

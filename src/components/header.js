@@ -19,7 +19,12 @@ class Header extends React.PureComponent {
   }
 
   componentDidMount = () => {
-    window.addEventListener('scroll', this.handleScroll);
+    if(this.props.fixed){
+      this.setState({ fixed: true });
+    }
+    else {
+      window.addEventListener('scroll', this.handleScroll);
+    }
   }
 
   componentWillUnmount = () => {

@@ -366,6 +366,26 @@
   margin-top: 1rem;
 }
 
+
+/* POLICY */
+#policy-section {
+  margin-top: calc(6rem + 80px);
+  margin-bottom: 6rem;
+}
+.privacy-text {
+  width: 60%;
+  margin-top: 4rem;
+}
+.privacy-text p {
+  font-size: 1.5rem;
+  font-weight: 400;
+  line-height: 1.5em;
+  text-align: justify;
+}
+.privacy-text h4{
+  margin-bottom: 0;
+}
+
 /* MOBILE */
 @media only screen and (max-width: 480px) {
   #landing-section .media {
