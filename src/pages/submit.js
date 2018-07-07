@@ -35,12 +35,6 @@ class SubmitPage extends React.PureComponent {
     script.src = "https://cdn1.pdmntn.com/a/4JQNDStMr.js";
 
     document.body.appendChild(script);
-
-    var newScript = document.createElement("script");
-    var inlineScript = document.createTextNode("alert('Hello World!');");
-    newScript.appendChild(inlineScript);
-
-    document.body.appendChild(newScript);
   }
 
   showSuccess = () => {
