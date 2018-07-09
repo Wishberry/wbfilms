@@ -24,10 +24,14 @@ const Footer = ({ siteTitle }) => (
           <div className="footer-nav-title"></div>
         </div>
         <div className="footer-nav">
-          <Link disabled to="/" className="footer-nav-link disabled">Films</Link>
+          {/* <Link disabled to="/" className="footer-nav-link disabled">Films</Link>
           <Link disabled to="/" className="footer-nav-link disabled">Investor Corner</Link>
           <Link disabled to="/" className="footer-nav-link disabled">Press</Link>
-          <Link disabled to="/" className="footer-nav-link disabled">FAQs</Link>
+          <Link disabled to="/" className="footer-nav-link disabled">FAQs</Link> */}
+          <div className="footer-nav-link disabled">Films</div>
+          <div className="footer-nav-link disabled">Investor Corner</div>
+          <div className="footer-nav-link disabled">Press</div>
+          <div className="footer-nav-link disabled">FAQs</div>
           {/* <div className="footer-nav-title">
           </div> */}
           <div className="footer-nav-banner">
@@ -79,10 +83,14 @@ const Footer = ({ siteTitle }) => (
         <div className="footer-nav-link-mobile"></div>
       </div>
       <div className="footer-nav-mobile">
-        <Link disabled to="/" className="footer-nav-link-mobile disabled">Films</Link>
+        {/* <Link disabled to="/" className="footer-nav-link-mobile disabled">Films</Link>
         <Link disabled to="/" className="footer-nav-link-mobile disabled">Investor Corner</Link>
         <Link disabled to="/" className="footer-nav-link-mobile disabled">Press</Link>
-        <Link disabled to="/" className="footer-nav-link-mobile disabled">FAQs</Link>
+        <Link disabled to="/" className="footer-nav-link-mobile disabled">FAQs</Link> */}
+        <div className="footer-nav-link-mobile disabled">Films</div>
+        <div className="footer-nav-link-mobile disabled">Investor Corner</div>
+        <div className="footer-nav-link-mobile disabled">Press</div>
+        <div className="footer-nav-link-mobile disabled">FAQs</div>
         <div className="footer-nav-banner">
           <img src={soon} alt="coming soon" />
         </div>

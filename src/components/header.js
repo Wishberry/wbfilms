@@ -62,14 +62,22 @@ class Header extends React.PureComponent {
           <Link className="header-link" activeClassName="header-link-active" to="/about">
             About Us
           </Link>
-          <Link disabled className="header-link disabled" activeClassName="header-link-active" to="#">
+          {/* <Link disabled className="header-link disabled" activeClassName="header-link-active" to="#">
             <img className="header-link-soon short" src={soon} alt="coming-soon" />
             Films
           </Link>
           <Link disabled className="header-link disabled" activeClassName="header-link-active" to="#">
             <img className="header-link-soon long" src={soon} alt="coming-soon" />
             Investor Corner
-          </Link>
+          </Link> */}
+          <div className="header-link disabled" activeClassName="header-link-active">
+            <img className="header-link-soon short" src={soon} alt="coming-soon" />
+            Films
+          </div>
+          <div className="header-link disabled" activeClassName="header-link-active">
+            <img className="header-link-soon long" src={soon} alt="coming-soon" />
+            Investor Corner
+          </div>
         </div>
         <div className="header-nav-mobile">
           <a className="nav-link" onClick={this.toggleMenu}>
@@ -87,14 +95,22 @@ class Header extends React.PureComponent {
             <Link className="header-link-mobile" activeClassName="header-link-active" to="/about">
               About Us
             </Link>
-            <Link className="header-link-mobile disabled" disabled activeClassName="header-link-active" to="#">
+            {/* <Link className="header-link-mobile disabled" disabled activeClassName="header-link-active" to="#">
               Films
               <img className="header-link-soon" src={soon} alt="coming-soon" />
             </Link>
             <Link className="header-link-mobile disabled" disabled activeClassName="header-link-active" to="#">
               Investor Corner
               <img className="header-link-soon" src={soon} alt="coming-soon" />
-            </Link>
+            </Link> */}
+            <div className="header-link-mobile disabled" activeClassName="header-link-active">
+              Films
+              <img className="header-link-soon" src={soon} alt="coming-soon" />
+            </div>
+            <div className="header-link-mobile disabled" activeClassName="header-link-active">
+              Investor Corner
+              <img className="header-link-soon" src={soon} alt="coming-soon" />
+            </div>
           </div>
         </div>
       </div>
