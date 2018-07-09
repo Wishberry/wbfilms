@@ -101,7 +101,7 @@ class IndexPage extends React.PureComponent {
           quote: "\"Every path is the right path. Everything could have been anything else, and it would have just as much meaning.\"",
           quoteFilm: "Mr. Nobody",
           title: "Production & Distribution",
-          linkedin: "https://www.wishberry.in/wishberry-team/www.linkedin.com/in/singh-shashwat",
+          linkedin: "https://www.linkedin.com/in/singh-shashwat",
         },
         {
           name: "Suprateek",
@@ -109,7 +109,7 @@ class IndexPage extends React.PureComponent {
           quote: "\"Happiness is in doing, not in getting what you want.\"",
           quoteFilm: "Before Sunset",
           title: "Content",
-          linkedin: "#",
+          linkedin: "https://in.linkedin.com/in/suprateek-chatterjee-7b515a130",
         }
       ],
       row2: [
@@ -119,7 +119,7 @@ class IndexPage extends React.PureComponent {
           quote: "\"All you have to do is listen.\"",
           quoteFilm: "August Rush",
           title: "Marketing & Publicity",
-          linkedin: "#",
+          linkedin: "https://in.linkedin.com/in/dhruvi-narsaria-ab4060130",
         },
         {
           name: "Apoorva",
@@ -158,14 +158,14 @@ class IndexPage extends React.PureComponent {
 
     const advisors = [
       {
-        name: "Dr. Sunil Patil",
-        title: "Director on the Board<br/>Scrabble Entertainment Limited<br/><br/>",
-        image: sunil
-      },
-      {
         name: "Shibasish Sarkar",
         title: "COO<br/>Reliance Big Entertainment<br/><br/>",
         image: shibashish
+      },
+      {
+        name: "Dr. Sunil Patil",
+        title: "Director on the Board<br/>Scrabble Entertainment Limited<br/><br/>",
+        image: sunil
       },
       {
         name: "Vikramaditya Motwane",

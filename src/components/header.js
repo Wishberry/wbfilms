@@ -70,14 +70,17 @@ class Header extends React.PureComponent {
             <img className="header-link-soon long" src={soon} alt="coming-soon" />
             Investor Corner
           </Link> */}
-          <div className="header-link disabled" activeClassName="header-link-active">
+          <div className="header-link disabled">
             <img className="header-link-soon short" src={soon} alt="coming-soon" />
             Films
           </div>
-          <div className="header-link disabled" activeClassName="header-link-active">
+          <div className="header-link disabled">
             <img className="header-link-soon long" src={soon} alt="coming-soon" />
             Investor Corner
           </div>
+          <Link className="header-link" activeClassName="header-link-active" to="/submit">
+            Submit Film
+          </Link>
         </div>
         <div className="header-nav-mobile">
           <a className="nav-link" onClick={this.toggleMenu}>
@@ -103,14 +106,17 @@ class Header extends React.PureComponent {
               Investor Corner
               <img className="header-link-soon" src={soon} alt="coming-soon" />
             </Link> */}
-            <div className="header-link-mobile disabled" activeClassName="header-link-active">
+            <div className="header-link-mobile disabled">
               Films
               <img className="header-link-soon" src={soon} alt="coming-soon" />
             </div>
-            <div className="header-link-mobile disabled" activeClassName="header-link-active">
+            <div className="header-link-mobile disabled">
               Investor Corner
               <img className="header-link-soon" src={soon} alt="coming-soon" />
             </div>
+            <Link className="header-link-mobile" activeClassName="header-link-active" to="/submit">
+              Submit Film
+            </Link>
           </div>
         </div>
       </div>

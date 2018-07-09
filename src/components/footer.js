@@ -20,8 +20,8 @@ const Footer = ({ siteTitle }) => (
         <div className="footer-nav">
           <Link to="/about" className="footer-nav-link">About Us</Link>
           <a href="https://www.wishberry.in/" className="footer-nav-link">Wishberry.in</a>
+          <Link to="/submit" className="footer-nav-link">Submit Film</Link>
           <Link to="/privacy-policy" className="footer-nav-link">Privacy Policy</Link>
-          <div className="footer-nav-title"></div>
         </div>
         <div className="footer-nav">
           {/* <Link disabled to="/" className="footer-nav-link disabled">Films</Link>
@@ -79,8 +79,8 @@ const Footer = ({ siteTitle }) => (
       <div className="footer-nav-mobile">
         <Link to="/about" className="footer-nav-link-mobile">About Us</Link>
         <a href="https://www.wishberry.in/" className="footer-nav-link-mobile">Wishberry.in</a>
+        <Link to="/submit" className="footer-nav-link-mobile">Submit Film</Link>
         <Link to="/privacy-policy" className="footer-nav-link-mobile">Privacy Policy</Link>
-        <div className="footer-nav-link-mobile"></div>
       </div>
       <div className="footer-nav-mobile">
         {/* <Link disabled to="/" className="footer-nav-link-mobile disabled">Films</Link>

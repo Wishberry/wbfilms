@@ -79,7 +79,7 @@ class IndexPage extends React.PureComponent {
             <img className="media" src={cover} alt="cover"/>
             {/* <div className="landing-overlay"></div> */}
             <div className="landing-text">
-              <h2>India's first<br />crowd-financing<br />studio for new age<br />cinema</h2>
+              <h2>India's first<br />crowd-financing<br />studio for new age<br />cinema.</h2>
               <Button to="/submit" size="16px">SUBMIT FILM</Button>
             </div>
             <div className="learn-more-container" onClick={this.scrollPage}>

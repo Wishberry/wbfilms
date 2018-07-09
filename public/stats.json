@@ -9,8 +9,8 @@
       "component---src-pages-film-sap-js-ad57c967c57f707e2516.js.map"
     ],
     "component---src-pages-index-js": [
-      "component---src-pages-index-js-ac2713069d24b8735c7e.js",
-      "component---src-pages-index-js-ac2713069d24b8735c7e.js.map"
+      "component---src-pages-index-js-fb3054d81550a60b7875.js",
+      "component---src-pages-index-js-fb3054d81550a60b7875.js.map"
     ],
     "path---film-zollywood": [
       "path---film-zollywood-a0e39f21c11f6a62c5ab.js",
@@ -29,8 +29,8 @@
       "component---src-pages-film-chippa-js-54c8adbdf2f61685d2eb.js.map"
     ],
     "component---src-layouts-index-js": [
-      "component---src-layouts-index-js-ad9f0df103c8c9ad585c.js",
-      "component---src-layouts-index-js-ad9f0df103c8c9ad585c.js.map"
+      "component---src-layouts-index-js-a4a6f996f4d18bb4633f.js",
+      "component---src-layouts-index-js-a4a6f996f4d18bb4633f.js.map"
     ],
     "path---film-sap": [
       "path---film-sap-a0e39f21c11f6a62c5ab.js",
@@ -53,9 +53,9 @@
       "component---src-pages-404-js-4503918ea3a16cfcdb75.js.map"
     ],
     "commons": [
-      "commons-6e2616109ae0ba0d43bc.js",
+      "commons-3a0c4945c146eb378221.js",
       "build-js-styles.css",
-      "commons-6e2616109ae0ba0d43bc.js.map",
+      "commons-3a0c4945c146eb378221.js.map",
       "build-js-styles.css.map"
     ],
     "path---404-html": [
@@ -97,8 +97,8 @@
       "component---src-pages-submit-js-705813de7d16562d4723.js.map"
     ],
     "component---src-pages-about-js": [
-      "component---src-pages-about-js-760b5023ba693137407c.js",
-      "component---src-pages-about-js-760b5023ba693137407c.js.map"
+      "component---src-pages-about-js-bc150ae00ac481be124e.js",
+      "component---src-pages-about-js-bc150ae00ac481be124e.js.map"
     ],
     "path---about": [
       "path---about-a0e39f21c11f6a62c5ab.js",

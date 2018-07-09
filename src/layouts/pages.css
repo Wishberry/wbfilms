@@ -97,7 +97,7 @@
 .service h6 {
   text-align: center;
   font-weight: 700;
-  color: #ee4723;
+  color: #fff;
   position: absolute;
   top: 50%;
   left: 50%;
@@ -440,12 +440,13 @@
   margin-top: 4rem;
 }
 .privacy-text p {
-  font-size: 1.5rem;
+  font-size: 18px;
   font-weight: 400;
   line-height: 1.5em;
-  text-align: justify;
+  text-align: left;
 }
 .privacy-text h4{
+  font-size: 1.75rem;
   margin-bottom: 0;
 }
 .cookie-policy {
