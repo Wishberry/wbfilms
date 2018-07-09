@@ -310,6 +310,7 @@
 .form-component {
   width: 40%;
   margin-bottom: 2.25rem;
+  position: relative;
 }
 .form-component label {
   font-size: 20px;
@@ -321,6 +322,9 @@
   content: '*';
   color: red;
 }
+::placeholder {
+  color: #999;
+}
 .form-component .form-input, .form-component textarea {
   height: 56px;
   display: block;
@@ -329,6 +333,16 @@
   font-size: 20px;
   padding: 0 1.5rem;
   border-radius: 0;
+}
+.form-input-group {
+  display: flex;
+  justify-content: space-between;
+}
+.form-component .form-input-group .form-input.tel-short {
+  width: 25%;
+}
+.form-component .form-input-group .form-input.tel-long {
+  width: 65%;
 }
 .form-component textarea {
   padding-top: 1rem;
@@ -369,6 +383,13 @@
 }
 .form-submit {
   margin-top: 1rem;
+}
+.text-area-words {
+  position: absolute;
+  top: 20px;
+  right: 0;
+  color: #999;
+  font-size: 14px;
 }
 
 

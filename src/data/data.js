@@ -57,13 +57,13 @@ const films = {
     coverImage: "https://s3.ap-south-1.amazonaws.com/aw-files-1-118130771025/chippa-cover.jpg",
     director: {
       name: "Safdar Rahman",
-      text: "<strong>Safdar Rahman</strong> was born in Kolkata and has been involved in the theatre scene since a very young age. He directed 2 plays: Exit and Haroun Ki Dilchasp Kahaani, and has been working with kids for the last 6 years. Safdar has also worked on numerous films as an executive producer.",
+      text: "<strong>Safdar Rahman</strong> was born in Kolkata and has been involved in the theatre scene since a very young age. He directed 2 plays: Exit and Haroun Ki Dilchasp Kahaani, and has been working with kids for the last 6 years. Safdar has also worked on numerous films as an Executive Producer.",
       image: "https://s3.ap-south-1.amazonaws.com/aw-files-1-118130771025/safdar.jpg",
     },
     producer: {
       title: "PRODUCER",
       name: "Céline Loop",
-      text: "<strong>Céline Loop</strong> is a Belgian lawyer turned indie film producer, who has been living in India for the last 8 years. Céline's core strength is creating universal stories for global audiences and selling them to Netflix.<br/><br/>Céline produced four films which were subsequently sold to Netflix. 'Brahman Naman' premiered at Sundance Film Festival and was sold to Netflix for Rs. 7 crores, 'Gandu' & 'Ludo' were sold to Netflix for Rs. 1-1.5 crores and 'Kajarya' was sold to Netflix for Rs. 1 crore.",
+      text: "<strong>Céline Loop</strong> is a lawyer turned indie film producer from Belgium who has been living in India for the last 8 years. Céline's core strength lies in creating universal stories for the global audiences & and eye for upcoming, talented filmmakers.<br/><br/>Céline produced four films, which were subsequently sold to Netflix - 'Brahman Naman' (premiered at Sundance Film Festival), Gandu, Ludo and Kajarya.",
       image: "https://s3.ap-south-1.amazonaws.com/aw-files-1-118130771025/celine.jpg",
     },
     synopsis: {
@@ -113,7 +113,7 @@ const films = {
     coverImage: "https://s3.ap-south-1.amazonaws.com/aw-files-1-118130771025/zollywood-cover.jpg",
     director: {
       name: "Trushant Ingle",
-      text: "<strong>Trushant Ingle</strong> was born and brought up in Nagpur and was a child artist for performances in <i>Zadipatti</i> from 2005 to 2007.<br/><br/>Trushant worked with Amit as the Casting Director on ‘Newton’. Amit has mentored him since then helping Trushant hone his directorial skills.<br/><br/>As an insider in the <i>Zadipatti</i> industry and Amit’s protégé, he is in a unique position to direct this story professionally while capturing the nuances of Zadipatti",
+      text: "<strong>Trushant Ingle</strong> was born and brought up in Nagpur and grew up as a child artist in the performances of <i>Zadipatti, a rural, folk theatre tradition in Vidarbha region.</i><br></br>Trushant went on to work with Amit Masurkar, filmmaker of the award-winning film Newton as the Casting Director and Amit since has mentored Trushant in helping him hone his directorial skills.<br/><br/>As an insider in the <i>Zadipatti</i> industry and Amit’s protégé, Trushant is in a unique position to direct this story professionally while capturing the nuances of <i>Zadipatti.</i>",
       image: "https://s3.ap-south-1.amazonaws.com/aw-files-1-118130771025/trushant.jpg",
     },
     producer: {

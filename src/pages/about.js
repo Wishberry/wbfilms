@@ -100,7 +100,7 @@ class IndexPage extends React.PureComponent {
           image: shashwat,
           quote: "\"Every path is the right path. Everything could have been anything else, and it would have just as much meaning.\"",
           quoteFilm: "Mr. Nobody",
-          title: "Production",
+          title: "Production & Distribution",
           linkedin: "https://www.wishberry.in/wishberry-team/www.linkedin.com/in/singh-shashwat",
         },
         {
@@ -114,20 +114,20 @@ class IndexPage extends React.PureComponent {
       ],
       row2: [
         {
-          name: "Apoorva",
-          image: apoorva,
-          quote: "\"Don't let the muggles get you down.\"",
-          quoteFilm: "Harry Potter and the Prisoner of Azkaban",
-          title: "Investor Relations",
-          linkedin: "https://www.linkedin.com/in/apoorvaa-agarwal-35834478/",
-        },
-        {
           name: "Dhruvi",
           image: dhruvi,
           quote: "\"All you have to do is listen.\"",
           quoteFilm: "August Rush",
           title: "Marketing & Publicity",
           linkedin: "#",
+        },
+        {
+          name: "Apoorva",
+          image: apoorva,
+          quote: "\"Don't let the muggles get you down.\"",
+          quoteFilm: "Harry Potter and the Prisoner of Azkaban",
+          title: "Investor Relations",
+          linkedin: "https://www.linkedin.com/in/apoorvaa-agarwal-35834478/",
         },
         {
           name: "Anant",
@@ -142,7 +142,7 @@ class IndexPage extends React.PureComponent {
           image: nikita,
           quote: "\"It’s sort of like how they say that other dimensions exist all around us, but we don’t have the ability to perceive them. That’s - That’s what I want out of any relationship. Or just life, I guess.\"",
           quoteFilm: "Frances Ha",
-          title: "Festival Strategy",
+          title: "Investor Relations",
           linkedin: "https://in.linkedin.com/in/ahujanikita136",
         },
         {
@@ -150,7 +150,7 @@ class IndexPage extends React.PureComponent {
           image: mohanish,
           quote: "\"Gentlemen. You can't fight in there. This is the war room!\"",
           quoteFilm: "Dr. Strangelove",
-          title: "Manager, Distribution ",
+          title: "Distribution ",
           linkedin: "https://www.linkedin.com/in/mohanishvaidya/",
         }
       ]
@@ -159,17 +159,17 @@ class IndexPage extends React.PureComponent {
     const advisors = [
       {
         name: "Dr. Sunil Patil",
-        title: "Director on the Board, Scrabble Entertainment Limited",
+        title: "Director on the Board<br/>Scrabble Entertainment Limited<br/><br/>",
         image: sunil
       },
       {
         name: "Shibasish Sarkar",
-        title: "COO, Reliance Entertainment<br/><br/>",
+        title: "COO<br/>Reliance Big Entertainment<br/><br/>",
         image: shibashish
       },
       {
         name: "Vikramaditya Motwane",
-        title: "Film Director, Udaan, Dev D<br/>Co-Owner, Phantom Films",
+        title: "Film Director<br/>(Udaan, Lootera, Bhavesh Joshi)<br/>Co-Owner, Phantom Films",
         image: vikramaditya
       }
     ];
@@ -182,7 +182,7 @@ class IndexPage extends React.PureComponent {
             <img className="cover-image" src="https://s3.ap-south-1.amazonaws.com/aw-files-1-118130771025/about-cover.jpg" alt="cover" />
             <div id="landing-section">
               <div className="landing-text">
-                <h2>We finance,<br />produce, market<br />and distribute<span>&quot;smart<br />budget&quot; films</span></h2>
+                <h2>A good film,<br/>a smart budget<br/>and some caramel<br/>popcorn, <span>priceless!</span></h2>
               </div>
               <div className="learn-more-container" onClick={this.scrollPage}>
                 <p className="learn-more-text">See more</p>
@@ -193,7 +193,9 @@ class IndexPage extends React.PureComponent {
               <div className="about-text">
                 <h5>In 2012, Wishberry premiered the concept of crowdfunding in India for Independent filmmakers. Over 400 media projects have raised over 2 million dollars using the platform's rewards-based crowdfunding model from over 15,000 people across the world.
                 <br /><br />
-                Leveraging on its experience in supporting indie cinema, Wishberry is now extending its digital platform to allow High Net Worth Individuals (HNIs) to discover and invest in low budget cinema in exchange for a share of the film’s profits.
+                Wishberry is now launching Wishberry Films - a new-age, content-driven, film financing platform, that believes in balancing the equation between art and commerce. We believe that a good story and a smart budget is all that’s needed to make films a lucrative investment opportunity for HNIs.
+                <br/><br/>
+                Wishberry Films will finance, produce, market & distribute films with universal and regional stories from India. And help HNIs discover and invest in such films.
               </h5>
               </div>
             </Section>

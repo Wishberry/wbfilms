@@ -2,7 +2,8 @@ import React from 'react'
 import Link from 'gatsby-link'
 import { ToastContainer, toast, Slide } from 'react-toastify';
 import axios from 'axios';
-import Dropdown from 'react-dropdown'
+import Dropdown from 'react-dropdown';
+import { Formik, Form, Field, FieldArray } from 'formik';
 import 'react-dropdown/style.css'
 import 'react-toastify/dist/ReactToastify.css';
 
@@ -12,20 +13,13 @@ import Button from '../components/button';
 
 const submit = "https://s3.ap-south-1.amazonaws.com/aw-files-1-118130771025/submit-cover.jpg";
 
+
 class SubmitPage extends React.PureComponent {
 
   constructor(props) {
     super(props);
     this.state = {
-      userName: undefined,
-      phoneNumber: undefined,
-      userEmail: undefined,
-      filmName: undefined,
-      directorName: undefined,
-      filmSummary: undefined,
-      pastWork: undefined,
-      filmBudget: undefined,
-      success: false,
+      wordCount: 0
     };
   }
 
@@ -51,19 +45,21 @@ class SubmitPage extends React.PureComponent {
     });
   }
 
-  handleChange = (event, field) => {
-    let updatedState = this.state;
-    updatedState[field] = event.target.value;
-    this.setState(updatedState);
+  updateWordCount = (event) => {
+    const wordArray = event.target.value.split(" ");
+    if(wordArray.length > 250) {
+      wordArray.length = 250;
+      const text = wordArray.join(" ");
+      event.target.value = text;
+    }
+    this.setState({wordCount: wordArray.length});
   }
-
-  onSelect = (selected) => {
-    this.setState({ filmBudget: selected.value })
-  }
-
-  onSubmit = (event) => {
+  onSubmit = (values) => {
+    const data = values;
+    data.phoneNumber = data.areaCode.concat(" ", data.phoneNumber);
+    delete data.areaCode;
     event.preventDefault();
-    axios.post('https://wishberry-films.herokuapp.com/api/creator/lead/create', this.state)
+    axios.post('https://wishberry-films.herokuapp.com/api/creator/lead/create', data)
     .then(function (response) {
       console.log(response);
       if (response.data && response.data.success) {
@@ -73,7 +69,7 @@ class SubmitPage extends React.PureComponent {
         this.showError();
       }
     })
-    .catch(function (error) {
+    .catch((error) => {
       console.log(error);
       this.showError();
     });
@@ -109,74 +105,110 @@ class SubmitPage extends React.PureComponent {
           <Section id="submit-section" title="HERE WE GO">
             <ToastContainer transition={Slide} hideProgressBar/>
             <div className="form-container">
-              <form onSubmit={this.onSubmit} noValidate>
-                <div className="form">
-                  <div className="form-component required">
-                    <label>
-                      Your Name
-                    </label>
-                    <input className="form-input" type="text" name="userName" value={this.state.userName} onChange={(e) => this.handleChange(e, 'userName')} required/>
-                  </div>
-                  <div className="form-component required">
-                    <label>
-                      Phone Number
-                    </label>
-                    <input className="form-input" type="text" name="phoneNumber" value={this.state.phoneNumber} onChange={(e) => this.handleChange(e, 'phoneNumber')} required/>
-                  </div>
-                  <div className="form-component required">
-                    <label>
-                      Email ID
-                    </label>
-                    <input className="form-input" type="text" name="userEmail" value={this.state.userEmail} onChange={(e) => this.handleChange(e, 'userEmail')} required/>
-                  </div>
-                  <div className="form-component required">
-                    <label>
-                      Name of Film
-                    </label>
-                    <input className="form-input" type="text" name="filmName" value={this.state.filmName} onChange={(e) => this.handleChange(e, 'filmName')} required/>
-                  </div>
-                  <div className="form-component required">
-                    <label>
-                      Name of Director
-                    </label>
-                    <input className="form-input" type="text" name="directorName" value={this.state.directorName} onChange={(e) => this.handleChange(e, 'directorName')} required/>
-                  </div>
-                  <div className="form-component required">
-                    <div>
-                      <label>
-                        Film Synopsis
-                      </label>
-                      <textarea type="text" name="filmSummary" value={this.state.filmSummary} onChange={(e) => this.handleChange(e, 'filmSummary')} required/>
-                    </div>
-                  </div>
-                  <div className="form-component required">
-                    <label>
-                      Budget Range
-                    </label>
-                    <Dropdown
-                      options={options}
-                      onChange={this.onSelect}
-                      placeholder="Select Budget"
-                      controlClassName="form-input"
-                      className="dropdown"
-                      arrowClassName="drop-arrow"
-                      menuClassName="drop-menu"
-                      value={this.state.filmBudget}
-                    />
-                    <div className="help-text">*We mainly work with films that are under 2 Crores.</div>
-                  </div>
-                  <div className="form-component">
-                    <label>
-                      Past Work
-                    </label>
-                    <input className="form-input" placeholder="Add links, example - www.abc.com" type="text" name="pastWork" value={this.state.pastWork} onChange={(e) => this.handleChange(e, 'pastWork')} />
-                  </div>
 
-                </div>
-                <div className="form-submit">
-                  <Button type="submit" size="16px">SUBMIT</Button>
-                </div>
-              </form>
+              <Formik
+                onSubmit={this.onSubmit}
+                render={({
+                  values,
+                  errors,
+                  touched,
+                  setFieldValue,
+                  setFieldTouched,
+                  handleChange,
+                  handleBlur,
+                  handleSubmit,
+                  isSubmitting,
+                }) => (
+                  <Form>
+                    <div className="form">
+                      <div className="form-component required">
+                        <label>
+                          Your Name
+                        </label>
+                        <Field className="form-input" type="text" name="userName" required/>
+                      </div>
+                      <div className="form-component required">
+                        <label>
+                          Phone Number
+                        </label>
+                        <FieldArray>
+                          <div className="form-input-group">
+                            <Field className="form-input tel-short" maxLength={4} type="tel" name="areaCode" placeholder="+91" required/>
+                            <Field className="form-input tel-long" maxLength={10} type="tel" name="phoneNumber" placeholder="Your Phone Number" required/>
+                          </div>
+                        </FieldArray>
+                      </div>
+                      <div className="form-component required">
+                        <label>
+                          Email ID
+                        </label>
+                        <Field className="form-input" type="email" name="userEmail" required/>
+                      </div>
+                      <div className="form-component required">
+                        <label>
+                          Name of Film
+                        </label>
+                        <Field className="form-input" type="text" name="filmName" required/>
+                      </div>
+                      <div className="form-component required">
+                        <label>
+                          Name of Director
+                        </label>
+                        <Field className="form-input" type="text" name="directorName" required/>
+                      </div>
+                      <div className="form-component required">
+                        <div className="text-area-words">Words: {this.state.wordCount}/250</div>
+                        <div>
+                          <label>
+                            Film Synopsis
+                          </label>
+                          <Field
+                            component="textarea"
+                            onChange={(e) => {
+                              this.updateWordCount(e)
+                              handleChange(e)
+                            }}
+                            name="filmSummary"
+                            value={values.filmSummary}
+                            required
+                          />
+                        </div>
+                      </div>
+                      <div className="form-component required">
+                        <label>
+                          Budget Range
+                        </label>
+                        <Dropdown
+                          options={options}
+                          onChange={(selected) => setFieldValue('filmBudget', selected.value)}
+                          onBlur={() => setFieldTouched('filmBudget', true)}
+                          error={errors.topics}
+                          touched={touched.topics}
+                          placeholder="Select Budget"
+                          controlClassName="form-input"
+                          className="dropdown"
+                          arrowClassName="drop-arrow"
+                          menuClassName="drop-menu"
+                          value={values.filmBudget}
+                        />
+
+                        <div className="help-text">*We mainly work with films that are under 2 Crores.</div>
+                      </div>
+                      <div className="form-component">
+                        <label>
+                          Past Work
+                        </label>
+                        <Field className="form-input" placeholder="Add links, example - www.abc.com" type="text" name="pastWork"/>
+                      </div>
+
+                    </div>
+                    <div className="form-submit">
+                      <Button type="submit" size="16px">SUBMIT</Button>
+                    </div>
+
+                  </Form>
+                )}
+              />
             </div>
           </Section>
         </div>
