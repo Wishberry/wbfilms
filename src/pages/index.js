@@ -66,7 +66,7 @@ class IndexPage extends React.PureComponent {
         image: festivalService
       },
       {
-        name: "PUBLICITY & DISTRIBUTION",
+        name: "PUBLICITY & ADVERTISEMENT",
         image: publicityService
       },
     ];

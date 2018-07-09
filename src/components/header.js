@@ -1,12 +1,13 @@
 import React from 'react'
 import Link from 'gatsby-link'
 
-import logoBlack from '../images/logo.png';
+// import logoBlack from '../images/logo.png';
+import logoOrange from '../images/logo-orange.png';
 import logoWhite from '../images/logo-white.png';
 import menuWhite from '../images/menu-white.png';
 import menuBlack from '../images/menu-black.png';
 import close from '../images/close.png';
-import soon from '../images/coming-soon.png';
+import soon from '../images/soon.png';
 
 class Header extends React.PureComponent {
 
@@ -54,19 +55,19 @@ class Header extends React.PureComponent {
       <div  className={this.state.fixed || this.props.fixed ? 'header fixed' : 'header'}>
         <Link to="/" style={{ height: '100%' }}>
           <div className="logo">
-            <img src={(this.state.fixed || this.state.menuOpen) ? logoBlack : logoWhite} alt="Logo" />
+            <img src={(this.state.fixed || this.state.menuOpen) ? logoOrange : logoWhite} alt="Logo" />
           </div>
         </Link>
         <div className='header-nav'>
           <Link className="header-link" activeClassName="header-link-active" to="/about">
             About Us
           </Link>
-          <Link disabled className="header-link" activeClassName="header-link-active" to="#">
-            <img className="header-link-soon left" src={soon} alt="coming-soon" />
+          <Link disabled className="header-link disabled" activeClassName="header-link-active" to="#">
+            <img className="header-link-soon short" src={soon} alt="coming-soon" />
             Films
           </Link>
-          <Link disabled className="header-link" activeClassName="header-link-active" to="#">
-            <img className="header-link-soon" src={soon} alt="coming-soon" />
+          <Link disabled className="header-link disabled" activeClassName="header-link-active" to="#">
+            <img className="header-link-soon long" src={soon} alt="coming-soon" />
             Investor Corner
           </Link>
         </div>
@@ -86,11 +87,11 @@ class Header extends React.PureComponent {
             <Link className="header-link-mobile" activeClassName="header-link-active" to="/about">
               About Us
             </Link>
-            <Link className="header-link-mobile" disabled activeClassName="header-link-active" to="#">
+            <Link className="header-link-mobile disabled" disabled activeClassName="header-link-active" to="#">
               Films
               <img className="header-link-soon" src={soon} alt="coming-soon" />
             </Link>
-            <Link className="header-link-mobile" disabled activeClassName="header-link-active" to="#">
+            <Link className="header-link-mobile disabled" disabled activeClassName="header-link-active" to="#">
               Investor Corner
               <img className="header-link-soon" src={soon} alt="coming-soon" />
             </Link>

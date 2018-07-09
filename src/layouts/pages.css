@@ -96,8 +96,8 @@
 }
 .service h6 {
   text-align: center;
-  font-weight: 600;
-  color: #fff;
+  font-weight: 700;
+  color: #ee4723;
   position: absolute;
   top: 50%;
   left: 50%;
@@ -142,7 +142,7 @@
   margin-top: 1em;
 }
 .author .name {
-  color: #777;
+  color: #ee4723;
   text-align: center;
   font-weight: 700;
   margin-bottom: 0;
@@ -393,6 +393,7 @@
 .cookie-policy {
   background-color:transparent;
   border-collapse:collapse;
+  table-layout: fixed;
 }
 .cookie-policy td {
   border:1px solid black;
@@ -492,5 +493,11 @@
   }
   .small, .medium, .large {
     width: 100%;
+  }
+  .privacy-text {
+    width: 100%;
+  }
+  .privacy-text p {
+    text-align: left;
   }
 }

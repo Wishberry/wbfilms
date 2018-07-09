@@ -9,7 +9,7 @@ import films from '../../data/data';
 
 import linkArrow from '../../images/link-arrow.png';
 import downArrow from '../../images/down-arrow.png';
-import soon from '../../images/coming-soon.png';
+import soon from '../../images/soon.png';
 
 class FilmPage extends React.PureComponent {
 

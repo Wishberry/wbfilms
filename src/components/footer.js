@@ -3,7 +3,7 @@ import Link from 'gatsby-link'
 
 import logo from '../images/logo-white.png';
 
-import soon from '../images/coming-soon.png';
+import soon from '../images/soon.png';
 
 import facebook from '../images/facebook.png';
 import instagram from '../images/instagram.png';
@@ -19,16 +19,17 @@ const Footer = ({ siteTitle }) => (
         </div>
         <div className="footer-nav">
           <Link to="/about" className="footer-nav-link">About Us</Link>
-          <Link to="/" className="footer-nav-link">Films</Link>
+          <a href="https://www.wishberry.in/" className="footer-nav-link">Wishberry.in</a>
           <Link to="/privacy-policy" className="footer-nav-link">Privacy Policy</Link>
           <div className="footer-nav-title"></div>
         </div>
         <div className="footer-nav">
-          <Link to="/" className="footer-nav-link">Investor Corner</Link>
-          <Link to="/" className="footer-nav-link">Press</Link>
-          <Link to="/" className="footer-nav-link">FAQs</Link>
-          <div className="footer-nav-title">
-          </div>
+          <Link disabled to="/" className="footer-nav-link disabled">Films</Link>
+          <Link disabled to="/" className="footer-nav-link disabled">Investor Corner</Link>
+          <Link disabled to="/" className="footer-nav-link disabled">Press</Link>
+          <Link disabled to="/" className="footer-nav-link disabled">FAQs</Link>
+          {/* <div className="footer-nav-title">
+          </div> */}
           <div className="footer-nav-banner">
             <img src={soon} alt="coming soon" />
           </div>
@@ -51,8 +52,8 @@ const Footer = ({ siteTitle }) => (
             &copy;2016 All Rights Reserved Wishberry Online Services Pvt. Ltd. (CIN: U74300MH2009PTC191803)
           </div>
         </div>
-        {/* <div className="footer-social"> */}
-          <a className="footer-social-link">
+        <div className="footer-social">
+          {/* <a className="footer-social-link">
             <img src={facebook} alt="facebook" />
           </a>
           <a className="footer-social-link">
@@ -63,8 +64,8 @@ const Footer = ({ siteTitle }) => (
           </a>
           <a className="footer-social-link">
             <img src={twitter} alt="facebook" />
-          </a>
-        {/* </div> */}
+          </a> */}
+        </div>
       </div>
     </div>
     <div className="footer-mobile">
@@ -73,13 +74,15 @@ const Footer = ({ siteTitle }) => (
       </div>
       <div className="footer-nav-mobile">
         <Link to="/about" className="footer-nav-link-mobile">About Us</Link>
-        <Link to="/" className="footer-nav-link-mobile">Films</Link>
+        <a href="https://www.wishberry.in/" className="footer-nav-link-mobile">Wishberry.in</a>
         <Link to="/privacy-policy" className="footer-nav-link-mobile">Privacy Policy</Link>
+        <div className="footer-nav-link-mobile"></div>
       </div>
       <div className="footer-nav-mobile">
-        <Link to="/" className="footer-nav-link-mobile">Investor Corner</Link>
-        <Link to="/" className="footer-nav-link-mobile">Press</Link>
-        <Link to="/" className="footer-nav-link-mobile">FAQs</Link>
+        <Link disabled to="/" className="footer-nav-link-mobile disabled">Films</Link>
+        <Link disabled to="/" className="footer-nav-link-mobile disabled">Investor Corner</Link>
+        <Link disabled to="/" className="footer-nav-link-mobile disabled">Press</Link>
+        <Link disabled to="/" className="footer-nav-link-mobile disabled">FAQs</Link>
         <div className="footer-nav-banner">
           <img src={soon} alt="coming soon" />
         </div>
@@ -98,7 +101,7 @@ const Footer = ({ siteTitle }) => (
       <div className="footer-mobile-info">
         &copy;2016 All Rights Reserved Wishberry Online Services Pvt. Ltd.<br/>(CIN: U74300MH2009PTC191803)
       </div>
-      <div className="footer-mobile-social">
+      {/* <div className="footer-mobile-social">
         <a className="footer-social-link">
           <img src={facebook} alt="facebook" />
         </a>
@@ -111,7 +114,7 @@ const Footer = ({ siteTitle }) => (
         <a className="footer-social-link">
           <img src={twitter} alt="facebook" />
         </a>
-      </div>
+      </div> */}
     </div>
   </div>
 )
