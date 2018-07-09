@@ -200,7 +200,7 @@ class SubmitPage extends React.Component {
                           value={values.filmBudget}
                         />
 
-                        <div className="help-text">*We mainly work with films that are under 2 Crores.</div>
+                        <div className="help-text">*We mainly work with films that are under Rs. 2 Crores.</div>
                       </div>
                       <div className="form-component">
                           <label>
@@ -233,28 +233,6 @@ class SubmitPage extends React.Component {
                               </div>
                             )}
                           >
-                            {/* <div className="form-input-list">
-                              <div className="input-with-action">
-                                <Field className="form-input" placeholder="Add links, example - www.abc.com" type="text" name="pastWork.0"/>
-                                <a
-                                  className="add-input"
-                                  onClick={this.addField}
-                                >
-                                  &#43;
-                                </a>
-                              </div>
-                              {this.state.pastWork.map( (item, index) =>
-                                <div key={index} className="input-with-action">
-                                  <Field className="form-input" placeholder="Add links, example - www.abc.com" type="text" name={`pastWork.${item}`}/>
-                                  <a
-                                    className="remove-input"
-                                    onClick={() => this.removeField(index)}
-                                  >
-                                    -
-                                  </a>
-                                </div>
-                              )}
-                            </div> */}
                           </FieldArray>
                       </div>
 
