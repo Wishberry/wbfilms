@@ -7,7 +7,6 @@
 var app = require('../app');
 var debug = require('debug')('chuskit-website:server');
 var http = require('http');
-var enforce = require('express-sslify');
 
 /**
  * Get port from environment and store in Express.
@@ -15,7 +14,6 @@ var enforce = require('express-sslify');
 
 var port = normalizePort(process.env.PORT || '3000');
 app.set('port', port);
-app.use(enforce.HTTPS({ trustProtoHeader: true }))
 /**
  * Create HTTP server.
  */
