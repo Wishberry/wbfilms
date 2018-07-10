@@ -280,16 +280,18 @@
   position: relative;
   margin-top: 2rem;
   font-weight: 600;
-  width: 80%;
+  width: 90%;
   text-align: center;
   margin-left: auto;
   margin-right: auto;
   color: #232323;
+  font-size: 1.4rem;
 }
 .advisor-container h6 {
   color: #999;
   text-align: center;
   font-weight: normal;
+  font-size: 1.15rem;
 }
 .advisor img {
   display: block;
