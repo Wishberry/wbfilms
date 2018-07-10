@@ -60,11 +60,10 @@ class SubmitPage extends React.Component {
     if(data.pastWork) {
       data.pastWork = data.pastWork.join(", ");
     }
-    let phoneNumber = data.phoneNumber.join("");
-    if(phoneNumber.charAt(0) === '+'){
-      phoneNumber = phoneNumber.slice(1);
+    if(data.pastWork === "") {
+      delete data.pastWork;
     }
-    data.phoneNumber = parseInt(phoneNumber);
+    data.phoneNumber = data.phoneNumber.join(" ");
     event.preventDefault();
     axios.post('https://wishberry-films.herokuapp.com/api/creator/lead/create', data)
     .then(function (response) {
@@ -141,8 +140,8 @@ class SubmitPage extends React.Component {
                         </label>
                         <FieldArray name="phoneNumber">
                           <div className="form-input-group">
-                            <Field className="form-input tel-short" maxLength={4} type="tel" name="phoneNumber.0" placeholder="+91" required/>
-                            <Field className="form-input tel-long" maxLength={10} type="tel" name="phoneNumber.1" placeholder="Your Phone Number" required/>
+                            <Field className="form-input tel-short" maxLength={4} type="tel" name="phoneNumber.0" placeholder="+91" pattern="^(\+?\d{1,3}|\d{1,4})$" required/>
+                            <Field className="form-input tel-long" type="number" name="phoneNumber.1" placeholder="Your Phone Number" required/>
                           </div>
                         </FieldArray>
                       </div>
