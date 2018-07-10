@@ -55,7 +55,7 @@ class SubmitPage extends React.Component {
     }
     this.setState({wordCount: wordArray.length});
   }
-  onSubmit = (values) => {
+  onSubmit = (values, {resetForm}) => {
     const data = {...values};
     if(data.pastWork) {
       data.pastWork = data.pastWork.join(", ");
@@ -64,12 +64,11 @@ class SubmitPage extends React.Component {
       delete data.pastWork;
     }
     data.phoneNumber = data.phoneNumber.join(" ");
-    event.preventDefault();
     axios.post('https://wishberry-films.herokuapp.com/api/creator/lead/create', data)
-    .then(function (response) {
+    .then((response) => {
       console.log(response);
       if (response.data && response.data.success) {
-        event.target.reset();
+        resetForm();
         this.showSuccess();
       } else {
         this.showError();
