@@ -305,7 +305,7 @@
 
 /* CAROUSEL */
 .carousel-container {
-  padding: 5%;
+  padding: 5% 0;
 }
 .slick-track {
   display: flex;

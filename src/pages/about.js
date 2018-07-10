@@ -25,6 +25,7 @@ import linkedin from '../images/linkedin.png';
 const vikramaditya = "https://s3.ap-south-1.amazonaws.com/aw-files-1-118130771025/vikramaditya.jpg";
 const shibashish = "https://s3.ap-south-1.amazonaws.com/aw-files-1-118130771025/shibashish.jpg";
 const sunil = "https://s3.ap-south-1.amazonaws.com/aw-files-1-118130771025/sunil.jpg";
+const arjun = "https://s3.ap-south-1.amazonaws.com/aw-files-1-118130771025/arjun.png";
 
 class IndexPage extends React.PureComponent {
 
@@ -171,6 +172,11 @@ class IndexPage extends React.PureComponent {
         name: "Vikramaditya Motwane",
         title: "Film Director<br/>(Udaan, Lootera, Bhavesh Joshi)<br/>Co-Owner, Phantom Films",
         image: vikramaditya
+      },
+      {
+        name: "Arjun Mudda",
+        title: "Founder & Director<br/>MumbaiBeats<br/></br>",
+        image: arjun
       }
     ];
 
@@ -241,7 +247,7 @@ class IndexPage extends React.PureComponent {
           <Section id="advisor-section" title="BOARD OF ADVISORS">
             <div className="advisor-container">
               <Carousel
-                settings={this.state.isMobile ? {} : { slidesToShow: 3, infinite: false, arrows: false, autoplay: false }}
+                settings={this.state.isMobile ? {} : { slidesToShow: 4, infinite: false, arrows: false, autoplay: false }}
               >
                 { advisors.map((item, index) => (
                   <div key={index} className="advisors">
