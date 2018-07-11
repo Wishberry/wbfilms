@@ -9,8 +9,8 @@
       "component---src-pages-film-sap-js-ad57c967c57f707e2516.js.map"
     ],
     "component---src-pages-index-js": [
-      "component---src-pages-index-js-fb3054d81550a60b7875.js",
-      "component---src-pages-index-js-fb3054d81550a60b7875.js.map"
+      "component---src-pages-index-js-a3c518a8a7de879ab4b1.js",
+      "component---src-pages-index-js-a3c518a8a7de879ab4b1.js.map"
     ],
     "path---film-zollywood": [
       "path---film-zollywood-a0e39f21c11f6a62c5ab.js",
@@ -53,9 +53,9 @@
       "component---src-pages-404-js-4503918ea3a16cfcdb75.js.map"
     ],
     "commons": [
-      "commons-3a0c4945c146eb378221.js",
+      "commons-63114d3d9ddf3896360b.js",
       "build-js-styles.css",
-      "commons-3a0c4945c146eb378221.js.map",
+      "commons-63114d3d9ddf3896360b.js.map",
       "build-js-styles.css.map"
     ],
     "path---404-html": [
@@ -70,14 +70,22 @@
       "path---film-chuskit-a0e39f21c11f6a62c5ab.js",
       "path---film-chuskit-a0e39f21c11f6a62c5ab.js.map"
     ],
+    "component---src-pages-about-2-js": [
+      "component---src-pages-about-2-js-ad834537f4d9f6b3ae0e.js",
+      "component---src-pages-about-2-js-ad834537f4d9f6b3ae0e.js.map"
+    ],
+    "path---about-2": [
+      "path---about-2-a0e39f21c11f6a62c5ab.js",
+      "path---about-2-a0e39f21c11f6a62c5ab.js.map"
+    ],
     "component---src-pages-page-2-js": [
       "component---src-pages-page-2-js-13f3515fb0ed3019d40d.js",
       "component---src-pages-page-2-js-13f3515fb0ed3019d40d.js.map"
     ],
     "app": [
-      "app-f7c675cc73b4ed21d886.js",
+      "app-35ed696acf7f7c115270.js",
       "build-js-styles.css",
-      "app-f7c675cc73b4ed21d886.js.map",
+      "app-35ed696acf7f7c115270.js.map",
       "build-js-styles.css.map"
     ],
     "path---privacy-policy": [
@@ -93,12 +101,12 @@
       "path---404-a0e39f21c11f6a62c5ab.js.map"
     ],
     "component---src-pages-submit-js": [
-      "component---src-pages-submit-js-710658399fc3f32e3d38.js",
-      "component---src-pages-submit-js-710658399fc3f32e3d38.js.map"
+      "component---src-pages-submit-js-0d1d58ec2e544beff7e1.js",
+      "component---src-pages-submit-js-0d1d58ec2e544beff7e1.js.map"
     ],
     "component---src-pages-about-js": [
-      "component---src-pages-about-js-a97653f1ac13b87334fe.js",
-      "component---src-pages-about-js-a97653f1ac13b87334fe.js.map"
+      "component---src-pages-about-js-908ac16cbc04a380c1b3.js",
+      "component---src-pages-about-js-908ac16cbc04a380c1b3.js.map"
     ],
     "path---about": [
       "path---about-a0e39f21c11f6a62c5ab.js",

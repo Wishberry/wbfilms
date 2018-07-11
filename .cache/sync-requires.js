@@ -9,6 +9,7 @@ exports.layouts = {
 exports.components = {
   "component---src-pages-404-js": preferDefault(require("/Users/ankur/work/wbfilms/src/pages/404.js")),
   "component---src-pages-about-js": preferDefault(require("/Users/ankur/work/wbfilms/src/pages/about.js")),
+  "component---src-pages-about-2-js": preferDefault(require("/Users/ankur/work/wbfilms/src/pages/about2.js")),
   "component---src-pages-film-chippa-js": preferDefault(require("/Users/ankur/work/wbfilms/src/pages/film/chippa.js")),
   "component---src-pages-film-chuskit-js": preferDefault(require("/Users/ankur/work/wbfilms/src/pages/film/chuskit.js")),
   "component---src-pages-film-sap-js": preferDefault(require("/Users/ankur/work/wbfilms/src/pages/film/sap.js")),
@@ -23,6 +24,7 @@ exports.json = {
   "layout-index.json": require("/Users/ankur/work/wbfilms/.cache/json/layout-index.json"),
   "404.json": require("/Users/ankur/work/wbfilms/.cache/json/404.json"),
   "about.json": require("/Users/ankur/work/wbfilms/.cache/json/about.json"),
+  "about-2.json": require("/Users/ankur/work/wbfilms/.cache/json/about-2.json"),
   "film-chippa.json": require("/Users/ankur/work/wbfilms/.cache/json/film-chippa.json"),
   "film-chuskit.json": require("/Users/ankur/work/wbfilms/.cache/json/film-chuskit.json"),
   "film-sap.json": require("/Users/ankur/work/wbfilms/.cache/json/film-sap.json"),

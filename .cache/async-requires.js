@@ -4,6 +4,7 @@ const preferDefault = m => m && m.default || m
 exports.components = {
   "component---src-pages-404-js": require("gatsby-module-loader?name=component---src-pages-404-js!/Users/ankur/work/wbfilms/src/pages/404.js"),
   "component---src-pages-about-js": require("gatsby-module-loader?name=component---src-pages-about-js!/Users/ankur/work/wbfilms/src/pages/about.js"),
+  "component---src-pages-about-2-js": require("gatsby-module-loader?name=component---src-pages-about-2-js!/Users/ankur/work/wbfilms/src/pages/about2.js"),
   "component---src-pages-film-chippa-js": require("gatsby-module-loader?name=component---src-pages-film-chippa-js!/Users/ankur/work/wbfilms/src/pages/film/chippa.js"),
   "component---src-pages-film-chuskit-js": require("gatsby-module-loader?name=component---src-pages-film-chuskit-js!/Users/ankur/work/wbfilms/src/pages/film/chuskit.js"),
   "component---src-pages-film-sap-js": require("gatsby-module-loader?name=component---src-pages-film-sap-js!/Users/ankur/work/wbfilms/src/pages/film/sap.js"),
@@ -18,6 +19,7 @@ exports.json = {
   "layout-index.json": require("gatsby-module-loader?name=path---!/Users/ankur/work/wbfilms/.cache/json/layout-index.json"),
   "404.json": require("gatsby-module-loader?name=path---404!/Users/ankur/work/wbfilms/.cache/json/404.json"),
   "about.json": require("gatsby-module-loader?name=path---about!/Users/ankur/work/wbfilms/.cache/json/about.json"),
+  "about-2.json": require("gatsby-module-loader?name=path---about-2!/Users/ankur/work/wbfilms/.cache/json/about-2.json"),
   "film-chippa.json": require("gatsby-module-loader?name=path---film-chippa!/Users/ankur/work/wbfilms/.cache/json/film-chippa.json"),
   "film-chuskit.json": require("gatsby-module-loader?name=path---film-chuskit!/Users/ankur/work/wbfilms/.cache/json/film-chuskit.json"),
   "film-sap.json": require("gatsby-module-loader?name=path---film-sap!/Users/ankur/work/wbfilms/.cache/json/film-sap.json"),
