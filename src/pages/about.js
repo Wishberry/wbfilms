@@ -160,22 +160,22 @@ class IndexPage extends React.PureComponent {
     const advisors = [
       {
         name: "Shibasish Sarkar",
-        title: "COO<br/>Reliance Big Entertainment<br/><br/>",
+        title: "COO<br/>Reliance Big Entertainment<br/>",
         image: shibashish
       },
       {
         name: "Dr. Sunil Patil",
-        title: "Director on the Board<br/>Scrabble Entertainment Limited<br/><br/>",
+        title: "Director on the Board<br/>Scrabble Entertainment Limited<br/>",
         image: sunil
       },
       {
         name: "Vikramaditya Motwane",
-        title: "Film Director<br/>(Udaan, Lootera, Bhavesh Joshi)<br/>Co-Owner, Phantom Films",
+        title: "Film Director (Udaan, Bhavesh Joshi)<br/>Co-Owner, Phantom Films",
         image: vikramaditya
       },
       {
         name: "Arjun Mudda",
-        title: "Founder & Director<br/>MumbaiBeats<br/></br>",
+        title: "Founder & Director<br/>MumbaiBeats<br/>",
         image: arjun
       }
     ];
