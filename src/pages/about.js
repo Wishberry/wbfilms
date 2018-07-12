@@ -185,7 +185,7 @@ class IndexPage extends React.PureComponent {
         <Header />
         <div className="home">
           <div className="about-container">
-            <img className="cover-image" src="https://s3.ap-south-1.amazonaws.com/aw-files-1-118130771025/about-cover.jpg" alt="cover" />
+            <img className="cover-image" src="https://s3.ap-south-1.amazonaws.com/aw-files-1-118130771025/about-cover-1.jpg" alt="cover" />
             <div id="landing-section">
               <div className="landing-text">
                 <h2>A good film,<br/>a smart budget<br/>and some caramel<br/>popcorn, <span>priceless!</span></h2>
