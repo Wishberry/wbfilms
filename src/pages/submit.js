@@ -1,5 +1,5 @@
 import React from 'react'
-import Link from 'gatsby-link'
+import Link, {navigateTo} from 'gatsby-link'
 import { ToastContainer, toast, Slide } from 'react-toastify';
 import axios from 'axios';
 import Dropdown from 'react-dropdown';
@@ -63,12 +63,15 @@ class SubmitPage extends React.Component {
     if(data.pastWork === "") {
       delete data.pastWork;
     }
-    data.phoneNumber = data.phoneNumber.join(" ");
+    if(data.phoneNumber) {
+      data.phoneNumber = data.phoneNumber.join(" ");
+    }
     axios.post('https://wishberry-films.herokuapp.com/api/creator/lead/create', data)
     .then((response) => {
       console.log(response);
       if (response.data && response.data.success) {
         resetForm();
+        navigateTo('/submit?success=true');
         this.showSuccess();
       } else {
         this.showError();
@@ -112,7 +115,16 @@ class SubmitPage extends React.Component {
             <div className="form-container">
 
               <Formik
-                initialValues={{ pastWork: [''] }}
+                initialValues={{
+                  pastWork: [''],
+                  userName: "",
+                  phoneNumber: "",
+                  userEmail: "",
+                  filmName: "",
+                  directorName: "",
+                  filmSummary: "",
+                  filmBudget: "",
+                 }}
                 onSubmit={this.onSubmit}
                 render={({
                   values,
