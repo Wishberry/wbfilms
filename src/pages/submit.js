@@ -71,7 +71,7 @@ class SubmitPage extends React.Component {
       console.log(response);
       if (response.data && response.data.success) {
         resetForm();
-        navigateTo('/submit?success=true');
+        window.location.search = 'success=true';
         this.showSuccess();
       } else {
         this.showError();
