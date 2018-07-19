@@ -68,12 +68,14 @@
   display: flex;
   justify-content: space-around;
   align-items: center;
+  flex-wrap: wrap;
 }
 .director-image img {
   width: 100%;
 }
 .synopsis-image img {
   width: 45%;
+  margin-bottom: 3rem;
 }
 .synopsis-link {
   max-height: 20px;

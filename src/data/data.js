@@ -15,7 +15,9 @@ const films = {
     synopsis: {
       text: "Sprightly Chuskit’s dream of going to school is cut short when she is rendered a paraplegic after an accident. She’s confined to life indoors in the company of her strict grandfather, Dorje. Chuskit continues to harbour hopes of school but Dorje tries to make her understand that school can’t handle her needs. As life at home gets harder, her battle with her grandfather intensifies. Caught between their struggle are Chuskit’s parents and her enterprising brother who want to respect the old world views that Dorje represents, but also want to keep Chuskit’s spirit alive. Chuskit will have to get her grandfather to yield or she will have to accept the reality he has chosen for her."
     },
-    festivals: ["https://s3.ap-south-1.amazonaws.com/aw-files-1-118130771025/giffoni.png"],
+    festivals: [
+      "https://s3.ap-south-1.amazonaws.com/aw-files-1-118130771025/giffoni.png", "https://s3.ap-south-1.amazonaws.com/aw-files-1-118130771025/sharjah.png"
+    ],
     facebook: "https://www.facebook.com/ChuskitTheFilm/",
     website: "http://www.chuskit.com",
     cast: [
